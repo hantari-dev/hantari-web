@@ -5,6 +5,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ComingSoon } from "@/components/ComingSoon";
+
+/** Set COMING_SOON=true (e.g. in Vercel) to show only the holding page. Redeploy after changing it. */
+const COMING_SOON = process.env.COMING_SOON === "true";
 
 import "@fontsource/newsreader/400.css";
 import "@fontsource/newsreader/500.css";
@@ -39,6 +43,7 @@ export async function generateMetadata({
       description: t("description"),
       locale: locale === "ro" ? "ro_RO" : "en_GB",
     },
+    ...(COMING_SOON && { robots: { index: false, follow: false } }),
   };
 }
 
@@ -54,6 +59,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className="flex min-h-screen flex-col bg-paper text-ink antialiased">
+        {COMING_SOON ? (
+          <ComingSoon locale={locale} />
+        ) : (
         <NextIntlClientProvider>
           <a
             href="#main"
@@ -67,6 +75,7 @@ export default async function LocaleLayout({
           </main>
           <Footer />
         </NextIntlClientProvider>
+        )}
       </body>
     </html>
   );
