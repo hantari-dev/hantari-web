@@ -1,0 +1,11 @@
+{
+  "name": "hantari-web",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm ci",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "bradlc.vscode-tailwindcss", "lokalise.i18n-ally"]
+    }
+  }
+}
