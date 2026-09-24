@@ -61,3 +61,58 @@
     padding-inline: 96px;
   }
 }
+
+/* ── Sunrise (coming-soon image): night → dawn, plays once, then holds ── */
+.sunrise .sunrise-dawn,
+.sunrise .sunrise-glow {
+  opacity: 0;
+  animation: sunrise-fade-in 3.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+}
+.sunrise .sunrise-glow {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation-name: sunrise-glow-rise;
+  animation-duration: 3.6s;
+}
+.sunrise .sunrise-stars {
+  animation: sunrise-fade-out 2.6s ease-in 0.4s forwards;
+}
+.sunrise .sunrise-ridge {
+  opacity: 0;
+  transform-box: fill-box;
+  animation: sunrise-ridge-in 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.sunrise .sunrise-ridge-1 { opacity: 0; animation-delay: 1.2s; }
+.sunrise .sunrise-ridge-2 { animation-delay: 1.5s; }
+.sunrise .sunrise-ridge-3 { animation-delay: 1.8s; }
+
+@keyframes sunrise-fade-in { to { opacity: 1; } }
+@keyframes sunrise-fade-out { to { opacity: 0; } }
+@keyframes sunrise-glow-rise {
+  from { opacity: 0; transform: translateY(8%) scaleY(0.85); }
+  to { opacity: 1; transform: translateY(0) scaleY(1); }
+}
+@keyframes sunrise-ridge-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.sunrise .sunrise-ridge-1 { animation-name: sunrise-ridge-in-far; }
+@keyframes sunrise-ridge-in-far {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 0.75; transform: translateY(0); }
+}
+
+/* Visitors who prefer less motion see the final dawn straight away */
+@media (prefers-reduced-motion: reduce) {
+  .sunrise .sunrise-dawn,
+  .sunrise .sunrise-glow,
+  .sunrise .sunrise-ridge,
+  .sunrise .sunrise-stars {
+    animation: none;
+  }
+  .sunrise .sunrise-dawn,
+  .sunrise .sunrise-glow,
+  .sunrise .sunrise-ridge { opacity: 1; }
+  .sunrise .sunrise-ridge-1 { opacity: 0.75; }
+  .sunrise .sunrise-stars { opacity: 0; }
+}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/services";
 import { HMark } from "./Logo";
-import { NightArt } from "./art/Art";
+import { SunriseScene } from "./art/Sunrise";
 import { CopyEmail } from "./CopyEmail";
 
 /** Temporary holding page, shown on every route while COMING_SOON=true. */
@@ -32,7 +32,7 @@ export function ComingSoon({ locale }: { locale: string }) {
             </div>
           </div>
           <div className="relative h-[260px] overflow-hidden rounded-2xl bg-night md:h-[380px] lg:col-span-5">
-            <NightArt />
+            <SunriseScene />
           </div>
         </div>
 
