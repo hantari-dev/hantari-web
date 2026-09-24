@@ -1,5 +1,5 @@
 /**
- * Sunrise — the coming-soon image. Night brightens into dawn once (~3.5s) and then stays still.
+ * Sunrise — the coming-soon image. Night brightens into dawn once (~25s) and then stays still.
  * Pure SVG + CSS (no JavaScript). With "reduce motion" enabled it shows the final dawn immediately.
  * Animations live in globals.css under "Sunrise".
  */
