@@ -17,7 +17,7 @@ import "@fontsource/ibm-plex-sans/500.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "../globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hantari.ro";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://hantari.ro";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
