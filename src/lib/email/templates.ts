@@ -35,7 +35,7 @@ function layout(inner: string, preheader: string) {
 <tr><td style="padding:28px 32px 8px;font-size:13px;font-weight:bold;letter-spacing:0.22em">HANTARI</td></tr>
 <tr><td style="padding:8px 32px 32px;font-size:15px;line-height:1.6">${inner}</td></tr>
 </table>
-<p style="font-size:12px;color:#5B5E63;margin:20px 0 0">Hantari · Software &amp; AI · Timișoara, Romania · <a href="https://hantari.ro" style="color:#5B5E63">hantari.ro</a></p>
+<p style="font-size:12px;color:#5B5E63;margin:20px 0 0">Hantari · Software &amp; AI · From Timișoara, for anywhere · <a href="https://hantari.ro" style="color:#5B5E63">hantari.ro</a></p>
 </td></tr></table></body></html>`;
 }
 

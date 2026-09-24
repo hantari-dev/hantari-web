@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hantari — Studio de software & AI",
-    "description": "Hantari este un studio de software & AI din Timișoara. Construim aplicații, automatizăm munca manuală, conectăm instrumentele pe care le folosiți, modernizăm software-ul vechi și folosim AI acolo unde aduce valoare reală.",
+    "description": "Hantari este un studio de software & AI din Timișoara, care lucrează cu oameni de oriunde. Construim aplicații și site-uri, automatizăm munca manuală, conectăm instrumentele pe care le folosiți, modernizăm software-ul vechi și folosim AI acolo unde aduce valoare reală.",
     "aboutTitle": "Despre noi",
     "startTitle": "Începe un proiect",
     "privacyTitle": "Confidențialitate"
@@ -58,8 +58,8 @@
     }
   },
   "home": {
-    "title": "<services>Software</services> inteligent pentru <work>afaceri reale</work>.",
-    "intro": "Hantari este un studio de software & AI. Ajutăm afacerile să se digitalizeze, modernizăm software-ul pe care se bazează, automatizăm munca manuală și folosim AI acolo unde aduce valoare reală.",
+    "title": "<services>Software</services> inteligent pentru <work>idei reale</work>.",
+    "intro": "Hantari este un studio de software & AI. Ajutăm afaceri, organizații și oameni cu o idee să se digitalizeze, modernizăm software-ul pe care se bazează, automatizăm munca manuală și folosim AI acolo unde aduce valoare reală.",
     "ctaSecondary": "Ce facem",
     "featureEyebrow": "Cum lucrăm",
     "featureTitle": "De la muncă manuală la software care merge singur.",
@@ -87,7 +87,7 @@
   "about": {
     "eyebrow": "Despre Hantari",
     "title": "Un studio mic pentru software practic.",
-    "intro": "Hantari este un studio de software & AI din Timișoara. Ajutăm afacerile să se digitalizeze, aducem software-ul vechi la standarde moderne, automatizăm munca manuală — și folosim AI acolo unde rezolvă o problemă reală, nu unde sună bine într-un titlu.",
+    "intro": "Hantari este un studio de software & AI din Timișoara, care lucrează cu oameni de oriunde. Ajutăm afaceri, organizații și creatori independenți să se digitalizeze, aducem software-ul vechi la standarde moderne, automatizăm munca manuală — și folosim AI acolo unde rezolvă o problemă reală, nu unde sună bine într-un titlu.",
     "imageLine": "Aceeași mentalitate, alt teren.",
     "howEyebrow": "Cum lucrăm",
     "p1Title": "Simplu, nu sofisticat.",
@@ -100,7 +100,7 @@
     "p4Text": "Îmbunătățirile mici și constante bat rescrierile mari dintr-odată.",
     "studioEyebrow": "Studioul",
     "basedIn": "Locație",
-    "basedInValue": "Timișoara, România",
+    "basedInValue": "Timișoara, România — lucrăm cu clienți de oriunde",
     "email": "Email",
     "languages": "Limbi",
     "languagesValue": "Engleză, română",
@@ -153,8 +153,8 @@
     "namePlaceholder": "Nume complet",
     "emailLabel": "Email",
     "emailPlaceholder": "nume@companie.ro",
-    "company": "Companie",
-    "companyPlaceholder": "Numele companiei",
+    "company": "Companie sau organizație",
+    "companyPlaceholder": "Dacă există",
     "phone": "Telefon",
     "replyIn": "Răspuns în",
     "consent": "Sunt de acord ca Hantari să folosească aceste date pentru a răspunde acestei cereri, conform",
@@ -199,7 +199,7 @@
     "s6Text": "Ne poți cere oricând să vezi, să corectezi sau să ștergi datele tale, scriindu-ne la hello@hantari.ro. Ai și dreptul de a depune o plângere la ANSPDCP."
   },
   "footer": {
-    "tagline": "Software & AI · Timișoara, România",
+    "tagline": "Software & AI · Din Timișoara, pentru oriunde",
     "ethos": "Mai bine decât ieri.",
     "services": "Servicii",
     "studio": "Studio",

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/services";
 import { HMark } from "./Logo";
-import { DuskArt } from "./art/Art";
+import { NightArt } from "./art/Art";
+import { CopyEmail } from "./CopyEmail";
 
-/** Temporary holding page, shown on every route while COMING_SOON=true. Bilingual on purpose. */
+/** Temporary holding page, shown on every route while COMING_SOON=true. */
 export function ComingSoon({ locale }: { locale: string }) {
   const ro = locale === "ro";
   return (
@@ -16,26 +17,22 @@ export function ComingSoon({ locale }: { locale: string }) {
 
         <div className="grid items-end gap-10 lg:grid-cols-12 lg:gap-6">
           <div className="flex flex-col gap-7 lg:col-span-7">
-            <p className="eyebrow">Software &amp; AI · Timișoara</p>
+            <p className="eyebrow">{ro ? "Software & AI · Din Timișoara, pentru oriunde" : "Software & AI · From Timișoara, for anywhere"}</p>
             <h1 className="font-display text-[56px] leading-[0.98] tracking-[-0.02em] md:text-[96px]">
               {ro ? "În curând." : "Coming soon."}
             </h1>
-            <p className="max-w-[520px] font-display text-[20px] leading-[1.45] text-graphite md:text-[23px]">
+            <p className="max-w-[540px] font-display text-[20px] leading-[1.45] text-graphite md:text-[23px]">
               {ro
-                ? "Un studio de software & AI pentru afaceri reale. Site-ul nostru este aproape gata."
-                : "A software & AI studio for real businesses. Our new website is almost ready."}
+                ? "Un studio de software & AI pentru afaceri, organizații și oameni cu o idee. Site-ul nostru este aproape gata."
+                : "A software & AI studio for businesses, organisations and people with an idea. Our new website is almost ready."}
             </p>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="rounded-lg bg-ink px-[22px] py-3.5 text-[15px] font-medium text-paper transition-opacity hover:opacity-85"
-              >
-                {ro ? "Scrie-ne" : "Email us"} — {CONTACT_EMAIL}
-              </a>
+            <div className="flex flex-col gap-2">
+              <span className="eyebrow !text-[11px]">{ro ? "Scrie-ne" : "Write to us"}</span>
+              <CopyEmail email={CONTACT_EMAIL} copyLabel={ro ? "Copiază" : "Copy"} copiedLabel={ro ? "Copiat ✓" : "Copied ✓"} />
             </div>
           </div>
-          <div className="relative h-[260px] overflow-hidden rounded-2xl md:h-[380px] lg:col-span-5">
-            <DuskArt />
+          <div className="relative h-[260px] overflow-hidden rounded-2xl bg-night md:h-[380px] lg:col-span-5">
+            <NightArt />
           </div>
         </div>
 

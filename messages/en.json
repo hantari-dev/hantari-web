@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hantari — Software & AI studio",
-    "description": "Hantari is a software & AI studio in Timișoara, Romania. We build apps, automate manual work, connect your tools, modernise older software and add AI where it earns its place.",
+    "description": "Hantari is a software & AI studio from Timișoara, working with people everywhere. We build apps and websites, automate manual work, connect your tools, modernise older software and add AI where it earns its place.",
     "aboutTitle": "About",
     "startTitle": "Start a project",
     "privacyTitle": "Privacy"
@@ -58,8 +58,8 @@
     }
   },
   "home": {
-    "title": "Intelligent <services>software</services> for real <work>businesses</work>.",
-    "intro": "Hantari is a software & AI studio. We help businesses go digital, modernise the software they rely on, automate the manual work and add AI where it earns its place.",
+    "title": "Intelligent <services>software</services> for real <work>ideas</work>.",
+    "intro": "Hantari is a software & AI studio. We help businesses, organisations and people with an idea go digital, modernise the software they rely on, automate the manual work and add AI where it earns its place.",
     "ctaSecondary": "What we do",
     "featureEyebrow": "How we work",
     "featureTitle": "From manual work to software that runs itself.",
@@ -87,7 +87,7 @@
   "about": {
     "eyebrow": "About Hantari",
     "title": "A small studio for practical software.",
-    "intro": "Hantari is a software & AI studio based in Timișoara, Romania. We help businesses go digital, bring older software up to modern standards, automate the manual work — and use AI where it solves a real problem, not where it makes a good headline.",
+    "intro": "Hantari is a software & AI studio based in Timișoara, Romania, working with people everywhere. We help businesses, organisations and independent makers go digital, bring older software up to modern standards, automate the manual work — and use AI where it solves a real problem, not where it makes a good headline.",
     "imageLine": "Same mindset, different terrain.",
     "howEyebrow": "How we work",
     "p1Title": "Plain over clever.",
@@ -100,7 +100,7 @@
     "p4Text": "Small, steady improvements beat big-bang rewrites.",
     "studioEyebrow": "The studio",
     "basedIn": "Based in",
-    "basedInValue": "Timișoara, Romania",
+    "basedInValue": "Timișoara, Romania — working worldwide",
     "email": "Email",
     "languages": "Languages",
     "languagesValue": "English, Romanian",
@@ -153,8 +153,8 @@
     "namePlaceholder": "Full name",
     "emailLabel": "Email",
     "emailPlaceholder": "name@company.ro",
-    "company": "Company",
-    "companyPlaceholder": "Company name",
+    "company": "Company or organisation",
+    "companyPlaceholder": "If there is one",
     "phone": "Phone",
     "replyIn": "Reply in",
     "consent": "I agree that Hantari may use these details to reply to this request, as described in the",
@@ -199,7 +199,7 @@
     "s6Text": "You can ask us at any time to see, correct or delete your data by writing to hello@hantari.ro. You also have the right to complain to the Romanian data protection authority (ANSPDCP)."
   },
   "footer": {
-    "tagline": "Software & AI · Timișoara, Romania",
+    "tagline": "Software & AI · From Timișoara, for anywhere",
     "ethos": "Better than yesterday.",
     "services": "Services",
     "studio": "Studio",
