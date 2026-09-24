@@ -30,6 +30,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     metadataBase: new URL(SITE_URL),
+    // Stop iOS/Safari from turning random words, numbers and addresses into links
+    formatDetection: { email: false, address: false, telephone: false },
     title: { default: t("title"), template: `%s · Hantari` },
     description: t("description"),
     alternates: {

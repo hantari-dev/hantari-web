@@ -2,7 +2,6 @@ import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/services";
 import { HMark } from "./Logo";
 import { SunriseScene } from "./art/Sunrise";
-import { CopyEmail } from "./CopyEmail";
 
 /** Temporary holding page, shown on every route while COMING_SOON=true. */
 export function ComingSoon({ locale }: { locale: string }) {
@@ -28,7 +27,12 @@ export function ComingSoon({ locale }: { locale: string }) {
             </p>
             <div className="flex flex-col gap-2">
               <span className="eyebrow !text-[11px]">{ro ? "Scrie-ne" : "Write to us"}</span>
-              <CopyEmail email={CONTACT_EMAIL} copyLabel={ro ? "Copiază" : "Copy"} copiedLabel={ro ? "Copiat ✓" : "Copied ✓"} />
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="w-fit border-b border-ink font-mono text-[17px] text-ink transition-colors hover:border-signal hover:text-signal md:text-lg"
+              >
+                {CONTACT_EMAIL}
+              </a>
             </div>
           </div>
           <div className="relative h-[260px] overflow-hidden rounded-2xl bg-night md:h-[380px] lg:col-span-5">
