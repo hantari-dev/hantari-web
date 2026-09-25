@@ -44,8 +44,8 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
                 {chunks}
               </Link>
             ),
-            start: (chunks) => (
-              <Link href="/start" className={underline}>
+            work: (chunks) => (
+              <Link href="/#work" className={underline}>
                 {chunks}
               </Link>
             ),
@@ -93,7 +93,7 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
           {SERVICE_CARDS.map(({ id, Art, big }, i) => (
             <Link
               key={id}
-              href={{ pathname: "/start", query: { service: id } }}
+              href={`/services/${id}`}
               className={`group flex flex-col gap-4 md:gap-5 ${big ? "md:col-span-3" : "md:col-span-2"}`}
             >
               <Reveal className={`relative overflow-hidden rounded-2xl ${big ? "h-[220px] md:h-[320px]" : "h-[220px] md:h-[250px]"}`}>
@@ -138,7 +138,8 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
         <div className="flex flex-col gap-12 border-t border-hairline pb-16 pt-14 md:gap-16 md:pb-[150px] md:pt-[110px]">
           <div className="flex flex-col gap-5">
             <p className="eyebrow">{t("approachEyebrow")}</p>
-            <h2 className="max-w-[1080px] font-display text-[30px] leading-[1.15] md:text-[46px] md:leading-[1.12]">{t("approachTitle")}</h2>
+            <h2 className="font-display text-[38px] leading-[1.05] md:text-[64px]">{t("approachTitle")}</h2>
+            <p className="max-w-[860px] font-display text-[20px] leading-[1.45] text-graphite md:text-[26px]">{t("approachLead")}</p>
           </div>
           <div className="grid gap-10 md:grid-cols-3 md:gap-12">
             {([1, 2, 3] as const).map((n) => (
@@ -161,11 +162,17 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
               <h2 className="font-display text-[30px] leading-[1.1] md:text-[48px] md:leading-[1.08]">{t("ctaTitle")}</h2>
               <p className="text-[17px] leading-relaxed text-[#D3D8E8]">{t("ctaText")}</p>
             </div>
-            <div className="flex flex-col gap-3.5 md:items-end">
+            <div className="flex w-full flex-col items-stretch gap-4 sm:w-auto sm:min-w-[240px]">
               <Link href="/start" className="rounded-lg bg-[#F7F3EA] px-6 py-[15px] text-center text-[15px] font-medium text-ink transition-opacity hover:opacity-90">
                 {tn("start")}
               </Link>
-              <a href={`mailto:${CONTACT_EMAIL}`} className="text-center font-mono text-[13px] text-[#D3D8E8] hover:text-white">
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="flex items-center justify-center gap-2 rounded-lg border border-white/25 px-6 py-[13px] text-center font-mono text-[13px] text-[#E4E8F3] transition-colors hover:border-white/60 hover:text-white"
+              >
+                <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden>
+                  <path d="M2 4h12v8H2zM2 4l6 5 6-5" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
+                </svg>
                 {CONTACT_EMAIL}
               </a>
             </div>

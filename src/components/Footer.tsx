@@ -25,7 +25,7 @@ export function Footer() {
             <div className="flex flex-col gap-2.5">
               <span className="eyebrow pb-1 !text-[11px]">{t("services")}</span>
               {SERVICE_IDS.map((id) => (
-                <Link key={id} href={{ pathname: "/start", query: { service: id } }} className="hover:text-signal">
+                <Link key={id} href={`/services/${id}`} className="hover:text-signal">
                   {ts(`${id}.name`)}
                 </Link>
               ))}

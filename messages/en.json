@@ -12,8 +12,8 @@
     "studio": "Studio",
     "start": "Start a project",
     "whatWeDo": "What we do",
-    "notSure": "Not sure which fits?",
-    "notSureText": "Tell us what slows your business down. We’ll suggest where to start.",
+    "notSure": "Not sure where to start?",
+    "notSureText": "Tell us what you have in mind — an idea, a process or a business you want to take online. We’ll suggest where to begin.",
     "about": "About",
     "aboutLine": "Who we are and where we work",
     "approach": "Approach",
@@ -30,35 +30,270 @@
     "apps": {
       "name": "Web & desktop apps",
       "line": "The software your business needs",
-      "long": "We build the software you need — internal tools and customer-facing apps, made to last."
+      "long": "We build the software you need — internal tools and customer-facing apps, made to last.",
+      "page": {
+        "intro": "Web and desktop apps shaped around the way you work — from a simple internal tool to a platform for your customers.",
+        "process": [
+          {
+            "t": "Discovery",
+            "d": "Together we define what the app needs to do, who it’s for and what success looks like."
+          },
+          {
+            "t": "Visual direction",
+            "d": "Sketches and a clickable prototype, so you can see the app before it’s built."
+          },
+          {
+            "t": "Scope & plan",
+            "d": "We split the work into clear stages, each with a price and a deadline."
+          },
+          {
+            "t": "Build",
+            "d": "We build in stages; you get a test version within the first weeks."
+          },
+          {
+            "t": "Launch",
+            "d": "We publish the app and set up the domain, security and backups."
+          },
+          {
+            "t": "Support",
+            "d": "Monitoring, updates and improvements after launch."
+          }
+        ],
+        "get": [
+          "A web app that works on phone and desktop",
+          "A desktop app for Windows and macOS, when needed",
+          "An admin panel for your content and data",
+          "Hosting, domain and SSL certificate set up",
+          "You own the source code and documentation"
+        ],
+        "fit": [
+          "Customer portals and booking",
+          "Internal tools: stock, orders, reports",
+          "Presentation sites with real features",
+          "A first product (MVP) for a new idea"
+        ],
+        "tools": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tauri",
+          "PostgreSQL",
+          "Vercel",
+          "AWS"
+        ]
+      }
     },
     "automation": {
       "name": "Automation",
       "line": "Less manual work, fewer loops",
-      "long": "We make your business processes run with less manual work."
+      "long": "We make your business processes run with less manual work.",
+      "page": {
+        "intro": "The steps that repeat — copying data, sending emails, creating documents — can run on their own, correctly and on time, giving your team hours back for work that matters.",
+        "process": [
+          {
+            "t": "Mapping",
+            "d": "We follow the process end to end and see what repeats and what can run by itself."
+          },
+          {
+            "t": "Prioritising",
+            "d": "We start with the automations that give back the most time."
+          },
+          {
+            "t": "Building",
+            "d": "Flows, scripts and integrations that do the repetitive work for you."
+          },
+          {
+            "t": "Testing on real data",
+            "d": "We run alongside the way you work today until everything comes out right."
+          },
+          {
+            "t": "Handover & monitoring",
+            "d": "We show you how it works, and you get alerts if anything needs attention."
+          }
+        ],
+        "get": [
+          "Documents, invoices and reports created automatically",
+          "Emails and notifications sent at the right moment",
+          "Data kept in sync between apps, no manual copying",
+          "A dashboard showing everything that runs"
+        ],
+        "fit": [
+          "Weekly or monthly reports",
+          "Order and invoice processing",
+          "Customer or employee onboarding",
+          "Data imports and exports"
+        ],
+        "tools": [
+          "Python",
+          "Node.js",
+          "n8n",
+          "APIs",
+          "Google Workspace",
+          "Scheduled jobs"
+        ]
+      }
     },
     "ai": {
       "name": "AI solutions",
-      "line": "Practical AI for real problems",
-      "long": "We use AI to solve practical business problems."
+      "line": "AI that works for your business",
+      "long": "We put AI to work in your business: assistants, document processing and search that know your data.",
+      "page": {
+        "intro": "Assistants, document processing and smart search — AI connected to your data and tools, working for your business.",
+        "process": [
+          {
+            "t": "Choosing the task",
+            "d": "We start from a concrete task where AI brings value you can measure."
+          },
+          {
+            "t": "Data & access",
+            "d": "We decide what information it uses and what it may do — your data stays under your control."
+          },
+          {
+            "t": "Prototype",
+            "d": "A working prototype within days, tested on real examples."
+          },
+          {
+            "t": "Integration",
+            "d": "We connect the AI to your apps: calendar, email, database, invoicing."
+          },
+          {
+            "t": "Ongoing evaluation",
+            "d": "We measure answer quality and keep improving."
+          }
+        ],
+        "get": [
+          "An assistant that answers from your own documents",
+          "Data extracted automatically from PDFs, invoices and emails",
+          "Search across documents in plain language",
+          "Agents that take actions: bookings, orders, summaries"
+        ],
+        "fit": [
+          "Customer questions and FAQs",
+          "Invoice and document processing",
+          "Email and report summaries",
+          "Appointments and bookings (like Lacta)"
+        ],
+        "tools": [
+          "Claude (Anthropic)",
+          "OpenAI",
+          "RAG",
+          "Agents & tool use",
+          "PostgreSQL + pgvector"
+        ]
+      }
     },
     "integrations": {
       "name": "Integrations",
       "line": "Your tools — and AI — working together",
-      "long": "We connect the software you already use — e-Factura, SmartBill or Oblio, WooCommerce, couriers, Google Calendar, Stripe or Netopia — and add AI on top."
+      "long": "We connect the software you already use — e-Factura, SmartBill or Oblio, WooCommerce, couriers, Google Calendar, Stripe or Netopia — and add AI on top.",
+      "page": {
+        "intro": "The software you already use can work together — data flows by itself between your shop, invoicing, couriers and calendar.",
+        "process": [
+          {
+            "t": "Inventory",
+            "d": "We list your apps and the data that needs to move between them."
+          },
+          {
+            "t": "Flow plan",
+            "d": "We decide who sends what, when, and what happens in every case."
+          },
+          {
+            "t": "Connecting",
+            "d": "We build the links through each service’s official APIs."
+          },
+          {
+            "t": "Testing",
+            "d": "We check every flow with real data, including the rarer cases."
+          },
+          {
+            "t": "Monitoring",
+            "d": "You get alerts if a connection needs attention."
+          }
+        ],
+        "get": [
+          "e-Factura (ANAF) sent automatically from your shop or app",
+          "SmartBill or Oblio connected to WooCommerce: an order becomes an invoice",
+          "Shipping labels created automatically (FAN Courier, Sameday, Cargus)",
+          "Bookings synced with Google Calendar and Meet",
+          "Online payments with Stripe or Netopia",
+          "AI on top: summaries, answers, extracted data"
+        ],
+        "fit": [
+          "Online shops",
+          "Practices and services that take bookings",
+          "Businesses that issue many invoices",
+          "Teams moving data between apps"
+        ],
+        "tools": [
+          "REST APIs",
+          "Webhooks",
+          "e-Factura",
+          "SmartBill / Oblio",
+          "WooCommerce",
+          "Stripe",
+          "Netopia",
+          "Google APIs"
+        ]
+      }
     },
     "modernisation": {
       "name": "Modernisation",
       "line": "Older software, modern standards",
-      "long": "We bring your old software up to modern standards."
+      "long": "We bring your old software up to modern standards.",
+      "page": {
+        "intro": "The software that keeps your business moving can be brought up to date — faster, more secure and easier to maintain, without stopping your work.",
+        "process": [
+          {
+            "t": "Assessment",
+            "d": "We look at what you have: code, data, hosting, security — and what’s worth keeping."
+          },
+          {
+            "t": "Strategy",
+            "d": "We choose the right path: update, rebuild in stages or replace."
+          },
+          {
+            "t": "Staged migration",
+            "d": "We move features one at a time, without pausing your business."
+          },
+          {
+            "t": "Data kept safe",
+            "d": "We migrate data with checks and backups at every step."
+          },
+          {
+            "t": "Cloud & support",
+            "d": "Modern hosting, automatic backups and regular updates."
+          }
+        ],
+        "get": [
+          "Your app on modern technology",
+          "Moved to the cloud (AWS or Vercel) with automatic backups",
+          "Better security and controlled access",
+          "Better performance and clear hosting costs",
+          "Documentation for the whole system"
+        ],
+        "fit": [
+          "Internal apps used for years",
+          "Systems that grew with the business",
+          "Own servers ready to move to the cloud",
+          "Excel or Access records that have grown too big"
+        ],
+        "tools": [
+          "AWS",
+          "Terraform",
+          "Docker",
+          "Linux",
+          "PostgreSQL",
+          "CI/CD"
+        ]
+      }
     },
     "unsure": {
       "name": "Not sure yet",
-      "line": "Describe the problem, we’ll suggest"
+      "line": "Tell us your idea, we’ll suggest the path"
     }
   },
   "home": {
-    "title": "<services>Digitalising</services> businesses, modernising software, <start>bringing ideas to life</start>.",
+    "title": "<services>Digitalising</services> businesses, modernising software, <work>bringing ideas to life</work>.",
     "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to launch and beyond, with clear prices and deadlines agreed up front.",
     "ctaSecondary": "What we do",
     "featureEyebrow": "Software & AI",
@@ -72,12 +307,13 @@
     "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with online booking and an AI assistant that answers questions and helps visitors book.",
     "lactaCta": "Visit lacta.ro",
     "approachEyebrow": "Our vision",
-    "approachTitle": "Technology should work for you. We help businesses go digital, bring older software up to date and turn ideas into something real — built carefully, explained plainly, and looked after once it’s live.",
+    "approachTitle": "Technology that works for you.",
+    "approachLead": "We help businesses go digital, bring older software up to date and turn ideas into real solutions — built carefully, explained plainly and supported after launch.",
     "step1Label": "01 · Understand",
     "step1Title": "Start from the idea — or from how you work today.",
     "step1Text": "A business to digitalise, an old system to modernise or a brand-new idea: first we understand what exists and agree together what “better” means.",
     "step2Label": "02 · Build",
-    "step2Title": "Small steps you can see.",
+    "step2Title": "Steps you can see.",
     "step2Text": "Working versions early and often — your idea takes shape in front of you, and you always know what you’re paying for.",
     "step3Label": "03 · Run",
     "step3Title": "Kept running after launch.",
@@ -111,7 +347,7 @@
   "start": {
     "back": "Back to site",
     "eyebrow": "Start a project",
-    "title": "Tell us what you’d like to fix.",
+    "title": "Tell us what you’d like to build.",
     "intro": "Three short steps, about two minutes. No technical knowledge needed — describe it the way you’d explain it to a colleague.",
     "nextTitle": "What happens next",
     "next1": "You get an email confirming we’ve received your request.",
@@ -128,9 +364,9 @@
     "s1Text": "Pick one or more. Not sure? That’s fine too.",
     "selected": "{count} selected",
     "s2Title": "Tell us about it.",
-    "s2Text": "A few sentences is plenty. What happens today, and what should happen instead?",
-    "description": "What’s the problem or idea?",
-    "descriptionPlaceholder": "e.g. We track orders in a spreadsheet and email three people every time one changes. It takes hours each week and things get missed.",
+    "s2Text": "A few sentences is plenty. What would you like to build, change or make easier?",
+    "description": "What do you have in mind?",
+    "descriptionPlaceholder": "e.g. We’d like an app where customers place orders themselves, connected to our invoicing, so the team always sees what’s next.",
     "tools": "Tools you use today",
     "toolsPlaceholder": "e.g. Excel, Gmail, an old in-house app, SmartBill…",
     "optional": "(optional)",
@@ -166,7 +402,7 @@
     "another": "Send another request",
     "errors": {
       "services": "Pick at least one option.",
-      "description": "Please describe the problem or idea in a few words (at least 20 characters).",
+      "description": "Please tell us a little more (at least 20 characters).",
       "name": "Please tell us your name.",
       "email": "Please enter a valid email address.",
       "consent": "Please confirm we may use your details to reply.",
@@ -183,7 +419,7 @@
       {
         "title": "1. Who we are",
         "p": [
-          "The controller of your data is Hantari — a software & AI studio in Timișoara, Romania, represented by [Full name]. Until the company is registered, your data is handled by him personally.",
+          "The controller of your data is Hantari — a software & AI studio in Timișoara, Romania, represented by Hantari Beneamin Andrei. Until the company is registered, your data is handled by him personally.",
           "For any question about your data, write to us at hello@hantari.ro."
         ]
       },
@@ -289,5 +525,17 @@
     "title": "This page took a wrong turn.",
     "text": "The page you’re looking for doesn’t exist or has moved.",
     "home": "Go to the homepage"
+  },
+  "servicePage": {
+    "eyebrow": "Services",
+    "processTitle": "How we work",
+    "getTitle": "What you get",
+    "fitTitle": "A good fit for",
+    "toolsTitle": "Technology",
+    "ctaTitle": "Let’s build it together.",
+    "ctaText": "Tell us what you have in mind — you’ll hear from us within 1 business day.",
+    "prev": "Previous service",
+    "next": "Next service",
+    "all": "All services"
   }
 }

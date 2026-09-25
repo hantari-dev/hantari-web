@@ -162,7 +162,7 @@ export function Header() {
                   {SERVICE_IDS.map((id, i) => (
                     <Link
                       key={id}
-                      href={{ pathname: "/start", query: { service: id } }}
+                      href={`/services/${id}`}
                       className="group flex gap-4 rounded-lg p-3 transition-colors hover:bg-[#F1EFE9]"
                     >
                       <span className="pt-1 font-mono text-[11px] text-graphite">0{i + 1}</span>
@@ -287,7 +287,7 @@ export function Header() {
               {SERVICE_IDS.map((id) => (
                 <Link
                   key={id}
-                  href={{ pathname: "/start", query: { service: id } }}
+                  href={`/services/${id}`}
                   className="border-b border-hairline py-3.5 font-display text-[22px]"
                 >
                   {ts(`${id}.name`)}

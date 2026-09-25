@@ -1,7 +1,13 @@
 import type { MetadataRoute } from "next";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://hantari.ro";
-const PAGES = ["", "/about", "/start", "/privacy"];
+const PAGES = [
+  "",
+  "/about",
+  "/start",
+  "/privacy",
+  ...["apps", "automation", "ai", "integrations", "modernisation"].map((s) => `/services/${s}`),
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return PAGES.flatMap((p) =>

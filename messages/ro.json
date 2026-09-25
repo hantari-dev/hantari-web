@@ -12,8 +12,8 @@
     "studio": "Studio",
     "start": "Începe un proiect",
     "whatWeDo": "Ce facem",
-    "notSure": "Nu știi ce ți se potrivește?",
-    "notSureText": "Spune-ne ce îți încetinește afacerea. Îți sugerăm de unde să începem.",
+    "notSure": "Nu știi încă de unde să începi?",
+    "notSureText": "Spune-ne ce ai în minte — o idee, un proces sau o afacere pe care vrei s-o duci în online. Îți sugerăm de unde să începem.",
     "about": "Despre noi",
     "aboutLine": "Cine suntem și unde lucrăm",
     "approach": "Abordare",
@@ -30,35 +30,270 @@
     "apps": {
       "name": "Aplicații web & desktop",
       "line": "Software-ul de care are nevoie afacerea ta",
-      "long": "Construim software-ul de care ai nevoie — instrumente interne și aplicații pentru clienți, făcute să dureze."
+      "long": "Construim software-ul de care ai nevoie — instrumente interne și aplicații pentru clienți, făcute să dureze.",
+      "page": {
+        "intro": "Aplicații web și desktop construite pe măsura felului în care lucrezi — de la un instrument intern simplu până la o platformă pentru clienții tăi.",
+        "process": [
+          {
+            "t": "Descoperire",
+            "d": "Stabilim împreună ce trebuie să facă aplicația, pentru cine și ce înseamnă succes."
+          },
+          {
+            "t": "Direcție vizuală",
+            "d": "Schițe și un prototip pe care îl poți încerca, ca să vezi aplicația înainte să fie scrisă."
+          },
+          {
+            "t": "Scop și plan",
+            "d": "Împărțim totul în etape clare, cu preț și termen pentru fiecare."
+          },
+          {
+            "t": "Dezvoltare",
+            "d": "Construim pe etape; primești acces la o versiune de test încă din primele săptămâni."
+          },
+          {
+            "t": "Lansare",
+            "d": "Publicăm aplicația și configurăm domeniul, securitatea și backup-urile."
+          },
+          {
+            "t": "Susținere",
+            "d": "Monitorizare, actualizări și îmbunătățiri după lansare."
+          }
+        ],
+        "get": [
+          "Aplicație web care arată bine pe telefon și pe calculator",
+          "Aplicație desktop pentru Windows și macOS, când e nevoie",
+          "Panou de administrare pentru conținut și date",
+          "Găzduire, domeniu și certificat SSL configurate",
+          "Codul sursă și documentația îți aparțin"
+        ],
+        "fit": [
+          "Portaluri pentru clienți și rezervări",
+          "Instrumente interne: stocuri, comenzi, rapoarte",
+          "Site-uri de prezentare cu funcții reale",
+          "Primul produs (MVP) pentru o idee nouă"
+        ],
+        "tools": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tauri",
+          "PostgreSQL",
+          "Vercel",
+          "AWS"
+        ]
+      }
     },
     "automation": {
       "name": "Automatizare",
       "line": "Mai puțină muncă manuală",
-      "long": "Facem ca procesele afacerii tale să meargă cu mai puțină muncă manuală."
+      "long": "Facem ca procesele afacerii tale să meargă cu mai puțină muncă manuală.",
+      "page": {
+        "intro": "Pașii care se repetă — copiat date, trimis emailuri, generat documente — pot rula singuri, corect și la timp, iar echipa ta câștigă ore pentru munca ce contează.",
+        "process": [
+          {
+            "t": "Cartografiere",
+            "d": "Urmărim procesul de la cap la coadă și vedem ce se repetă și ce poate rula singur."
+          },
+          {
+            "t": "Prioritizare",
+            "d": "Începem cu automatizările care aduc cel mai mult timp înapoi."
+          },
+          {
+            "t": "Construire",
+            "d": "Fluxuri, scripturi și integrări care fac munca repetitivă în locul tău."
+          },
+          {
+            "t": "Testare pe date reale",
+            "d": "Rulăm în paralel cu felul în care lucrezi azi, până când totul iese corect."
+          },
+          {
+            "t": "Predare și monitorizare",
+            "d": "Îți arătăm cum funcționează și primești alerte dacă ceva are nevoie de atenție."
+          }
+        ],
+        "get": [
+          "Documente, facturi și rapoarte generate automat",
+          "Emailuri și notificări trimise la momentul potrivit",
+          "Date sincronizate între aplicații, fără copiere manuală",
+          "Un tablou de bord cu tot ce rulează"
+        ],
+        "fit": [
+          "Rapoarte săptămânale sau lunare",
+          "Procesarea comenzilor și a facturilor",
+          "Onboarding pentru clienți sau angajați",
+          "Importuri și exporturi de date"
+        ],
+        "tools": [
+          "Python",
+          "Node.js",
+          "n8n",
+          "API-uri",
+          "Google Workspace",
+          "Sarcini programate"
+        ]
+      }
     },
     "ai": {
       "name": "Soluții AI",
-      "line": "AI practic pentru probleme reale",
-      "long": "Folosim AI pentru a rezolva probleme practice de business."
+      "line": "AI care lucrează pentru afacerea ta",
+      "long": "Punem AI la lucru în afacerea ta: asistenți, procesare de documente și căutare care îți cunosc datele.",
+      "page": {
+        "intro": "Asistenți, procesare de documente și căutare inteligentă — AI conectat la datele și instrumentele tale, ca să lucreze pentru afacerea ta.",
+        "process": [
+          {
+            "t": "Alegem sarcina",
+            "d": "Pornim de la o activitate concretă în care AI aduce valoare pe care o poți măsura."
+          },
+          {
+            "t": "Date și acces",
+            "d": "Stabilim ce informații folosește și ce are voie să facă — datele rămân sub controlul tău."
+          },
+          {
+            "t": "Prototip",
+            "d": "Un prototip funcțional în câteva zile, testat pe exemple reale."
+          },
+          {
+            "t": "Integrare",
+            "d": "Conectăm AI-ul la aplicațiile tale: calendar, email, bază de date, facturare."
+          },
+          {
+            "t": "Evaluare continuă",
+            "d": "Măsurăm calitatea răspunsurilor și îmbunătățim pe parcurs."
+          }
+        ],
+        "get": [
+          "Asistent care răspunde din documentele tale",
+          "Date extrase automat din PDF-uri, facturi și emailuri",
+          "Căutare în documente, în limbaj natural",
+          "Agenți care fac acțiuni: programări, comenzi, rezumate"
+        ],
+        "fit": [
+          "Relații cu clienții și întrebări frecvente",
+          "Procesarea facturilor și a documentelor",
+          "Rezumate de emailuri și rapoarte",
+          "Programări și rezervări (ca la Lacta)"
+        ],
+        "tools": [
+          "Claude (Anthropic)",
+          "OpenAI",
+          "RAG",
+          "Agenți & tool use",
+          "PostgreSQL + pgvector"
+        ]
+      }
     },
     "integrations": {
       "name": "Integrări",
       "line": "Instrumentele tale — și AI — lucrând împreună",
-      "long": "Conectăm programele pe care le folosești deja — e-Factura, SmartBill sau Oblio, WooCommerce, curieri, Google Calendar, Stripe sau Netopia — și adăugăm AI peste ele."
+      "long": "Conectăm programele pe care le folosești deja — e-Factura, SmartBill sau Oblio, WooCommerce, curieri, Google Calendar, Stripe sau Netopia — și adăugăm AI peste ele.",
+      "page": {
+        "intro": "Programele pe care le folosești deja pot lucra împreună — datele circulă singure între magazin, facturare, curieri și calendar.",
+        "process": [
+          {
+            "t": "Inventar",
+            "d": "Facem lista aplicațiilor tale și a datelor care trebuie să circule între ele."
+          },
+          {
+            "t": "Planul fluxului",
+            "d": "Stabilim cine trimite ce, când și ce se întâmplă în fiecare caz."
+          },
+          {
+            "t": "Conectare",
+            "d": "Construim legăturile prin API-urile oficiale ale fiecărui serviciu."
+          },
+          {
+            "t": "Testare",
+            "d": "Verificăm fiecare flux cu date reale, inclusiv cazurile mai rare."
+          },
+          {
+            "t": "Monitorizare",
+            "d": "Primești alerte dacă o conexiune are nevoie de atenție."
+          }
+        ],
+        "get": [
+          "e-Factura (ANAF) trimisă automat din magazin sau aplicație",
+          "SmartBill sau Oblio conectat la WooCommerce: comanda devine factură",
+          "AWB-uri generate automat (FAN Courier, Sameday, Cargus)",
+          "Programări sincronizate cu Google Calendar și Meet",
+          "Plăți online cu Stripe sau Netopia",
+          "AI peste toate: rezumate, răspunsuri, date extrase"
+        ],
+        "fit": [
+          "Magazine online",
+          "Cabinete și servicii cu programări",
+          "Firme care emit multe facturi",
+          "Echipe care mută date între aplicații"
+        ],
+        "tools": [
+          "API-uri REST",
+          "Webhooks",
+          "e-Factura",
+          "SmartBill / Oblio",
+          "WooCommerce",
+          "Stripe",
+          "Netopia",
+          "Google APIs"
+        ]
+      }
     },
     "modernisation": {
       "name": "Modernizare",
       "line": "Software vechi, la standarde moderne",
-      "long": "Aducem software-ul tău vechi la standarde moderne."
+      "long": "Aducem software-ul tău vechi la standarde moderne.",
+      "page": {
+        "intro": "Software-ul care îți ține afacerea în mișcare poate fi adus la zi — mai rapid, mai sigur și ușor de întreținut, fără să oprești activitatea.",
+        "process": [
+          {
+            "t": "Evaluare",
+            "d": "Analizăm ce ai: cod, date, găzduire, securitate — și ce merită păstrat."
+          },
+          {
+            "t": "Strategie",
+            "d": "Alegem drumul potrivit: actualizare, reconstruire pe etape sau înlocuire."
+          },
+          {
+            "t": "Migrare pe etape",
+            "d": "Mutăm funcțiile pe rând, fără pauze în activitatea ta."
+          },
+          {
+            "t": "Date în siguranță",
+            "d": "Migrăm datele cu verificări și backup-uri la fiecare pas."
+          },
+          {
+            "t": "Cloud și susținere",
+            "d": "Găzduire modernă, backup-uri automate și actualizări regulate."
+          }
+        ],
+        "get": [
+          "Aplicație adusă pe tehnologii moderne",
+          "Mutare în cloud (AWS sau Vercel) cu backup-uri automate",
+          "Securitate mai bună și acces controlat",
+          "Performanță mai bună și costuri de găzduire clare",
+          "Documentație pentru tot sistemul"
+        ],
+        "fit": [
+          "Aplicații interne folosite de ani de zile",
+          "Sisteme care au crescut odată cu afacerea",
+          "Servere proprii care pot trece în cloud",
+          "Evidențe în Excel sau Access care au devenit prea mari"
+        ],
+        "tools": [
+          "AWS",
+          "Terraform",
+          "Docker",
+          "Linux",
+          "PostgreSQL",
+          "CI/CD"
+        ]
+      }
     },
     "unsure": {
       "name": "Nu știu încă",
-      "line": "Descrie problema, noi îți sugerăm"
+      "line": "Spune-ne ideea, îți sugerăm drumul"
     }
   },
   "home": {
-    "title": "<services>Digitalizăm</services> afaceri, modernizăm software și <start>dăm viață ideilor</start>.",
+    "title": "<services>Digitalizăm</services> afaceri, modernizăm software și <work>dăm viață ideilor</work>.",
     "intro": "Hantari este un studio de software & AI pentru afaceri, organizații și oameni cu o idee — de la prima schiță până la lansare și mai departe, cu prețuri și termene clare, stabilite de la început.",
     "ctaSecondary": "Ce facem",
     "featureEyebrow": "Software & AI",
@@ -72,12 +307,13 @@
     "lactaText": "Un site bilingv pentru un cabinet de consultanță în alăptare — servicii, recenzii și resurse administrate chiar de proprietară, cu programări online și un asistent AI care răspunde la întrebări și ajută la programare.",
     "lactaCta": "Vezi lacta.ro",
     "approachEyebrow": "Viziunea noastră",
-    "approachTitle": "Tehnologia ar trebui să lucreze pentru tine. Ajutăm afacerile să se digitalizeze, aducem software-ul vechi la zi și transformăm ideile în ceva real — construit cu grijă, explicat simplu și îngrijit și după lansare.",
+    "approachTitle": "Tehnologia lucrează pentru tine.",
+    "approachLead": "Ajutăm afacerile să se digitalizeze, aducem software-ul vechi la zi și transformăm ideile în soluții reale — construite cu grijă, explicate simplu și susținute și după lansare.",
     "step1Label": "01 · Înțelegem",
     "step1Title": "Pornim de la idee — sau de la felul în care lucrezi azi.",
     "step1Text": "O afacere de digitalizat, un sistem vechi de modernizat sau o idee nouă: întâi înțelegem ce există și stabilim împreună ce înseamnă „mai bine”.",
     "step2Label": "02 · Construim",
-    "step2Title": "Pași mici, pe care îi vezi.",
+    "step2Title": "Pași pe care îi vezi.",
     "step2Text": "Versiuni funcționale devreme și des — ideea prinde contur sub ochii tăi și știi mereu pentru ce plătești.",
     "step3Label": "03 · Întreținem",
     "step3Title": "Funcțional și după lansare.",
@@ -111,7 +347,7 @@
   "start": {
     "back": "Înapoi la site",
     "eyebrow": "Începe un proiect",
-    "title": "Spune-ne ce ai vrea să rezolvi.",
+    "title": "Spune-ne ce vrei să construiești.",
     "intro": "Trei pași scurți, cam două minute. Nu ai nevoie de cunoștințe tehnice — descrie totul cum i-ai explica unui coleg.",
     "nextTitle": "Ce urmează",
     "next1": "Primești un email care confirmă că am primit cererea ta.",
@@ -128,9 +364,9 @@
     "s1Text": "Alege una sau mai multe variante. Nu ești sigur? E în regulă.",
     "selected": "{count} selectate",
     "s2Title": "Povestește-ne.",
-    "s2Text": "Câteva propoziții sunt de ajuns. Ce se întâmplă azi și ce ar trebui să se întâmple în schimb?",
-    "description": "Care este problema sau ideea?",
-    "descriptionPlaceholder": "ex. Ținem comenzile într-un Excel și trimitem email la trei oameni de fiecare dată când se schimbă ceva. Durează ore întregi pe săptămână și se mai pierd lucruri.",
+    "s2Text": "Câteva propoziții sunt de ajuns. Ce ai vrea să construiești, să schimbi sau să simplifici?",
+    "description": "Ce ai în minte?",
+    "descriptionPlaceholder": "ex. Ne-ar plăcea o aplicație în care clienții își plasează singuri comenzile, conectată la facturare, ca echipa să vadă mereu ce urmează.",
     "tools": "Ce programe folosiți azi",
     "toolsPlaceholder": "ex. Excel, Gmail, o aplicație internă veche, SmartBill…",
     "optional": "(opțional)",
@@ -166,7 +402,7 @@
     "another": "Trimite altă cerere",
     "errors": {
       "services": "Alege cel puțin o variantă.",
-      "description": "Te rugăm să descrii problema sau ideea în câteva cuvinte (minim 20 de caractere).",
+      "description": "Te rugăm să ne spui puțin mai mult (minim 20 de caractere).",
       "name": "Te rugăm să ne spui numele tău.",
       "email": "Te rugăm să introduci o adresă de email validă.",
       "consent": "Te rugăm să confirmi că putem folosi datele tale pentru a-ți răspunde.",
@@ -183,7 +419,7 @@
       {
         "title": "1. Cine suntem",
         "p": [
-          "Operatorul datelor tale este Hantari — studio de software & AI din Timișoara, România, reprezentat de [Nume complet]. Până la înregistrarea companiei, datele sunt gestionate de acesta în nume propriu.",
+          "Operatorul datelor tale este Hantari — studio de software & AI din Timișoara, România, reprezentat de Hantari Beneamin Andrei. Până la înregistrarea companiei, datele sunt gestionate de acesta în nume propriu.",
           "Pentru orice întrebare despre datele tale ne poți scrie la hello@hantari.ro."
         ]
       },
@@ -289,5 +525,17 @@
     "title": "Pagina asta a luat-o pe alt drum.",
     "text": "Pagina pe care o cauți nu există sau a fost mutată.",
     "home": "Mergi la pagina principală"
+  },
+  "servicePage": {
+    "eyebrow": "Servicii",
+    "processTitle": "Cum lucrăm",
+    "getTitle": "Ce primești",
+    "fitTitle": "Potrivit pentru",
+    "toolsTitle": "Tehnologii",
+    "ctaTitle": "Hai să construim împreună.",
+    "ctaText": "Spune-ne ce ai în minte — îți răspundem în cel mult o zi lucrătoare.",
+    "prev": "Serviciul anterior",
+    "next": "Serviciul următor",
+    "all": "Toate serviciile"
   }
 }
