@@ -45,6 +45,7 @@ export async function generateMetadata({
       description: t("description"),
       locale: locale === "ro" ? "ro_RO" : "en_GB",
     },
+    twitter: { card: "summary_large_image" },
     ...(COMING_SOON && { robots: { index: false, follow: false } }),
   };
 }
