@@ -45,7 +45,7 @@
     "integrations": {
       "name": "Integrations",
       "line": "Your tools — and AI — working together",
-      "long": "We make your existing software talk to each other, and connect AI to the tools you already use."
+      "long": "We connect the software you already use: e-Factura (ANAF) straight from your shop or app, SmartBill or Oblio with WooCommerce or Shopify, FAN Courier, Sameday or Cargus shipping, Google Calendar bookings, Stripe or Netopia payments — and AI on top of your own tools."
     },
     "modernisation": {
       "name": "Modernisation",
@@ -59,7 +59,7 @@
   },
   "home": {
     "title": "<services>Digitalising</services> businesses, modernising software, <start>bringing ideas to life</start>.",
-    "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to software that keeps running.",
+    "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to launch and beyond, with one team that stays accountable for all of it.",
     "ctaSecondary": "What we do",
     "featureEyebrow": "Software & AI",
     "featureTitle": "Intelligent software for real ideas.",
@@ -69,7 +69,7 @@
     "servicesIntro": "One small team, from the first conversation to the software running in your business.",
     "workTitle": "Selected work",
     "lactaEyebrow": "Case study · Web app",
-    "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with booking and an AI assistant on the way.",
+    "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with online booking and an AI assistant that answers questions and helps visitors book.",
     "lactaCta": "Visit lacta.ro",
     "approachEyebrow": "Our vision",
     "approachTitle": "Technology should work for you. We help businesses go digital, bring older software up to date and turn ideas into something real — built carefully, explained plainly, and looked after once it’s live.",
@@ -82,8 +82,8 @@
     "step3Label": "03 · Run",
     "step3Title": "Kept running after launch.",
     "step3Text": "Hosting, monitoring and updates handled. The people who built it stay with you — so tomorrow works better than today.",
-    "ctaTitle": "Have a process that eats your week?",
-    "ctaText": "Tell us what it is. You’ll hear from us within 1 business day with a clear next step."
+    "ctaTitle": "Have an idea you want to bring online, or a business that needs to go digital?",
+    "ctaText": "Tell us about it. You’ll hear from us within 1 business day with a clear next step."
   },
   "about": {
     "eyebrow": "About Hantari",

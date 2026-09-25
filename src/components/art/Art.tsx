@@ -114,42 +114,52 @@ export function StrataArt({ className = fill }: ArtProps) {
 }
 
 /**
- * Ben's "AI" mark traced as flowing light lines — AI solutions.
- * A teardrop "A" with a long diagonal crossbar, then a hook that sweeps into an open oval.
- * Colours follow his original: gold → blue → green → silver.
+ * Ben's "AI" mark traced as ribbons of light — AI solutions.
+ * Traced over his original design: one continuous "A" (crossbar → gold loop → blue base →
+ * rising leg → apex → long diagonal), then a hook that sweeps into the open green–silver oval.
  */
 export function LoopArt({ className = fill }: ArtProps) {
   const a =
-    "M143 113C92 101 38 134 29 172C23 206 71 227 109 218C147 210 168 126 197 17C202 4 210 13 206 29C193 76 188 92 181 101";
-  const bar = "M34 206C100 170 170 118 225 99";
-  const oval = "M191 185C189 202 218 218 252 214C311 206 370 168 368 118C365 80 298 67 235 88";
+    "M505 238C430 244 330 252 262 262C170 276 60 318 40 400C28 450 60 490 110 505C170 522 260 532 318 500C370 470 392 380 405 290C415 210 430 110 445 50C450 30 435 30 425 55C360 190 180 380 45 488";
+  const oval =
+    "M455 285C420 305 395 360 398 410C402 460 440 482 500 478C600 470 720 430 800 370C860 320 875 250 840 200C800 150 680 165 540 212";
   return (
-    <svg className={`loop ${className}`} viewBox="-12 -24 424 274" preserveAspectRatio="xMidYMid slice" aria-hidden>
+    <svg className={`loop ${className}`} viewBox="-50 -20 1000 620" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <defs>
         <radialGradient id="loop-bg" cx="0.5" cy="0.55" r="0.75">
-          <stop offset="0" stopColor="#1C2A5C" />
-          <stop offset="1" stopColor="#070C1E" />
+          <stop offset="0" stopColor="#18244F" />
+          <stop offset="1" stopColor="#060A1A" />
         </radialGradient>
-        <linearGradient id="loop-stroke" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="380" y2="0">
-          <stop offset="0" stopColor="#E7B96A" />
-          <stop offset="0.3" stopColor="#4F8FF2" />
-          <stop offset="0.48" stopColor="#5FD0F0" />
-          <stop offset="0.7" stopColor="#45C06E" />
+        <linearGradient id="loop-a" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="500" y2="0">
+          <stop offset="0" stopColor="#E3B25E" />
+          <stop offset="0.3" stopColor="#D9B878" />
+          <stop offset="0.55" stopColor="#2F63D8" />
+          <stop offset="0.85" stopColor="#56C6F2" />
           <stop offset="1" stopColor="#DCE2EE" />
         </linearGradient>
+        <linearGradient id="loop-o" gradientUnits="userSpaceOnUse" x1="0" y1="480" x2="0" y2="170">
+          <stop offset="0" stopColor="#3FBF5E" />
+          <stop offset="0.45" stopColor="#2BA7A0" />
+          <stop offset="1" stopColor="#E4E8F0" />
+        </linearGradient>
         <filter id="loop-blur" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="5" />
+          <feGaussianBlur stdDeviation="12" />
         </filter>
       </defs>
-      <rect x="-12" y="-24" width="424" height="274" fill="url(#loop-bg)" />
-      <g fill="none" stroke="url(#loop-stroke)" strokeLinecap="round" opacity="0.55" filter="url(#loop-blur)" strokeWidth="10">
-        <path className="loop-a" d={a} pathLength={1} />
-        <path className="loop-bar" d={bar} pathLength={1} />
-        <path className="loop-oval" d={oval} pathLength={1} />
+      <rect x="-50" y="-20" width="1000" height="620" fill="url(#loop-bg)" />
+      {/* soft glow */}
+      <g fill="none" strokeLinecap="round" strokeWidth="26" opacity="0.45" filter="url(#loop-blur)">
+        <path className="loop-a" d={a} stroke="url(#loop-a)" pathLength={1} />
+        <path className="loop-oval" d={oval} stroke="url(#loop-o)" pathLength={1} />
       </g>
-      <g fill="none" stroke="url(#loop-stroke)" strokeLinecap="round" strokeWidth="4">
+      {/* the ribbons */}
+      <g fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="13">
+        <path className="loop-a" d={a} stroke="url(#loop-a)" pathLength={1} />
+        <path className="loop-oval" d={oval} stroke="url(#loop-o)" pathLength={1} />
+      </g>
+      {/* a thin highlight along each ribbon, like the metallic edge in the original */}
+      <g fill="none" strokeLinecap="round" strokeWidth="2.5" stroke="#F4F2ED" opacity="0.55">
         <path className="loop-a" d={a} pathLength={1} />
-        <path className="loop-bar" d={bar} pathLength={1} />
         <path className="loop-oval" d={oval} pathLength={1} />
       </g>
     </svg>

@@ -45,7 +45,7 @@
     "integrations": {
       "name": "Integrări",
       "line": "Instrumentele tale — și AI — lucrând împreună",
-      "long": "Facem ca programele pe care le folosești deja să comunice între ele și conectăm AI la instrumentele tale."
+      "long": "Conectăm programele pe care le folosești deja: e-Factura (ANAF) direct din magazin sau aplicație, SmartBill sau Oblio cu WooCommerce sau Shopify, livrări prin FAN Courier, Sameday sau Cargus, programări în Google Calendar, plăți cu Stripe sau Netopia — și AI peste instrumentele tale."
     },
     "modernisation": {
       "name": "Modernizare",
@@ -59,7 +59,7 @@
   },
   "home": {
     "title": "<services>Digitalizăm</services> afaceri, modernizăm software și <start>dăm viață ideilor</start>.",
-    "intro": "Hantari este un studio de software & AI pentru afaceri, organizații și oameni cu o idee — de la prima schiță până la software care merge și după lansare.",
+    "intro": "Hantari este un studio de software & AI pentru afaceri, organizații și oameni cu o idee — de la prima schiță până la lansare și mai departe, cu o singură echipă care răspunde pentru tot.",
     "ctaSecondary": "Ce facem",
     "featureEyebrow": "Software & AI",
     "featureTitle": "Software inteligent pentru idei reale.",
@@ -69,7 +69,7 @@
     "servicesIntro": "O echipă mică, de la prima discuție până la software-ul care rulează în afacerea ta.",
     "workTitle": "Proiecte selectate",
     "lactaEyebrow": "Studiu de caz · Aplicație web",
-    "lactaText": "Un site bilingv pentru un cabinet de consultanță în alăptare — servicii, recenzii și resurse administrate chiar de proprietară, cu programări și un asistent AI în curând.",
+    "lactaText": "Un site bilingv pentru un cabinet de consultanță în alăptare — servicii, recenzii și resurse administrate chiar de proprietară, cu programări online și un asistent AI care răspunde la întrebări și ajută la programare.",
     "lactaCta": "Vezi lacta.ro",
     "approachEyebrow": "Viziunea noastră",
     "approachTitle": "Tehnologia ar trebui să lucreze pentru tine. Ajutăm afacerile să se digitalizeze, aducem software-ul vechi la zi și transformăm ideile în ceva real — construit cu grijă, explicat simplu și îngrijit și după lansare.",
@@ -82,8 +82,8 @@
     "step3Label": "03 · Întreținem",
     "step3Title": "Funcțional și după lansare.",
     "step3Text": "Găzduire, monitorizare și actualizări. Cei care au construit rămân alături — ca mâine să meargă mai bine decât azi.",
-    "ctaTitle": "Ai un proces care îți mănâncă săptămâna?",
-    "ctaText": "Spune-ne care este. Îți răspundem în cel mult o zi lucrătoare, cu un pas clar înainte."
+    "ctaTitle": "Ai o idee pe care vrei s-o digitalizezi sau o afacere care are nevoie de digitalizare?",
+    "ctaText": "Povestește-ne. Îți răspundem în cel mult o zi lucrătoare, cu un pas clar înainte."
   },
   "about": {
     "eyebrow": "Despre Hantari",

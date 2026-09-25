@@ -158,7 +158,7 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
           <NightArt />
           <div className="relative flex h-full flex-col justify-between gap-8 p-7 text-[#F7F3EA] md:flex-row md:items-end md:p-20">
             <div className="flex max-w-[660px] flex-col gap-5">
-              <h2 className="font-display text-[34px] leading-[1.06] md:text-6xl md:leading-[1.04]">{t("ctaTitle")}</h2>
+              <h2 className="font-display text-[30px] leading-[1.1] md:text-[48px] md:leading-[1.08]">{t("ctaTitle")}</h2>
               <p className="text-[17px] leading-relaxed text-[#D3D8E8]">{t("ctaText")}</p>
             </div>
             <div className="flex flex-col gap-3.5 md:items-end">

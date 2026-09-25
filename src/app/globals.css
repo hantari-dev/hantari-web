@@ -133,10 +133,9 @@
 [data-inview] .strata .strata-band { animation: art-slide 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
 
 /* AI — the mark draws itself: A, crossbar, then the oval */
-.loop .loop-a, .loop .loop-bar, .loop .loop-oval { stroke-dasharray: 1; stroke-dashoffset: 1; }
-[data-inview] .loop .loop-a { animation: art-draw 1.8s ease-in-out 0.2s forwards; }
-[data-inview] .loop .loop-bar { animation: art-draw 0.9s ease-out 1.8s forwards; }
-[data-inview] .loop .loop-oval { animation: art-draw 1.8s ease-in-out 2.4s forwards; }
+.loop .loop-a, .loop .loop-oval { stroke-dasharray: 1; stroke-dashoffset: 1; }
+[data-inview] .loop .loop-a { animation: art-draw 2.6s ease-in-out 0.2s forwards; }
+[data-inview] .loop .loop-oval { animation: art-draw 1.9s ease-in-out 2.5s forwards; }
 
 /* Integrations — the path travels from one shore to the other */
 .bridge .bridge-reveal { transform: scaleX(0); transform-box: fill-box; transform-origin: left center; }
@@ -167,6 +166,6 @@
 @media (prefers-reduced-motion: reduce) {
   .city .city-win, .city .city-node, .strata .strata-band, .bridge .bridge-arrive,
   .cave .cave-light, .cave .cave-beam { opacity: 1 !important; animation: none !important; }
-  .city .city-net, .loop .loop-a, .loop .loop-bar, .loop .loop-oval { stroke-dashoffset: 0 !important; animation: none !important; }
+  .city .city-net, .loop .loop-a, .loop .loop-oval { stroke-dashoffset: 0 !important; animation: none !important; }
   .strata .strata-band, .modern .modern-sun, .bridge .bridge-reveal { transform: none !important; animation: none !important; }
 }
