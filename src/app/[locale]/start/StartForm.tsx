@@ -244,17 +244,8 @@ function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: ()
             <input type="tel" name="phone" autoComplete="tel" maxLength={40} placeholder="+40 …" className={`${input} font-normal`} />
           </label>
         </div>
-        <fieldset className="flex flex-col gap-2.5">
-          <legend className="pb-2.5 text-sm font-medium">{t("replyIn")}</legend>
-          <div className="flex gap-5 text-[15px]">
-            {(["en", "ro"] as const).map((l) => (
-              <label key={l} className="flex items-center gap-2">
-                <input type="radio" name="replyLang" value={l} defaultChecked={l === locale} className="h-[18px] w-[18px] accent-ink" />
-                {l === "en" ? "English" : "Română"}
-              </label>
-            ))}
-          </div>
-        </fieldset>
+        {/* Replies go out in the language the visitor is browsing in */}
+        <input type="hidden" name="replyLang" value={locale} />
         <label className="flex items-start gap-3 pt-1 text-sm leading-relaxed text-graphite">
           <input type="checkbox" name="consent" className="mt-0.5 h-[18px] w-[18px] shrink-0 accent-ink" aria-invalid={errors.has("consent")} />
           <span>

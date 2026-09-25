@@ -32,11 +32,11 @@
       "line": "Software-ul de care are nevoie afacerea ta",
       "long": "Construim software-ul de care ai nevoie — instrumente interne și aplicații pentru clienți, făcute să dureze.",
       "page": {
-        "intro": "Aplicații web și desktop construite pe măsura felului în care lucrezi — de la un instrument intern simplu până la o platformă pentru clienții tăi.",
+        "intro": "Aplicații web și desktop gândite în jurul oamenilor care le folosesc — de la instrumente interne până la platforme pentru clienții tăi.",
         "process": [
           {
             "t": "Descoperire",
-            "d": "Stabilim împreună ce trebuie să facă aplicația, pentru cine și ce înseamnă succes."
+            "d": "Stabilim împreună ce trebuie să facă aplicația."
           },
           {
             "t": "Direcție vizuală",
@@ -44,7 +44,7 @@
           },
           {
             "t": "Scop și plan",
-            "d": "Împărțim totul în etape clare, cu preț și termen pentru fiecare."
+            "d": "Împărțim totul în etape clare, cu termen pentru fiecare."
           },
           {
             "t": "Dezvoltare",
@@ -61,7 +61,7 @@
         ],
         "get": [
           "Aplicație web care arată bine pe telefon și pe calculator",
-          "Aplicație desktop pentru Windows și macOS, când e nevoie",
+          "Aplicație desktop pentru Windows, când e nevoie",
           "Panou de administrare pentru conținut și date",
           "Găzduire, domeniu și certificat SSL configurate",
           "Codul sursă și documentația îți aparțin"
@@ -171,7 +171,7 @@
           "Relații cu clienții și întrebări frecvente",
           "Procesarea facturilor și a documentelor",
           "Rezumate de emailuri și rapoarte",
-          "Programări și rezervări (ca la Lacta)"
+          "Programări și rezervări"
         ],
         "tools": [
           "Claude (Anthropic)",
@@ -185,7 +185,7 @@
     "integrations": {
       "name": "Integrări",
       "line": "Instrumentele tale — și AI — lucrând împreună",
-      "long": "Conectăm programele pe care le folosești deja — e-Factura, SmartBill sau Oblio, WooCommerce, curieri, Google Calendar, Stripe sau Netopia — și adăugăm AI peste ele.",
+      "long": "Facem ca programele pe care le folosești deja să comunice între ele și conectăm AI la instrumentele tale.",
       "page": {
         "intro": "Programele pe care le folosești deja pot lucra împreună — datele circulă singure între magazin, facturare, curieri și calendar.",
         "process": [
@@ -293,7 +293,7 @@
     }
   },
   "home": {
-    "title": "<services>Digitalizăm</services> afaceri, modernizăm software și <work>dăm viață ideilor</work>.",
+    "title": "<services>Digitalizăm</services> afaceri, modernizăm software și dăm viață ideilor.",
     "intro": "Hantari este un studio de software & AI pentru afaceri, organizații și oameni cu o idee — de la prima schiță până la lansare și mai departe, cu prețuri și termene clare, stabilite de la început.",
     "ctaSecondary": "Ce facem",
     "featureEyebrow": "Software & AI",
@@ -304,7 +304,7 @@
     "servicesIntro": "O echipă mică, care se mișcă repede și livrează — de la prima discuție până la software-ul care rulează în afacerea ta.",
     "workTitle": "Proiecte selectate",
     "lactaEyebrow": "Studiu de caz · Aplicație web",
-    "lactaText": "Un site bilingv pentru un cabinet de consultanță în alăptare — servicii, recenzii și resurse administrate chiar de proprietară, cu programări online și un asistent AI care răspunde la întrebări și ajută la programare.",
+    "lactaText": "Un site bilingv pentru un cabinet de consultanță în alăptare — servicii, recenzii și resurse administrate chiar de proprietară, cu programări online și un asistent AI care ghidează vizitatorii prin resursele site-ului și îi aduce rapid la programare.",
     "lactaCta": "Vezi lacta.ro",
     "approachEyebrow": "Viziunea noastră",
     "approachTitle": "Tehnologia lucrează pentru tine.",
@@ -318,7 +318,7 @@
     "step3Label": "03 · Întreținem",
     "step3Title": "Funcțional și după lansare.",
     "step3Text": "Găzduire, monitorizare și actualizări. Cei care au construit rămân alături — ca mâine să meargă mai bine decât azi.",
-    "ctaTitle": "Ai o idee pe care vrei s-o digitalizezi sau o afacere care are nevoie de digitalizare?",
+    "ctaTitle": "Ai o idee sau o afacere pe care vrei s-o duci în digital?",
     "ctaText": "Povestește-ne. Îți răspundem în cel mult o zi lucrătoare, cu un pas clar înainte."
   },
   "about": {

@@ -32,11 +32,11 @@
       "line": "The software your business needs",
       "long": "We build the software you need — internal tools and customer-facing apps, made to last.",
       "page": {
-        "intro": "Web and desktop apps shaped around the way you work — from a simple internal tool to a platform for your customers.",
+        "intro": "Web and desktop apps designed around the people who use them — from internal tools to platforms for your customers.",
         "process": [
           {
             "t": "Discovery",
-            "d": "Together we define what the app needs to do, who it’s for and what success looks like."
+            "d": "Together we define what the app needs to do."
           },
           {
             "t": "Visual direction",
@@ -44,7 +44,7 @@
           },
           {
             "t": "Scope & plan",
-            "d": "We split the work into clear stages, each with a price and a deadline."
+            "d": "We split the work into clear stages, each with a deadline."
           },
           {
             "t": "Build",
@@ -61,7 +61,7 @@
         ],
         "get": [
           "A web app that works on phone and desktop",
-          "A desktop app for Windows and macOS, when needed",
+          "A desktop app for Windows, when needed",
           "An admin panel for your content and data",
           "Hosting, domain and SSL certificate set up",
           "You own the source code and documentation"
@@ -171,7 +171,7 @@
           "Customer questions and FAQs",
           "Invoice and document processing",
           "Email and report summaries",
-          "Appointments and bookings (like Lacta)"
+          "Appointments and bookings"
         ],
         "tools": [
           "Claude (Anthropic)",
@@ -185,7 +185,7 @@
     "integrations": {
       "name": "Integrations",
       "line": "Your tools — and AI — working together",
-      "long": "We connect the software you already use — e-Factura, SmartBill or Oblio, WooCommerce, couriers, Google Calendar, Stripe or Netopia — and add AI on top.",
+      "long": "We make your existing software talk to each other, and connect AI to the tools you already use.",
       "page": {
         "intro": "The software you already use can work together — data flows by itself between your shop, invoicing, couriers and calendar.",
         "process": [
@@ -293,7 +293,7 @@
     }
   },
   "home": {
-    "title": "<services>Digitalising</services> businesses, modernising software, <work>bringing ideas to life</work>.",
+    "title": "<services>Digitalising</services> businesses, modernising software, bringing ideas to life.",
     "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to launch and beyond, with clear prices and deadlines agreed up front.",
     "ctaSecondary": "What we do",
     "featureEyebrow": "Software & AI",
@@ -304,7 +304,7 @@
     "servicesIntro": "A small team that moves fast and delivers — from the first conversation to the software running in your business.",
     "workTitle": "Selected work",
     "lactaEyebrow": "Case study · Web app",
-    "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with online booking and an AI assistant that answers questions and helps visitors book.",
+    "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with online booking and an AI assistant that guides visitors through the site’s resources and gets them to a booking quickly.",
     "lactaCta": "Visit lacta.ro",
     "approachEyebrow": "Our vision",
     "approachTitle": "Technology that works for you.",
@@ -318,7 +318,7 @@
     "step3Label": "03 · Run",
     "step3Title": "Kept running after launch.",
     "step3Text": "Hosting, monitoring and updates handled. The people who built it stay with you — so tomorrow works better than today.",
-    "ctaTitle": "Have an idea you want to bring online, or a business that needs to go digital?",
+    "ctaTitle": "Have an idea or a business you want to take digital?",
     "ctaText": "Tell us about it. You’ll hear from us within 1 business day with a clear next step."
   },
   "about": {

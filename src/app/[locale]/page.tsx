@@ -44,19 +44,11 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
                 {chunks}
               </Link>
             ),
-            work: (chunks) => (
-              <Link href="/#work" className={underline}>
-                {chunks}
-              </Link>
-            ),
           })}
         </h1>
         <div className="flex flex-col gap-7 lg:col-span-4 lg:col-start-9 lg:pb-2">
           <p className="font-display text-[19px] leading-[1.45] md:text-[23px] md:leading-[1.4]">{t("intro")}</p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/start" className="rounded-lg bg-ink px-[22px] py-3.5 text-[15px] font-medium text-paper transition-opacity hover:opacity-85">
-              {tn("start")}
-            </Link>
             <Link href="/#services" className="rounded-lg border border-[#C9C4B8] px-[22px] py-[13px] text-[15px] transition-colors hover:border-ink">
               {t("ctaSecondary")}
             </Link>
