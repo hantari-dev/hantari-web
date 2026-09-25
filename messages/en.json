@@ -45,7 +45,7 @@
     "integrations": {
       "name": "Integrations",
       "line": "Your tools — and AI — working together",
-      "long": "We connect the software you already use: e-Factura (ANAF) straight from your shop or app, SmartBill or Oblio with WooCommerce or Shopify, FAN Courier, Sameday or Cargus shipping, Google Calendar bookings, Stripe or Netopia payments — and AI on top of your own tools."
+      "long": "We connect the software you already use — e-Factura, SmartBill or Oblio, WooCommerce, couriers, Google Calendar, Stripe or Netopia — and add AI on top."
     },
     "modernisation": {
       "name": "Modernisation",
@@ -59,14 +59,14 @@
   },
   "home": {
     "title": "<services>Digitalising</services> businesses, modernising software, <start>bringing ideas to life</start>.",
-    "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to launch and beyond, with one team that stays accountable for all of it.",
+    "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to launch and beyond, with clear prices and deadlines agreed up front.",
     "ctaSecondary": "What we do",
     "featureEyebrow": "Software & AI",
     "featureTitle": "Intelligent software for real ideas.",
     "featureCta": "How we work",
     "servicesEyebrow": "What we do",
     "servicesTitle": "Five things, done well.",
-    "servicesIntro": "One small team, from the first conversation to the software running in your business.",
+    "servicesIntro": "A small team that moves fast and delivers — from the first conversation to the software running in your business.",
     "workTitle": "Selected work",
     "lactaEyebrow": "Case study · Web app",
     "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with online booking and an AI assistant that answers questions and helps visitors book.",
@@ -88,23 +88,23 @@
   "about": {
     "eyebrow": "About Hantari",
     "title": "A small studio for practical software.",
-    "intro": "Hantari is a software & AI studio based in Timișoara, Romania, working with people everywhere. Our vision is simple: help businesses go digital, bring older software up to modern standards and turn good ideas into working products — using AI where it solves a real problem, not where it makes a good headline.",
+    "intro": "Hantari is a software & AI studio based in Timișoara, Romania, working with people everywhere. Our vision is simple: help businesses go digital, bring older software up to modern standards and turn good ideas into working products — using AI where it solves a real problem.",
     "imageLine": "Bringing ideas into the light.",
     "howEyebrow": "How we work",
     "p1Title": "Plain over clever.",
     "p1Text": "We explain what we’re building and why, in words you’d use yourself.",
     "p2Title": "Outcomes over features.",
-    "p2Text": "Success is time saved and errors avoided — not a longer feature list.",
+    "p2Text": "Success means time saved and mistakes avoided.",
     "p3Title": "Built to be kept.",
-    "p3Text": "Solid infrastructure, sensible security and support after launch.",
+    "p3Text": "Solid infrastructure, security and support after launch.",
     "p4Title": "Better than yesterday.",
-    "p4Text": "Small, steady improvements beat big-bang rewrites.",
+    "p4Text": "Steady, consistent progress, day after day — that’s how we build things that last.",
     "studioEyebrow": "The studio",
     "basedIn": "Based in",
     "basedInValue": "Timișoara, Romania — working worldwide",
     "email": "Email",
     "languages": "Languages",
-    "languagesValue": "English, Romanian",
+    "languagesValue": "English, Romanian, Spanish, French",
     "response": "Response time",
     "responseValue": "Within 1 business day"
   },
@@ -178,19 +178,103 @@
     "eyebrow": "Privacy",
     "title": "Privacy policy",
     "updated": "Last updated: {date}",
-    "draftNote": "Draft — to be reviewed before launch and completed with the company’s legal details once registered.",
-    "s1Title": "Who we are",
-    "s1Text": "Hantari is a software & AI studio based in Timișoara, Romania. You can reach us at hello@hantari.ro.",
-    "s2Title": "What we collect",
-    "s2Text": "When you send a request through our “Start a project” form, we collect the details you enter: your name, email, and optionally your company and phone number, plus what you tell us about your project.",
-    "s3Title": "Why we use it",
-    "s3Text": "Only to reply to your request and, if we work together, to prepare a proposal. We do not sell your data or use it for marketing without your separate consent.",
-    "s4Title": "Where it’s stored",
-    "s4Text": "Requests are stored in a database hosted in the EU and delivered by email through our email provider. We keep them for up to 24 months, then delete them.",
-    "s5Title": "Cookies",
-    "s5Text": "We only use a strictly necessary cookie that remembers your language choice. No advertising or tracking cookies.",
-    "s6Title": "Your rights",
-    "s6Text": "You can ask us at any time to see, correct or delete your data by writing to hello@hantari.ro. You also have the right to complain to the Romanian data protection authority (ANSPDCP)."
+    "draftNote": "Hantari is being registered. The company’s identification details will be added here as soon as registration is complete.",
+    "sections": [
+      {
+        "title": "1. Who we are",
+        "p": [
+          "The controller of your data is Hantari — a software & AI studio in Timișoara, Romania, represented by [Full name]. Until the company is registered, your data is handled by him personally.",
+          "For any question about your data, write to us at hello@hantari.ro."
+        ]
+      },
+      {
+        "title": "2. What we collect",
+        "p": [
+          "We only collect what we need to reply to you:"
+        ],
+        "items": [
+          "What you enter in the “Start a project” form: name, email and, optionally, company or organisation and phone.",
+          "What you tell us about the project: the services you’re interested in, the description, the tools you use today and when you’d like to start.",
+          "The language you’d like us to reply in.",
+          "Email correspondence, if you write to us directly.",
+          "Minimal technical data kept automatically by our hosting provider for security (for example IP address and browser type)."
+        ]
+      },
+      {
+        "title": "3. Why we use it and on what legal basis",
+        "items": [
+          "To reply to you and prepare a proposal at your request — steps prior to entering a contract (Art. 6(1)(b) GDPR) and on the basis of the consent you give in the form (Art. 6(1)(a)).",
+          "To keep the website secure and working — our legitimate interest (Art. 6(1)(f)).",
+          "If we work together, for legal invoicing and accounting obligations (Art. 6(1)(c))."
+        ],
+        "p2": [
+          "We don’t sell your data, use it for advertising or send you newsletters without separate consent."
+        ]
+      },
+      {
+        "title": "4. Who we share it with",
+        "p": [
+          "We use a few trusted providers that process data only on our behalf:"
+        ],
+        "items": [
+          "Vercel — website hosting.",
+          "Neon — the database where requests are stored (hosted in the EU).",
+          "Resend — sending confirmation and notification emails.",
+          "Google Workspace — our email."
+        ],
+        "p2": [
+          "Some of these providers are US companies. When data leaves the European Economic Area, the transfer relies on the EU–US Data Privacy Framework or on the European Commission’s standard contractual clauses."
+        ]
+      },
+      {
+        "title": "5. How long we keep it",
+        "items": [
+          "Requests sent through the form: up to 24 months, then deleted.",
+          "If you become a client: for the duration of our work together, then as long as the law requires for financial and accounting records.",
+          "Technical security data: a few days, according to the hosting provider’s settings."
+        ]
+      },
+      {
+        "title": "6. Cookies",
+        "p": [
+          "We use a single, strictly necessary cookie that remembers your language (NEXT_LOCALE). No advertising, tracking or analytics cookies."
+        ]
+      },
+      {
+        "title": "7. How we protect it",
+        "p": [
+          "The website only uses encrypted connections (HTTPS), access to data is limited to us, and the accounts we use are protected with two-step verification."
+        ]
+      },
+      {
+        "title": "8. Your rights",
+        "p": [
+          "Under the GDPR you have the right to:"
+        ],
+        "items": [
+          "know what data we hold about you and get a copy;",
+          "have it corrected or deleted;",
+          "restrict or object to its processing;",
+          "receive it in a portable format;",
+          "withdraw your consent at any time, without affecting processing done before."
+        ],
+        "p2": [
+          "Write to hello@hantari.ro — we reply within one month at most. You can also complain to the Romanian data protection authority (ANSPDCP), www.dataprotection.ro."
+        ]
+      },
+      {
+        "title": "9. Children",
+        "p": [
+          "Our services are not aimed at people under 16 and we don’t knowingly collect their data."
+        ]
+      },
+      {
+        "title": "10. Changes",
+        "p": [
+          "If we change this policy, we update the date above. For important changes, we’ll let you know on the website."
+        ]
+      }
+    ]
   },
   "footer": {
     "tagline": "Software & AI · From Timișoara, for anywhere",

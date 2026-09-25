@@ -10,13 +10,16 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/privacy"
 }
 
 // Update this date whenever the policy text changes.
-const UPDATED = "2026-09-24";
+const UPDATED = "2026-09-25";
+
+type Section = { title: string; p?: string[]; items?: string[]; p2?: string[] };
 
 export default function PrivacyPage({ params }: PageProps<"/[locale]/privacy">) {
   const { locale } = use(params);
   setRequestLocale(locale);
   const t = useTranslations("privacy");
   const date = new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(new Date(UPDATED));
+  const sections = t.raw("sections") as Section[];
 
   return (
     <section className="container-page grid gap-8 pb-24 pt-12 md:pt-[120px] lg:grid-cols-3 lg:gap-12">
@@ -27,10 +30,16 @@ export default function PrivacyPage({ params }: PageProps<"/[locale]/privacy">) 
           <p className="text-sm text-graphite">{t("updated", { date })}</p>
           <p className="rounded-lg border border-hairline bg-stone px-4 py-3 text-sm text-graphite">{t("draftNote")}</p>
         </div>
-        {([1, 2, 3, 4, 5, 6] as const).map((n) => (
-          <div key={n} className="flex flex-col gap-2.5 border-t border-hairline pt-6">
-            <h2 className="text-xl font-medium">{t(`s${n}Title`)}</h2>
-            <p className="leading-relaxed text-graphite">{t(`s${n}Text`)}</p>
+        {sections.map((s) => (
+          <div key={s.title} className="flex flex-col gap-3 border-t border-hairline pt-6 leading-relaxed text-graphite">
+            <h2 className="text-xl font-medium text-ink">{s.title}</h2>
+            {s.p?.map((x) => <p key={x}>{x}</p>)}
+            {s.items && (
+              <ul className="flex list-disc flex-col gap-1.5 pl-5 marker:text-hairline">
+                {s.items.map((x) => <li key={x}>{x}</li>)}
+              </ul>
+            )}
+            {s.p2?.map((x) => <p key={x}>{x}</p>)}
           </div>
         ))}
       </div>
