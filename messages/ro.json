@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hantari — Studio de software & AI",
-    "description": "Hantari este un studio de software & AI din Timișoara, care lucrează cu oameni de oriunde. Construim aplicații și site-uri, automatizăm munca manuală, conectăm instrumentele pe care le folosiți, modernizăm software-ul vechi și folosim AI acolo unde aduce valoare reală.",
+    "description": "Hantari este un studio de software & AI. Digitalizăm afaceri, modernizăm software și dăm viață ideilor — pentru afaceri, organizații și oameni cu o idee, din Timișoara pentru oriunde.",
     "aboutTitle": "Despre noi",
     "startTitle": "Începe un proiect",
     "privacyTitle": "Confidențialitate"
@@ -44,8 +44,8 @@
     },
     "integrations": {
       "name": "Integrări",
-      "line": "Instrumentele tale, conectate între ele",
-      "long": "Facem ca programele pe care le folosești deja să comunice între ele."
+      "line": "Instrumentele tale — și AI — lucrând împreună",
+      "long": "Facem ca programele pe care le folosești deja să comunice între ele și conectăm AI la instrumentele tale."
     },
     "modernisation": {
       "name": "Modernizare",
@@ -58,12 +58,12 @@
     }
   },
   "home": {
-    "title": "<services>Software</services> inteligent pentru <work>idei reale</work>.",
-    "intro": "Hantari este un studio de software & AI. Ajutăm afaceri, organizații și oameni cu o idee să se digitalizeze, modernizăm software-ul pe care se bazează, automatizăm munca manuală și folosim AI acolo unde aduce valoare reală.",
+    "title": "<services>Digitalizăm</services> afaceri, modernizăm software și <start>dăm viață ideilor</start>.",
+    "intro": "Hantari este un studio de software & AI pentru afaceri, organizații și oameni cu o idee — de la prima schiță până la software care merge și după lansare.",
     "ctaSecondary": "Ce facem",
-    "featureEyebrow": "Cum lucrăm",
-    "featureTitle": "De la muncă manuală la software care merge singur.",
-    "featureCta": "Vezi abordarea noastră",
+    "featureEyebrow": "Software & AI",
+    "featureTitle": "Software inteligent pentru idei reale.",
+    "featureCta": "Cum lucrăm",
     "servicesEyebrow": "Ce facem",
     "servicesTitle": "Cinci lucruri, făcute bine.",
     "servicesIntro": "O echipă mică, de la prima discuție până la software-ul care rulează în afacerea ta.",
@@ -71,24 +71,25 @@
     "lactaEyebrow": "Studiu de caz · Aplicație web",
     "lactaText": "Un site bilingv pentru un cabinet de consultanță în alăptare — servicii, recenzii și resurse administrate chiar de proprietară, cu programări și un asistent AI în curând.",
     "lactaCta": "Vezi lacta.ro",
-    "approachTitle": "Construim cu grijă, explicăm simplu și ne ocupăm ca totul să meargă și după lansare.",
+    "approachEyebrow": "Viziunea noastră",
+    "approachTitle": "Tehnologia ar trebui să lucreze pentru tine. Ajutăm afacerile să se digitalizeze, aducem software-ul vechi la zi și transformăm ideile în ceva real — construit cu grijă, explicat simplu și îngrijit și după lansare.",
     "step1Label": "01 · Înțelegem",
-    "step1Title": "Pornim de la muncă, nu de la tehnologie.",
-    "step1Text": "Vedem cum merg lucrurile azi și unde se pierde timp, apoi stabilim împreună ce înseamnă „mai bine”.",
+    "step1Title": "Pornim de la idee — sau de la felul în care lucrezi azi.",
+    "step1Text": "O afacere de digitalizat, un sistem vechi de modernizat sau o idee nouă: întâi înțelegem ce există și stabilim împreună ce înseamnă „mai bine”.",
     "step2Label": "02 · Construim",
     "step2Title": "Pași mici, pe care îi vezi.",
-    "step2Text": "Versiuni funcționale devreme și des, ca să știi mereu pentru ce plătești.",
+    "step2Text": "Versiuni funcționale devreme și des — ideea prinde contur sub ochii tăi și știi mereu pentru ce plătești.",
     "step3Label": "03 · Întreținem",
     "step3Title": "Funcțional și după lansare.",
-    "step3Text": "Găzduire, monitorizare și actualizări — cei care au construit se ocupă și de întreținere.",
+    "step3Text": "Găzduire, monitorizare și actualizări. Cei care au construit rămân alături — ca mâine să meargă mai bine decât azi.",
     "ctaTitle": "Ai un proces care îți mănâncă săptămâna?",
-    "ctaText": "Spune-ne care este. Îți răspundem în 1–2 zile lucrătoare cu un pas clar înainte."
+    "ctaText": "Spune-ne care este. Îți răspundem în cel mult o zi lucrătoare, cu un pas clar înainte."
   },
   "about": {
     "eyebrow": "Despre Hantari",
     "title": "Un studio mic pentru software practic.",
-    "intro": "Hantari este un studio de software & AI din Timișoara, care lucrează cu oameni de oriunde. Ajutăm afaceri, organizații și creatori independenți să se digitalizeze, aducem software-ul vechi la standarde moderne, automatizăm munca manuală — și folosim AI acolo unde rezolvă o problemă reală, nu unde sună bine într-un titlu.",
-    "imageLine": "Aceeași mentalitate, alt teren.",
+    "intro": "Hantari este un studio de software & AI din Timișoara, care lucrează cu oameni de oriunde. Viziunea noastră e simplă: să ajutăm afacerile să se digitalizeze, să aducem software-ul vechi la standarde moderne și să transformăm ideile bune în produse care funcționează — folosind AI acolo unde rezolvă o problemă reală, nu unde sună bine într-un titlu.",
+    "imageLine": "Aducem ideile la lumină.",
     "howEyebrow": "Cum lucrăm",
     "p1Title": "Simplu, nu sofisticat.",
     "p1Text": "Explicăm ce construim și de ce, în cuvintele pe care le-ai folosi și tu.",
@@ -105,7 +106,7 @@
     "languages": "Limbi",
     "languagesValue": "Engleză, română",
     "response": "Timp de răspuns",
-    "responseValue": "În 1–2 zile lucrătoare"
+    "responseValue": "În cel mult o zi lucrătoare"
   },
   "start": {
     "back": "Înapoi la site",
@@ -114,7 +115,7 @@
     "intro": "Trei pași scurți, cam două minute. Nu ai nevoie de cunoștințe tehnice — descrie totul cum i-ai explica unui coleg.",
     "nextTitle": "Ce urmează",
     "next1": "Primești un email care confirmă că am primit cererea ta.",
-    "next2": "În 1–2 zile lucrătoare îți răspundem cu întrebări sau o primă idee.",
+    "next2": "În cel mult o zi lucrătoare îți răspundem cu întrebări sau o primă idee.",
     "next3": "Dacă ne potrivim, o discuție scurtă — apoi o propunere clară, în scris.",
     "preferEmail": "Preferi emailul?",
     "stepOf": "Pasul {step} din 3",
@@ -140,15 +141,8 @@
       "later": "Mai târziu anul acesta",
       "exploring": "Doar mă informez"
     },
-    "budget": "Buget estimativ",
-    "budgetOptions": {
-      "unsure": "Nu știu încă",
-      "small": "Sub 5.000 €",
-      "medium": "5.000 – 15.000 €",
-      "large": "Peste 15.000 €"
-    },
     "s3Title": "Cum te putem contacta?",
-    "s3Text": "Folosim aceste date doar ca să răspundem cererii tale.",
+    "s3Text": "Folosim aceste date doar ca să răspundem cererii tale. Îți răspundem în cel mult o zi lucrătoare.",
     "name": "Numele tău",
     "namePlaceholder": "Nume complet",
     "emailLabel": "Email",
@@ -164,7 +158,7 @@
     "send": "Trimite cererea",
     "sending": "Se trimite…",
     "doneTitle": "Mulțumim{name} — am primit cererea.",
-    "doneText": "Am trimis o confirmare la {email}. Îți răspundem în 1–2 zile lucrătoare.",
+    "doneText": "Am trimis o confirmare la {email}. Îți răspundem în cel mult o zi lucrătoare.",
     "reference": "Referință",
     "askedAbout": "Ai întrebat despre",
     "notSpecified": "Nespecificat",

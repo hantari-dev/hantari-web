@@ -54,7 +54,7 @@ export function ownerEmail(lead: LeadInput, reference: string, locale: string) {
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px">
 ${row("Name", lead.name)}${row("Email", lead.email)}${row("Company", lead.company)}${row("Phone", lead.phone)}
 ${row("Services", services)}${row("Description", lead.description)}${row("Tools today", lead.tools)}
-${row("Timeline", lead.timeline)}${row("Budget", lead.budget)}${row("Reply in", lead.replyLang.toUpperCase())}${row("Site language", locale.toUpperCase())}
+${row("Timeline", lead.timeline)}${row("Reply in", lead.replyLang.toUpperCase())}${row("Site language", locale.toUpperCase())}
 </table>`,
     `${lead.name}: ${services}`,
   );
@@ -65,7 +65,7 @@ ${row("Timeline", lead.timeline)}${row("Budget", lead.budget)}${row("Reply in", 
     lead.company && `Company: ${lead.company}`,
     lead.phone && `Phone: ${lead.phone}`,
     `Services: ${services}`,
-    `Timeline: ${lead.timeline} · Budget: ${lead.budget} · Reply in: ${lead.replyLang}`,
+    `Timeline: ${lead.timeline} · Reply in: ${lead.replyLang}`,
     ``,
     lead.description,
     lead.tools && `\nTools today: ${lead.tools}`,
@@ -79,7 +79,7 @@ const COPY = {
   en: {
     subject: (ref: string) => `We’ve received your request (${ref})`,
     hello: (name: string) => `Hi ${name},`,
-    body: "Thanks for getting in touch with Hantari. We’ve received your request and will reply within 1–2 business days — usually with a few questions or a first idea.",
+    body: "Thanks for getting in touch with Hantari. We’ve received your request and will reply within 1 business day — usually with a few questions or a first idea.",
     summary: "Here’s what you sent us:",
     ref: "Reference",
     services: "You asked about",
@@ -91,7 +91,7 @@ const COPY = {
   ro: {
     subject: (ref: string) => `Am primit cererea ta (${ref})`,
     hello: (name: string) => `Bună, ${name},`,
-    body: "Îți mulțumim că ne-ai scris. Am primit cererea ta și îți răspundem în 1–2 zile lucrătoare — de obicei cu câteva întrebări sau o primă idee.",
+    body: "Îți mulțumim că ne-ai scris. Am primit cererea ta și îți răspundem în cel mult o zi lucrătoare — de obicei cu câteva întrebări sau o primă idee.",
     summary: "Iată ce ne-ai trimis:",
     ref: "Referință",
     services: "Ai întrebat despre",

@@ -4,7 +4,7 @@ import { startTransition, useActionState, useEffect, useRef, useState } from "re
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { FORM_OPTIONS, type FormOption } from "@/lib/services";
-import { BUDGETS, TIMELINES } from "@/lib/leadSchema";
+import { TIMELINES } from "@/lib/leadSchema";
 import { submitLead, type FieldError, type SubmitState } from "./actions";
 
 const input =
@@ -204,26 +204,14 @@ function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: ()
           </span>
           <input type="text" name="tools" maxLength={500} placeholder={t("toolsPlaceholder")} className={`${input} font-normal`} />
         </label>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <label className={labelCls}>
-            {t("timeline")}
-            <select name="timeline" defaultValue="asap" className={`${input} font-normal`}>
-              {TIMELINES.map((v) => (
-                <option key={v} value={v}>{t(`timelineOptions.${v}`)}</option>
-              ))}
-            </select>
-          </label>
-          <label className={labelCls}>
-            <span>
-              {t("budget")} <span className="font-normal text-graphite">{t("optional")}</span>
-            </span>
-            <select name="budget" defaultValue="unsure" className={`${input} font-normal`}>
-              {BUDGETS.map((v) => (
-                <option key={v} value={v}>{t(`budgetOptions.${v}`)}</option>
-              ))}
-            </select>
-          </label>
-        </div>
+        <label className={`${labelCls} sm:max-w-[50%]`}>
+          {t("timeline")}
+          <select name="timeline" defaultValue="asap" className={`${input} font-normal`}>
+            {TIMELINES.map((v) => (
+              <option key={v} value={v}>{t(`timelineOptions.${v}`)}</option>
+            ))}
+          </select>
+        </label>
       </fieldset>
 
       {/* Step 3 */}
@@ -295,11 +283,11 @@ function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: ()
           <span className="text-[13px] text-graphite">{t("selected", { count: picked.size })}</span>
         )}
         {step < 3 ? (
-          <button type="button" onClick={next} className="rounded-lg bg-ink px-[26px] py-3.5 text-[15px] font-medium text-paper hover:opacity-85">
+          <button key="next" type="button" onClick={next} className="rounded-lg bg-ink px-[26px] py-3.5 text-[15px] font-medium text-paper hover:opacity-85">
             {t("continue")}
           </button>
         ) : (
-          <button type="submit" disabled={pending} className="rounded-lg bg-ink px-[26px] py-3.5 text-[15px] font-medium text-paper hover:opacity-85 disabled:opacity-60">
+          <button key="submit" type="submit" disabled={pending} className="rounded-lg bg-ink px-[26px] py-3.5 text-[15px] font-medium text-paper hover:opacity-85 disabled:opacity-60">
             {pending ? t("sending") : t("send")}
           </button>
         )}

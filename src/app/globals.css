@@ -20,6 +20,8 @@
   html {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
+    /* keep #anchors clear of the sticky header */
+    scroll-padding-top: 96px;
   }
   body {
     background: var(--color-paper);
@@ -115,4 +117,56 @@
   .sunrise .sunrise-ridge { opacity: 1; }
   .sunrise .sunrise-ridge-1 { opacity: 0.75; }
   .sunrise .sunrise-stars { opacity: 0; }
+}
+
+/* ── Illustrations: each plays once when scrolled into view ([data-inview] from <Reveal>) ── */
+/* Apps — city windows switch on, the network line draws across the rooftops */
+.city .city-win { opacity: 0.12; }
+.city .city-net { stroke-dashoffset: 1; }
+.city .city-node { opacity: 0; }
+[data-inview] .city .city-win { animation: art-on 0.6s ease-out forwards; }
+[data-inview] .city .city-net { animation: art-draw 2.2s ease-in-out 1.2s forwards; }
+[data-inview] .city .city-node { animation: art-on 0.5s ease-out 2.2s forwards; }
+
+/* Automation — bands flow in one after another */
+.strata .strata-band { opacity: 0; transform: translateX(-6%); }
+[data-inview] .strata .strata-band { animation: art-slide 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
+
+/* AI — the mark draws itself: A, crossbar, then the oval */
+.loop .loop-a, .loop .loop-bar, .loop .loop-oval { stroke-dasharray: 1; stroke-dashoffset: 1; }
+[data-inview] .loop .loop-a { animation: art-draw 1.8s ease-in-out 0.2s forwards; }
+[data-inview] .loop .loop-bar { animation: art-draw 0.9s ease-out 1.8s forwards; }
+[data-inview] .loop .loop-oval { animation: art-draw 1.8s ease-in-out 2.4s forwards; }
+
+/* Integrations — the path travels from one shore to the other */
+.bridge .bridge-reveal { transform: scaleX(0); transform-box: fill-box; transform-origin: left center; }
+.bridge .bridge-arrive { opacity: 0.25; transform-box: fill-box; transform-origin: center; }
+[data-inview] .bridge .bridge-reveal { animation: art-grow 2.2s ease-in-out 0.3s forwards; }
+[data-inview] .bridge .bridge-arrive { animation: art-arrive 0.8s ease-out 2.4s forwards; }
+
+/* Modernisation — the sun rises over the old rock */
+.modern .modern-sun { transform: translateY(70px); transform-box: fill-box; }
+[data-inview] .modern .modern-sun { animation: art-rise 2.6s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s forwards; }
+
+/* About — light slowly fills the cave */
+.cave .cave-light, .cave .cave-beam { opacity: 0.25; }
+[data-inview] .cave .cave-light, [data-inview] .cave .cave-beam { animation: art-on 5s ease-in-out forwards; }
+
+@keyframes art-on { to { opacity: 1; } }
+@keyframes art-draw { to { stroke-dashoffset: 0; } }
+@keyframes art-slide { to { opacity: 1; transform: translateX(0); } }
+@keyframes art-grow { to { transform: scaleX(1); } }
+@keyframes art-rise { to { transform: translateY(0); } }
+@keyframes art-arrive {
+  0% { opacity: 0.25; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Reduced motion: show every illustration in its finished state */
+@media (prefers-reduced-motion: reduce) {
+  .city .city-win, .city .city-node, .strata .strata-band, .bridge .bridge-arrive,
+  .cave .cave-light, .cave .cave-beam { opacity: 1 !important; animation: none !important; }
+  .city .city-net, .loop .loop-a, .loop .loop-bar, .loop .loop-oval { stroke-dashoffset: 0 !important; animation: none !important; }
+  .strata .strata-band, .modern .modern-sun, .bridge .bridge-reveal { transform: none !important; animation: none !important; }
 }

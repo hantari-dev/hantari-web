@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { SERVICE_IDS } from "@/lib/services";
-import { Wordmark } from "./Logo";
+import { HMark } from "./Logo";
 import { MenuArt } from "./art/Art";
 
 type MenuId = "services" | "studio" | "lang" | null;
@@ -37,6 +37,14 @@ function Globe() {
   );
 }
 
+// Page scrolled past the top? (drives the sticky header's compact state)
+function subscribeScroll(cb: () => void) {
+  window.addEventListener("scroll", cb, { passive: true });
+  return () => window.removeEventListener("scroll", cb);
+}
+const getScrolled = () => window.scrollY > 24;
+const getScrolledServer = () => false;
+
 const panel =
   "absolute top-full z-40 mt-2 rounded-[14px] border border-hairline bg-paper-raised shadow-[0_18px_40px_rgba(25,26,28,0.10)]";
 
@@ -50,6 +58,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const scrolled = useSyncExternalStore(subscribeScroll, getScrolled, getScrolledServer);
 
   // Close menus when the route changes (render-time adjustment, no effect needed)
   const [prevPath, setPrevPath] = useState(pathname);
@@ -112,10 +121,25 @@ export function Header() {
     `flex items-center gap-1.5 py-2.5 transition-colors hover:text-signal ${open === id ? "text-signal" : ""}`;
 
   return (
-    <header className="relative z-30">
+    <header
+      className={`sticky top-0 z-30 transition-[background-color,border-color,box-shadow] duration-300 ${
+        scrolled || mobileOpen
+          ? "border-b border-hairline bg-paper/90 backdrop-blur-md"
+          : "border-b border-transparent bg-paper"
+      }`}
+    >
       <div className="container-page flex h-[72px] items-center justify-between lg:h-[84px]">
-        <Link href="/" aria-label={t("home")} className="text-ink">
-          <Wordmark />
+        <Link href="/" aria-label={t("home")} className="flex items-center text-ink">
+          <HMark className="h-[24px] w-auto shrink-0" />
+          {/* The word collapses into the H once you scroll */}
+          <span
+            aria-hidden={scrolled}
+            className={`overflow-hidden whitespace-nowrap text-[15px] font-medium tracking-[0.22em] transition-[max-width,opacity,margin] duration-500 ease-out ${
+              scrolled ? "ml-0 max-w-0 opacity-0" : "ml-3 max-w-[140px] opacity-100"
+            }`}
+          >
+            HANTARI
+          </span>
         </Link>
 
         {/* Desktop navigation */}

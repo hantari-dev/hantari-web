@@ -75,7 +75,7 @@ export function NightArt({ className = fill }: ArtProps) {
 /** Light falling into a cave — Web & desktop apps; also the About image. */
 export function CaveArt({ className = fill, idPrefix = "cave" }: ArtProps & { idPrefix?: string }) {
   return (
-    <svg className={className} viewBox="0 0 612 320" preserveAspectRatio="xMidYMid slice" aria-hidden>
+    <svg className={`cave ${className}`} viewBox="0 0 612 320" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <defs>
         <radialGradient id={`${idPrefix}-light`} cx="0.5" cy="0.12" r="0.6">
           <stop offset="0" stopColor="#F6E7C6" />
@@ -88,8 +88,8 @@ export function CaveArt({ className = fill, idPrefix = "cave" }: ArtProps & { id
         </linearGradient>
       </defs>
       <rect width="612" height="320" fill="#15181D" />
-      <rect width="612" height="320" fill={`url(#${idPrefix}-light)`} />
-      <path d="M270 0H350L470 320H150Z" fill={`url(#${idPrefix}-beam)`} />
+      <rect className="cave-light" width="612" height="320" fill={`url(#${idPrefix}-light)`} />
+      <path className="cave-beam" d="M270 0H350L470 320H150Z" fill={`url(#${idPrefix}-beam)`} />
       <path d="M0 0H250C228 40 214 70 190 110C160 170 120 210 0 240Z" fill="#0C0E12" />
       <path d="M612 0H372C400 50 420 90 452 130C490 180 540 220 612 236Z" fill="#0C0E12" />
       <path d="M0 320V262C120 250 210 272 306 266C410 260 500 244 612 258V320Z" fill="#0A0B0E" />
@@ -102,40 +102,56 @@ export function CaveArt({ className = fill, idPrefix = "cave" }: ArtProps & { id
 /** Layered blue strata — Automation. */
 export function StrataArt({ className = fill }: ArtProps) {
   return (
-    <svg className={className} viewBox="0 0 612 320" preserveAspectRatio="xMidYMid slice" aria-hidden>
+    <svg className={`strata ${className}`} viewBox="0 0 612 320" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <rect width="612" height="320" fill="#D9DEEB" />
-      <path d="M0 60C120 30 220 90 330 70C440 50 520 20 612 40V320H0Z" fill="#B3BEDA" />
-      <path d="M0 120C110 90 230 150 340 128C450 106 530 84 612 100V320H0Z" fill="#8196CF" />
-      <path d="M0 180C130 150 230 206 350 186C460 168 540 146 612 160V320H0Z" fill="#4D68C6" />
-      <path d="M0 236C120 212 240 262 360 244C470 228 550 210 612 220V320H0Z" fill="#2E4FC4" />
-      <path d="M0 284C140 262 250 304 370 290C480 278 560 264 612 272V320H0Z" fill="#1A2B6A" />
+      <path d="M0 60C120 30 220 90 330 70C440 50 520 20 612 40V320H0Z" fill="#B3BEDA" className="strata-band" style={{ animationDelay: "0.00s" }} />
+      <path d="M0 120C110 90 230 150 340 128C450 106 530 84 612 100V320H0Z" fill="#8196CF" className="strata-band" style={{ animationDelay: "0.15s" }} />
+      <path d="M0 180C130 150 230 206 350 186C460 168 540 146 612 160V320H0Z" fill="#4D68C6" className="strata-band" style={{ animationDelay: "0.30s" }} />
+      <path d="M0 236C120 212 240 262 360 244C470 228 550 210 612 220V320H0Z" fill="#2E4FC4" className="strata-band" style={{ animationDelay: "0.45s" }} />
+      <path d="M0 284C140 262 250 304 370 290C480 278 560 264 612 272V320H0Z" fill="#1A2B6A" className="strata-band" style={{ animationDelay: "0.60s" }} />
     </svg>
   );
 }
 
-/** The Hantari loop as one glowing line — AI solutions. */
+/**
+ * Ben's "AI" mark traced as flowing light lines — AI solutions.
+ * A teardrop "A" with a long diagonal crossbar, then a hook that sweeps into an open oval.
+ * Colours follow his original: gold → blue → green → silver.
+ */
 export function LoopArt({ className = fill }: ArtProps) {
-  const d =
-    "M92 176C120 90 176 48 196 70C214 92 160 178 120 186C90 192 110 150 170 136C240 120 300 104 316 136C332 168 284 196 246 180C214 166 236 122 272 110";
+  const a =
+    "M143 113C92 101 38 134 29 172C23 206 71 227 109 218C147 210 168 126 197 17C202 4 210 13 206 29C193 76 188 92 181 101";
+  const bar = "M34 206C100 170 170 118 225 99";
+  const oval = "M191 185C189 202 218 218 252 214C311 206 370 168 368 118C365 80 298 67 235 88";
   return (
-    <svg className={className} viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden>
+    <svg className={`loop ${className}`} viewBox="-12 -24 424 274" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <defs>
-        <radialGradient id="loop-bg" cx="0.5" cy="0.55" r="0.7">
-          <stop offset="0" stopColor="#26356E" />
-          <stop offset="1" stopColor="#0E1430" />
+        <radialGradient id="loop-bg" cx="0.5" cy="0.55" r="0.75">
+          <stop offset="0" stopColor="#1C2A5C" />
+          <stop offset="1" stopColor="#070C1E" />
         </radialGradient>
-        <linearGradient id="loop-stroke" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#F0B774" />
-          <stop offset="0.5" stopColor="#FFF4DF" />
-          <stop offset="1" stopColor="#7F9BF0" />
+        <linearGradient id="loop-stroke" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="380" y2="0">
+          <stop offset="0" stopColor="#E7B96A" />
+          <stop offset="0.3" stopColor="#4F8FF2" />
+          <stop offset="0.48" stopColor="#5FD0F0" />
+          <stop offset="0.7" stopColor="#45C06E" />
+          <stop offset="1" stopColor="#DCE2EE" />
         </linearGradient>
         <filter id="loop-blur" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="6" />
+          <feGaussianBlur stdDeviation="5" />
         </filter>
       </defs>
-      <rect width="400" height="250" fill="url(#loop-bg)" />
-      <path d={d} fill="none" stroke="url(#loop-stroke)" strokeWidth="10" strokeLinecap="round" opacity="0.55" filter="url(#loop-blur)" />
-      <path d={d} fill="none" stroke="url(#loop-stroke)" strokeWidth="2.4" strokeLinecap="round" />
+      <rect x="-12" y="-24" width="424" height="274" fill="url(#loop-bg)" />
+      <g fill="none" stroke="url(#loop-stroke)" strokeLinecap="round" opacity="0.55" filter="url(#loop-blur)" strokeWidth="10">
+        <path className="loop-a" d={a} pathLength={1} />
+        <path className="loop-bar" d={bar} pathLength={1} />
+        <path className="loop-oval" d={oval} pathLength={1} />
+      </g>
+      <g fill="none" stroke="url(#loop-stroke)" strokeLinecap="round" strokeWidth="4">
+        <path className="loop-a" d={a} pathLength={1} />
+        <path className="loop-bar" d={bar} pathLength={1} />
+        <path className="loop-oval" d={oval} pathLength={1} />
+      </g>
     </svg>
   );
 }
@@ -143,7 +159,7 @@ export function LoopArt({ className = fill }: ArtProps) {
 /** Two hills joined by a path — Integrations. */
 export function BridgeArt({ className = fill }: ArtProps) {
   return (
-    <svg className={className} viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden>
+    <svg className={`bridge ${className}`} viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <defs>
         <linearGradient id="bridge-sky" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#9FB0DA" />
@@ -155,9 +171,12 @@ export function BridgeArt({ className = fill }: ArtProps) {
       <path d="M0 250V170C50 150 90 140 140 160C170 172 180 196 180 250Z" fill="#5A6594" />
       <path d="M400 250V160C350 138 300 132 250 154C220 168 214 196 214 250Z" fill="#46507F" />
       <path d="M0 250V206C80 196 150 214 200 222C260 212 330 196 400 204V250Z" fill="#2B3257" />
-      <path d="M120 150C160 96 240 96 282 144" fill="none" stroke="#FFF7EA" strokeWidth="1.6" strokeDasharray="4 6" />
+      <clipPath id="bridge-draw">
+        <rect className="bridge-reveal" x="110" y="80" width="185" height="80" />
+      </clipPath>
+      <path d="M120 150C160 96 240 96 282 144" fill="none" stroke="#FFF7EA" strokeWidth="1.6" strokeDasharray="4 6" clipPath="url(#bridge-draw)" />
       <circle cx="120" cy="150" r="5" fill="#FFF7EA" />
-      <circle cx="282" cy="144" r="5" fill="#FFF7EA" />
+      <circle className="bridge-arrive" cx="282" cy="144" r="5" fill="#FFF7EA" />
     </svg>
   );
 }
@@ -165,7 +184,7 @@ export function BridgeArt({ className = fill }: ArtProps) {
 /** Sunrise over old rock — Modernisation. */
 export function SunriseArt({ className = fill }: ArtProps) {
   return (
-    <svg className={className} viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden>
+    <svg className={`modern ${className}`} viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <defs>
         <linearGradient id="sunrise-sky" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#6B3A3A" />
@@ -178,7 +197,7 @@ export function SunriseArt({ className = fill }: ArtProps) {
         </radialGradient>
       </defs>
       <rect width="400" height="250" fill="url(#sunrise-sky)" />
-      <circle cx="236" cy="170" r="54" fill="url(#sunrise-sun)" />
+      <circle className="modern-sun" cx="236" cy="170" r="54" fill="url(#sunrise-sun)" />
       <path d="M0 250V150L60 118L110 140L170 96L230 150L290 128L350 152L400 138V250Z" fill="#3B2230" />
       <path d="M0 250V204L90 184L160 204L250 180L330 202L400 190V250Z" fill="#1F1319" />
     </svg>
@@ -244,6 +263,165 @@ export function SmallDuskArt({ className = fill }: ArtProps) {
       <rect width="416" height="220" fill="url(#sdusk-sky)" />
       <path d="M0 170L60 146L110 160L170 132L230 156L290 136L350 158L416 142V220H0Z" fill="#20274A" />
       <path d="M0 200L90 178L180 196L270 176L416 198V220H0Z" fill="#0D1224" />
+    </svg>
+  );
+}
+
+/** A city at dusk whose windows light up — Web & desktop apps (software that runs a place). */
+export function CityArt({ className = fill }: ArtProps) {
+  return (
+    <svg className={`city ${className}`} viewBox="0 0 612 320" preserveAspectRatio="xMidYMid slice" aria-hidden>
+      <defs>
+        <linearGradient id="city-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#0B1122" />
+          <stop offset="0.45" stopColor="#1E2F5C" />
+          <stop offset="0.8" stopColor="#4B5A9A" />
+          <stop offset="1" stopColor="#D79A68" />
+        </linearGradient>
+      </defs>
+      <rect width="612" height="320" fill="url(#city-sky)" />
+      <path className="city-net" d="M91 152 L195 122 L299 102 L500 112 L591 142" fill="none" stroke="#8FA6F0" strokeWidth="1.2" strokeDasharray="1" pathLength={1} />
+      <path d="M91 170V152" stroke="#3A4A86" strokeWidth="1.5" />
+      <circle className="city-node" cx="91" cy="152" r="3" fill="#F4F2ED" />
+      <path d="M195 140V122" stroke="#3A4A86" strokeWidth="1.5" />
+      <circle className="city-node" cx="195" cy="122" r="3" fill="#F4F2ED" />
+      <path d="M299 120V102" stroke="#3A4A86" strokeWidth="1.5" />
+      <circle className="city-node" cx="299" cy="102" r="3" fill="#F4F2ED" />
+      <path d="M500 130V112" stroke="#3A4A86" strokeWidth="1.5" />
+      <circle className="city-node" cx="500" cy="112" r="3" fill="#F4F2ED" />
+      <path d="M591 160V142" stroke="#3A4A86" strokeWidth="1.5" />
+      <circle className="city-node" cx="591" cy="142" r="3" fill="#F4F2ED" />
+      <rect x="0" y="210" width="70" height="110" fill="#141B36" />
+      <rect x="62" y="170" width="58" height="150" fill="#1B2446" />
+      <rect x="112" y="235" width="64" height="85" fill="#141B36" />
+      <rect x="168" y="140" width="54" height="180" fill="#1B2446" />
+      <rect x="214" y="195" width="60" height="125" fill="#141B36" />
+      <rect x="266" y="120" width="66" height="200" fill="#1B2446" />
+      <rect x="324" y="180" width="52" height="140" fill="#141B36" />
+      <rect x="368" y="155" width="62" height="165" fill="#1B2446" />
+      <rect x="422" y="220" width="56" height="100" fill="#141B36" />
+      <rect x="470" y="130" width="60" height="190" fill="#1B2446" />
+      <rect x="522" y="190" width="52" height="130" fill="#141B36" />
+      <rect x="566" y="160" width="50" height="160" fill="#1B2446" />
+      <rect className="city-win" x="34" y="242" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.71s" }} />
+      <rect className="city-win" x="8" y="260" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.42s" }} />
+      <rect className="city-win" x="47" y="260" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.52s" }} />
+      <rect className="city-win" x="34" y="278" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.47s" }} />
+      <rect className="city-win" x="47" y="278" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.78s" }} />
+      <rect className="city-win" x="8" y="296" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.26s" }} />
+      <rect className="city-win" x="109" y="184" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.59s" }} />
+      <rect className="city-win" x="96" y="202" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.89s" }} />
+      <rect className="city-win" x="109" y="202" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.16s" }} />
+      <rect className="city-win" x="83" y="220" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.23s" }} />
+      <rect className="city-win" x="96" y="220" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.38s" }} />
+      <rect className="city-win" x="83" y="238" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.71s" }} />
+      <rect className="city-win" x="109" y="238" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.0s" }} />
+      <rect className="city-win" x="96" y="256" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.44s" }} />
+      <rect className="city-win" x="109" y="256" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.63s" }} />
+      <rect className="city-win" x="96" y="274" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.51s" }} />
+      <rect className="city-win" x="70" y="292" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.71s" }} />
+      <rect className="city-win" x="83" y="292" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.13s" }} />
+      <rect className="city-win" x="96" y="292" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "0.71s" }} />
+      <rect className="city-win" x="109" y="292" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.74s" }} />
+      <rect className="city-win" x="120" y="249" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "0.71s" }} />
+      <rect className="city-win" x="133" y="249" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.99s" }} />
+      <rect className="city-win" x="146" y="249" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.42s" }} />
+      <rect className="city-win" x="120" y="267" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.09s" }} />
+      <rect className="city-win" x="146" y="285" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.38s" }} />
+      <rect className="city-win" x="176" y="154" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.97s" }} />
+      <rect className="city-win" x="202" y="154" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.32s" }} />
+      <rect className="city-win" x="202" y="172" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.51s" }} />
+      <rect className="city-win" x="176" y="190" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.82s" }} />
+      <rect className="city-win" x="176" y="208" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.93s" }} />
+      <rect className="city-win" x="189" y="208" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.54s" }} />
+      <rect className="city-win" x="189" y="226" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "0.69s" }} />
+      <rect className="city-win" x="202" y="226" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.27s" }} />
+      <rect className="city-win" x="176" y="244" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.09s" }} />
+      <rect className="city-win" x="202" y="244" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.34s" }} />
+      <rect className="city-win" x="189" y="280" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.24s" }} />
+      <rect className="city-win" x="202" y="298" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.36s" }} />
+      <rect className="city-win" x="235" y="209" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "0.38s" }} />
+      <rect className="city-win" x="235" y="245" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.36s" }} />
+      <rect className="city-win" x="261" y="245" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.27s" }} />
+      <rect className="city-win" x="248" y="263" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.66s" }} />
+      <rect className="city-win" x="261" y="263" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.58s" }} />
+      <rect className="city-win" x="248" y="281" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.59s" }} />
+      <rect className="city-win" x="235" y="299" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.27s" }} />
+      <rect className="city-win" x="274" y="134" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.39s" }} />
+      <rect className="city-win" x="313" y="134" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.92s" }} />
+      <rect className="city-win" x="287" y="152" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.37s" }} />
+      <rect className="city-win" x="287" y="170" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.68s" }} />
+      <rect className="city-win" x="300" y="188" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.96s" }} />
+      <rect className="city-win" x="313" y="188" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.21s" }} />
+      <rect className="city-win" x="313" y="206" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.28s" }} />
+      <rect className="city-win" x="274" y="224" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.19s" }} />
+      <rect className="city-win" x="313" y="224" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.56s" }} />
+      <rect className="city-win" x="287" y="242" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.29s" }} />
+      <rect className="city-win" x="300" y="242" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.57s" }} />
+      <rect className="city-win" x="313" y="242" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.25s" }} />
+      <rect className="city-win" x="274" y="260" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.26s" }} />
+      <rect className="city-win" x="300" y="260" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.31s" }} />
+      <rect className="city-win" x="300" y="296" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.63s" }} />
+      <rect className="city-win" x="313" y="296" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.91s" }} />
+      <rect className="city-win" x="332" y="194" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.03s" }} />
+      <rect className="city-win" x="358" y="212" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.37s" }} />
+      <rect className="city-win" x="332" y="230" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.93s" }} />
+      <rect className="city-win" x="345" y="230" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.7s" }} />
+      <rect className="city-win" x="332" y="248" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.31s" }} />
+      <rect className="city-win" x="358" y="266" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.16s" }} />
+      <rect className="city-win" x="358" y="284" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.55s" }} />
+      <rect className="city-win" x="415" y="169" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.25s" }} />
+      <rect className="city-win" x="376" y="187" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.26s" }} />
+      <rect className="city-win" x="376" y="205" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "0.35s" }} />
+      <rect className="city-win" x="402" y="205" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.09s" }} />
+      <rect className="city-win" x="415" y="205" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.44s" }} />
+      <rect className="city-win" x="402" y="241" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.46s" }} />
+      <rect className="city-win" x="415" y="241" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.73s" }} />
+      <rect className="city-win" x="415" y="259" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.23s" }} />
+      <rect className="city-win" x="389" y="277" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.52s" }} />
+      <rect className="city-win" x="376" y="295" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.41s" }} />
+      <rect className="city-win" x="402" y="295" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.44s" }} />
+      <rect className="city-win" x="415" y="295" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.55s" }} />
+      <rect className="city-win" x="456" y="234" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.19s" }} />
+      <rect className="city-win" x="456" y="252" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.5s" }} />
+      <rect className="city-win" x="443" y="288" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.68s" }} />
+      <rect className="city-win" x="478" y="144" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.25s" }} />
+      <rect className="city-win" x="491" y="144" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.85s" }} />
+      <rect className="city-win" x="504" y="144" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.69s" }} />
+      <rect className="city-win" x="517" y="144" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.49s" }} />
+      <rect className="city-win" x="491" y="162" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.47s" }} />
+      <rect className="city-win" x="517" y="162" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.47s" }} />
+      <rect className="city-win" x="478" y="180" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.72s" }} />
+      <rect className="city-win" x="504" y="198" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.15s" }} />
+      <rect className="city-win" x="478" y="216" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.41s" }} />
+      <rect className="city-win" x="491" y="216" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.33s" }} />
+      <rect className="city-win" x="504" y="216" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.94s" }} />
+      <rect className="city-win" x="517" y="216" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.2s" }} />
+      <rect className="city-win" x="504" y="234" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.84s" }} />
+      <rect className="city-win" x="517" y="234" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.84s" }} />
+      <rect className="city-win" x="504" y="252" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.02s" }} />
+      <rect className="city-win" x="491" y="270" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.45s" }} />
+      <rect className="city-win" x="504" y="270" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.44s" }} />
+      <rect className="city-win" x="478" y="288" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.69s" }} />
+      <rect className="city-win" x="530" y="204" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.48s" }} />
+      <rect className="city-win" x="530" y="222" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.44s" }} />
+      <rect className="city-win" x="530" y="240" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "2.23s" }} />
+      <rect className="city-win" x="543" y="240" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.97s" }} />
+      <rect className="city-win" x="556" y="240" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.6s" }} />
+      <rect className="city-win" x="543" y="258" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.12s" }} />
+      <rect className="city-win" x="556" y="276" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.41s" }} />
+      <rect className="city-win" x="556" y="294" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.99s" }} />
+      <rect className="city-win" x="600" y="174" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "2.31s" }} />
+      <rect className="city-win" x="574" y="210" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.37s" }} />
+      <rect className="city-win" x="587" y="210" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.23s" }} />
+      <rect className="city-win" x="600" y="210" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.7s" }} />
+      <rect className="city-win" x="574" y="228" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.8s" }} />
+      <rect className="city-win" x="587" y="228" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.57s" }} />
+      <rect className="city-win" x="574" y="246" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.74s" }} />
+      <rect className="city-win" x="587" y="264" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "1.97s" }} />
+      <rect className="city-win" x="600" y="264" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.32s" }} />
+      <rect className="city-win" x="574" y="282" width="6" height="8" rx="1" fill="#F6D6A2" style={{ animationDelay: "0.44s" }} />
+      <rect className="city-win" x="587" y="282" width="6" height="8" rx="1" fill="#8FA6F0" style={{ animationDelay: "1.52s" }} />
     </svg>
   );
 }

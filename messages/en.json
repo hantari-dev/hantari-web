@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Hantari — Software & AI studio",
-    "description": "Hantari is a software & AI studio from Timișoara, working with people everywhere. We build apps and websites, automate manual work, connect your tools, modernise older software and add AI where it earns its place.",
+    "description": "Hantari is a software & AI studio. We digitalise businesses, modernise their software and bring ideas to life — for businesses, organisations and people with an idea, from Timișoara to anywhere.",
     "aboutTitle": "About",
     "startTitle": "Start a project",
     "privacyTitle": "Privacy"
@@ -44,8 +44,8 @@
     },
     "integrations": {
       "name": "Integrations",
-      "line": "Your tools, talking to each other",
-      "long": "We make your existing software talk to each other."
+      "line": "Your tools — and AI — working together",
+      "long": "We make your existing software talk to each other, and connect AI to the tools you already use."
     },
     "modernisation": {
       "name": "Modernisation",
@@ -58,12 +58,12 @@
     }
   },
   "home": {
-    "title": "Intelligent <services>software</services> for real <work>ideas</work>.",
-    "intro": "Hantari is a software & AI studio. We help businesses, organisations and people with an idea go digital, modernise the software they rely on, automate the manual work and add AI where it earns its place.",
+    "title": "<services>Digitalising</services> businesses, modernising software, <start>bringing ideas to life</start>.",
+    "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to software that keeps running.",
     "ctaSecondary": "What we do",
-    "featureEyebrow": "How we work",
-    "featureTitle": "From manual work to software that runs itself.",
-    "featureCta": "See our approach",
+    "featureEyebrow": "Software & AI",
+    "featureTitle": "Intelligent software for real ideas.",
+    "featureCta": "How we work",
     "servicesEyebrow": "What we do",
     "servicesTitle": "Five things, done well.",
     "servicesIntro": "One small team, from the first conversation to the software running in your business.",
@@ -71,24 +71,25 @@
     "lactaEyebrow": "Case study · Web app",
     "lactaText": "A bilingual website for a lactation consulting practice — services, reviews and resources the owner runs herself, with booking and an AI assistant on the way.",
     "lactaCta": "Visit lacta.ro",
-    "approachTitle": "We build carefully, explain plainly, and keep things running after launch.",
+    "approachEyebrow": "Our vision",
+    "approachTitle": "Technology should work for you. We help businesses go digital, bring older software up to date and turn ideas into something real — built carefully, explained plainly, and looked after once it’s live.",
     "step1Label": "01 · Understand",
-    "step1Title": "Start with the work, not the tech.",
-    "step1Text": "We map how things run today and where time is lost, then agree on what “better” means.",
+    "step1Title": "Start from the idea — or from how you work today.",
+    "step1Text": "A business to digitalise, an old system to modernise or a brand-new idea: first we understand what exists and agree together what “better” means.",
     "step2Label": "02 · Build",
     "step2Title": "Small steps you can see.",
-    "step2Text": "Working versions early and often, so you’re never guessing what you’re paying for.",
+    "step2Text": "Working versions early and often — your idea takes shape in front of you, and you always know what you’re paying for.",
     "step3Label": "03 · Run",
     "step3Title": "Kept running after launch.",
-    "step3Text": "Hosting, monitoring and updates handled — the people who built it look after it.",
+    "step3Text": "Hosting, monitoring and updates handled. The people who built it stay with you — so tomorrow works better than today.",
     "ctaTitle": "Have a process that eats your week?",
-    "ctaText": "Tell us what it is. We reply within 1–2 business days with a clear next step."
+    "ctaText": "Tell us what it is. You’ll hear from us within 1 business day with a clear next step."
   },
   "about": {
     "eyebrow": "About Hantari",
     "title": "A small studio for practical software.",
-    "intro": "Hantari is a software & AI studio based in Timișoara, Romania, working with people everywhere. We help businesses, organisations and independent makers go digital, bring older software up to modern standards, automate the manual work — and use AI where it solves a real problem, not where it makes a good headline.",
-    "imageLine": "Same mindset, different terrain.",
+    "intro": "Hantari is a software & AI studio based in Timișoara, Romania, working with people everywhere. Our vision is simple: help businesses go digital, bring older software up to modern standards and turn good ideas into working products — using AI where it solves a real problem, not where it makes a good headline.",
+    "imageLine": "Bringing ideas into the light.",
     "howEyebrow": "How we work",
     "p1Title": "Plain over clever.",
     "p1Text": "We explain what we’re building and why, in words you’d use yourself.",
@@ -105,7 +106,7 @@
     "languages": "Languages",
     "languagesValue": "English, Romanian",
     "response": "Response time",
-    "responseValue": "Within 1–2 business days"
+    "responseValue": "Within 1 business day"
   },
   "start": {
     "back": "Back to site",
@@ -114,7 +115,7 @@
     "intro": "Three short steps, about two minutes. No technical knowledge needed — describe it the way you’d explain it to a colleague.",
     "nextTitle": "What happens next",
     "next1": "You get an email confirming we’ve received your request.",
-    "next2": "Within 1–2 business days we reply with questions or a first idea.",
+    "next2": "Within 1 business day we reply with questions or a first idea.",
     "next3": "If it’s a fit, a short call — then a clear written proposal.",
     "preferEmail": "Prefer email?",
     "stepOf": "Step {step} of 3",
@@ -140,15 +141,8 @@
       "later": "Later this year",
       "exploring": "Just exploring"
     },
-    "budget": "Budget range",
-    "budgetOptions": {
-      "unsure": "Not sure yet",
-      "small": "Under €5,000",
-      "medium": "€5,000 – €15,000",
-      "large": "Over €15,000"
-    },
     "s3Title": "How do we reach you?",
-    "s3Text": "We only use this to reply to your request.",
+    "s3Text": "We only use this to reply to your request. You’ll hear from us within 1 business day.",
     "name": "Your name",
     "namePlaceholder": "Full name",
     "emailLabel": "Email",
@@ -164,7 +158,7 @@
     "send": "Send request",
     "sending": "Sending…",
     "doneTitle": "Thanks{name} — we’ve got it.",
-    "doneText": "We’ve sent a confirmation to {email}. You’ll hear from us within 1–2 business days.",
+    "doneText": "We’ve sent a confirmation to {email}. You’ll hear from us within 1 business day.",
     "reference": "Reference",
     "askedAbout": "You asked about",
     "notSpecified": "Not specified",

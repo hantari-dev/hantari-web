@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { CaveArt } from "@/components/art/Art";
+import { Reveal } from "@/components/Reveal";
 import { CONTACT_EMAIL } from "@/lib/services";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/about">): Promise<Metadata> {
@@ -34,12 +35,12 @@ export default function AboutPage({ params }: PageProps<"/[locale]/about">) {
       </section>
 
       <section className="container-page pb-16 md:pb-[120px]">
-        <div className="relative h-[320px] overflow-hidden rounded-2xl md:h-[520px] md:rounded-[22px]">
+        <Reveal className="relative h-[320px] overflow-hidden rounded-2xl md:h-[520px] md:rounded-[22px]">
           <CaveArt idPrefix="about-cave" />
           <p className="absolute bottom-7 left-6 max-w-[560px] font-display text-[28px] leading-[1.1] text-[#F7F3EA] md:bottom-12 md:left-14 md:text-[40px]">
             {t("imageLine")}
           </p>
-        </div>
+        </Reveal>
       </section>
 
       <section className="container-page">

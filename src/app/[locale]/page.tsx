@@ -3,9 +3,10 @@ import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { Link } from "@/i18n/navigation";
 import { CONTACT_EMAIL, type ServiceId } from "@/lib/services";
+import { Reveal } from "@/components/Reveal";
 import {
   BridgeArt,
-  CaveArt,
+  CityArt,
   DuskArt,
   LactaArt,
   LoopArt,
@@ -18,7 +19,7 @@ const underline =
   "underline decoration-[3px] underline-offset-[10px] transition-colors hover:text-signal max-md:decoration-2 max-md:underline-offset-[6px]";
 
 const SERVICE_CARDS: { id: ServiceId; Art: React.ComponentType; big: boolean }[] = [
-  { id: "apps", Art: CaveArt, big: true },
+  { id: "apps", Art: CityArt, big: true },
   { id: "automation", Art: StrataArt, big: true },
   { id: "ai", Art: LoopArt, big: false },
   { id: "integrations", Art: BridgeArt, big: false },
@@ -36,15 +37,15 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
     <>
       {/* Hero */}
       <section className="container-page grid gap-8 pb-12 pt-12 md:pt-20 lg:grid-cols-12 lg:items-end lg:gap-6 lg:pb-[72px] lg:pt-[120px]">
-        <h1 className="font-display text-[46px] leading-[1.02] tracking-[-0.015em] md:text-7xl lg:col-span-7 lg:text-[84px] lg:leading-none lg:tracking-[-0.02em]">
+        <h1 className="font-display text-[46px] leading-[1.02] tracking-[-0.015em] md:text-7xl lg:col-span-7 lg:text-[72px] lg:leading-[1.02] lg:tracking-[-0.02em]">
           {t.rich("title", {
             services: (chunks) => (
               <Link href="/#services" className={underline}>
                 {chunks}
               </Link>
             ),
-            work: (chunks) => (
-              <Link href="/#work" className={underline}>
+            start: (chunks) => (
+              <Link href="/start" className={underline}>
                 {chunks}
               </Link>
             ),
@@ -95,11 +96,11 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
               href={{ pathname: "/start", query: { service: id } }}
               className={`group flex flex-col gap-4 md:gap-5 ${big ? "md:col-span-3" : "md:col-span-2"}`}
             >
-              <div className={`relative overflow-hidden rounded-2xl ${big ? "h-[220px] md:h-[320px]" : "h-[220px] md:h-[250px]"}`}>
+              <Reveal className={`relative overflow-hidden rounded-2xl ${big ? "h-[220px] md:h-[320px]" : "h-[220px] md:h-[250px]"}`}>
                 <div className="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-[1.03]">
                   <Art />
                 </div>
-              </div>
+              </Reveal>
               <div className="flex items-baseline justify-between gap-6">
                 <span className={`font-display group-hover:text-signal ${big ? "text-[26px] md:text-[32px]" : "text-[26px] md:text-[28px]"}`}>
                   {ts(`${id}.name`)}
@@ -135,7 +136,10 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
       {/* Approach */}
       <section id="approach" className="container-page scroll-mt-6">
         <div className="flex flex-col gap-12 border-t border-hairline pb-16 pt-14 md:gap-16 md:pb-[150px] md:pt-[110px]">
-          <h2 className="max-w-[960px] font-display text-[34px] leading-[1.1] md:text-[56px] md:leading-[1.08]">{t("approachTitle")}</h2>
+          <div className="flex flex-col gap-5">
+            <p className="eyebrow">{t("approachEyebrow")}</p>
+            <h2 className="max-w-[1080px] font-display text-[30px] leading-[1.15] md:text-[46px] md:leading-[1.12]">{t("approachTitle")}</h2>
+          </div>
           <div className="grid gap-10 md:grid-cols-3 md:gap-12">
             {([1, 2, 3] as const).map((n) => (
               <div key={n} className="flex flex-col gap-3 border-t border-ink pt-6">
