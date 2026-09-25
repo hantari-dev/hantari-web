@@ -59,7 +59,7 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: "nav" });
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <body className="flex min-h-screen flex-col bg-paper text-ink antialiased">
         {COMING_SOON ? (
           <ComingSoon locale={locale} />

@@ -40,12 +40,10 @@ export default async function StartPage({ params, searchParams }: PageProps<"/[l
             </div>
           ))}
         </div>
-        <p className="hidden text-sm text-graphite lg:block">
-          {t("preferEmail")}{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`} className="border-b border-ink text-ink">
-            {CONTACT_EMAIL}
-          </a>
-        </p>
+        <div className="hidden flex-col items-start gap-3 lg:flex">
+          <p className="text-sm text-graphite">{t("preferEmail")}</p>
+          <EmailPill />
+        </div>
       </aside>
 
       <section className="self-start rounded-[20px] border border-hairline bg-paper-raised px-5 py-8 sm:px-10 sm:py-12 lg:col-span-7 lg:col-start-6 lg:px-14">
@@ -61,11 +59,25 @@ export default async function StartPage({ params, searchParams }: PageProps<"/[l
             <span>{t(`next${n}`)}</span>
           </div>
         ))}
-        <p className="pt-4 text-sm text-graphite">
-          {t("preferEmail")}{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`} className="border-b border-ink text-ink">{CONTACT_EMAIL}</a>
-        </p>
+        <div className="flex flex-col items-start gap-3 pt-5">
+          <p className="text-sm text-graphite">{t("preferEmail")}</p>
+          <EmailPill />
+        </div>
       </div>
     </div>
+  );
+}
+
+function EmailPill() {
+  return (
+    <a
+      href={`mailto:${CONTACT_EMAIL}`}
+      className="inline-flex items-center gap-2 rounded-lg border border-[#C9C4B8] px-4 py-2.5 font-mono text-[13px] text-ink transition-colors hover:border-ink hover:text-signal"
+    >
+      <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden>
+        <path d="M2 4h12v8H2zM2 4l6 5 6-5" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
+      </svg>
+      {CONTACT_EMAIL}
+    </a>
   );
 }

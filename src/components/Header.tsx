@@ -121,6 +121,7 @@ export function Header() {
     `flex items-center gap-1.5 py-2.5 transition-colors hover:text-signal ${open === id ? "text-signal" : ""}`;
 
   return (
+    <>
     <header
       className={`sticky top-0 z-30 transition-[background-color,border-color,box-shadow] duration-300 ${
         scrolled || mobileOpen
@@ -277,10 +278,12 @@ export function Header() {
           )}
         </button>
       </div>
+    </header>
 
-      {/* Mobile panel */}
+    {/* Mobile panel — outside <header>: the header's backdrop blur would otherwise become the
+        containing block for this fixed panel and collapse it to zero height. */}
       {mobileOpen && (
-        <div onClick={closeOnLink} className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto bg-paper lg:hidden">
+        <div onClick={closeOnLink} className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto border-t border-hairline bg-paper lg:hidden">
           <div className="container-page flex flex-col gap-8 pb-12 pt-4">
             <div className="flex flex-col">
               <p className="eyebrow pb-2 !text-[11px]">{t("services")}</p>
@@ -320,6 +323,6 @@ export function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
