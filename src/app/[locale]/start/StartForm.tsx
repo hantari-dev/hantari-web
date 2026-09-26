@@ -8,7 +8,7 @@ import { TIMELINES } from "@/lib/leadSchema";
 import { submitLead, type FieldError, type SubmitState } from "./actions";
 
 const input =
-  "w-full rounded-[10px] border border-[#C9C4B8] bg-white px-4 py-[13px] text-[15px] text-ink placeholder:text-[#8A8C90] focus:border-ink focus:outline-none";
+  "w-full rounded-[10px] border border-[#C9C4B8] bg-white px-4 py-[13px] text-base text-ink md:text-[15px] placeholder:text-[#8A8C90] focus:border-ink focus:outline-none";
 const labelCls = "flex flex-col gap-2 text-sm font-medium";
 
 function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: () => void }) {
@@ -136,7 +136,7 @@ function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: ()
       {/* Honeypot — hidden from people, tempting for bots */}
       <div aria-hidden className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label>
-          Website <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+          Website <input type="text" name="website" tabIndex={-1} autoComplete="off" className="text-base" />
         </label>
       </div>
 
