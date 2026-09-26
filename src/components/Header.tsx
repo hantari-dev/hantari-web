@@ -58,6 +58,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const navigatingRef = useRef(false);
   const scrolled = useSyncExternalStore(subscribeScroll, getScrolled, getScrolledServer);
 
   // Close menus when the route changes (render-time adjustment, no effect needed)
@@ -70,6 +71,7 @@ export function Header() {
   // …and when any link inside a menu is clicked (covers same-page #anchors)
   const closeOnLink = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest("a")) {
+      navigatingRef.current = true;
       setOpen(null);
       setMobileOpen(false);
     }
@@ -94,14 +96,26 @@ export function Header() {
     };
   }, []);
 
-  // Lock page scroll while the mobile menu is open. Lock the root (<html>), not <body>:
-  // with overflow-x: clip on both, overflow on <body> would turn it into its own scroll box,
-  // letting the page scroll underneath and the sticky header slide away.
+  // Freeze the page while the mobile menu is open. Pinning <body> with position: fixed is the
+  // only lock iOS Safari reliably respects (overflow: hidden alone still lets the page scroll,
+  // especially at the very bottom). The scroll position is restored on close — unless a menu
+  // link was tapped, in which case the navigation decides where the new page starts.
   useEffect(() => {
-    const root = document.documentElement;
-    root.style.overflow = mobileOpen ? "hidden" : "";
+    if (!mobileOpen) return;
+    const y = window.scrollY;
+    const body = document.body.style;
+    const html = document.documentElement.style;
+    body.position = "fixed";
+    body.top = `-${y}px`;
+    body.left = "0";
+    body.right = "0";
+    body.width = "100%";
+    html.overflow = "hidden";
+    navigatingRef.current = false;
     return () => {
-      root.style.overflow = "";
+      body.position = body.top = body.left = body.right = body.width = "";
+      html.overflow = "";
+      if (!navigatingRef.current) window.scrollTo({ top: y, behavior: "instant" });
     };
   }, [mobileOpen]);
 
@@ -115,6 +129,7 @@ export function Header() {
   const toggle = (id: MenuId) => () => setOpen((cur) => (cur === id ? null : id));
 
   const switchLocale = (next: Locale) => {
+    navigatingRef.current = true;
     setOpen(null);
     setMobileOpen(false);
     router.replace(pathname, { locale: next });
@@ -285,10 +300,28 @@ export function Header() {
       </div>
     </header>
 
-    {/* Mobile panel — outside <header>: the header's backdrop blur would otherwise become the
-        containing block for this fixed panel and collapse it to zero height. */}
+      {/* Mobile menu: a full-screen layer with its own top bar, independent of the page header */}
       {mobileOpen && (
-        <div onClick={closeOnLink} className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto overscroll-contain border-t border-hairline bg-paper lg:hidden">
+        <div className="fixed inset-0 z-50 flex flex-col bg-paper lg:hidden" role="dialog" aria-modal="true" aria-label={t("menu")}>
+          <div className="border-b border-hairline">
+            <div className="container-page flex h-[72px] items-center justify-between">
+              <Link href="/" aria-label={t("home")} onClick={closeOnLink} className="flex items-center text-ink">
+                <HMark className="h-[24px] w-auto shrink-0" />
+                <span className="ml-3 text-[15px] font-medium tracking-[0.22em]">HANTARI</span>
+              </Link>
+              <button
+                type="button"
+                className="-mr-2 flex h-11 w-11 items-center justify-center"
+                aria-label={t("closeMenu")}
+                onClick={() => setMobileOpen(false)}
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden>
+                  <path d="M3 3L17 17M17 3L3 17" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div onClick={closeOnLink} className="flex-1 overflow-y-auto overscroll-contain">
           <div className="container-page flex flex-col gap-8 pb-12 pt-4">
             <div className="flex flex-col">
               <p className="eyebrow pb-2 !text-[11px]">{t("services")}</p>
@@ -325,6 +358,7 @@ export function Header() {
             <Link href="/start" className="rounded-lg bg-ink px-5 py-4 text-center font-medium text-paper">
               {t("start")}
             </Link>
+          </div>
           </div>
         </div>
       )}
