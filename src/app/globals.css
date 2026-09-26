@@ -23,6 +23,24 @@
     /* keep #anchors clear of the sticky header */
     scroll-padding-top: 96px;
   }
+  /* Mobile: never let anything push the page sideways (no horizontal drift or wobble).
+     `clip` (not `hidden`) keeps the sticky header working. */
+  html,
+  body {
+    overflow-x: clip;
+    overscroll-behavior-x: none;
+  }
+  @supports not (overflow: clip) {
+    body {
+      overflow-x: hidden;
+    }
+  }
+  /* Safari: rounded, overflow-hidden frames don't always clip animated/transformed children.
+     Paint containment makes every illustration frame clip reliably. */
+  .overflow-hidden[class*="rounded"] {
+    isolation: isolate;
+    contain: paint;
+  }
   body {
     background: var(--color-paper);
     color: var(--color-ink);
