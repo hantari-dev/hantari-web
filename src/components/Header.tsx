@@ -94,11 +94,14 @@ export function Header() {
     };
   }, []);
 
-  // Lock page scroll while the mobile menu is open
+  // Lock page scroll while the mobile menu is open. Lock the root (<html>), not <body>:
+  // with overflow-x: clip on both, overflow on <body> would turn it into its own scroll box,
+  // letting the page scroll underneath and the sticky header slide away.
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    const root = document.documentElement;
+    root.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
-      document.body.style.overflow = "";
+      root.style.overflow = "";
     };
   }, [mobileOpen]);
 
@@ -124,9 +127,11 @@ export function Header() {
     <>
     <header
       className={`sticky top-0 z-30 transition-[background-color,border-color,box-shadow] duration-300 ${
-        scrolled || mobileOpen
-          ? "border-b border-hairline bg-paper/90 backdrop-blur-md"
-          : "border-b border-transparent bg-paper"
+        mobileOpen
+          ? "border-b border-hairline bg-paper"
+          : scrolled
+            ? "border-b border-hairline bg-paper/90 backdrop-blur-md"
+            : "border-b border-transparent bg-paper"
       }`}
     >
       <div className="container-page flex h-[72px] items-center justify-between lg:h-[84px]">
@@ -283,7 +288,7 @@ export function Header() {
     {/* Mobile panel — outside <header>: the header's backdrop blur would otherwise become the
         containing block for this fixed panel and collapse it to zero height. */}
       {mobileOpen && (
-        <div onClick={closeOnLink} className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto border-t border-hairline bg-paper lg:hidden">
+        <div onClick={closeOnLink} className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto overscroll-contain border-t border-hairline bg-paper lg:hidden">
           <div className="container-page flex flex-col gap-8 pb-12 pt-4">
             <div className="flex flex-col">
               <p className="eyebrow pb-2 !text-[11px]">{t("services")}</p>
