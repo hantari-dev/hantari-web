@@ -299,9 +299,9 @@ export function Header() {
             </div>
             <div className="flex flex-col">
               <p className="eyebrow pb-2 !text-[11px]">{t("studio")}</p>
-              <Link href="/#work" className="border-b border-hairline py-3.5 text-lg">{t("work")}</Link>
-              <Link href="/about" className="border-b border-hairline py-3.5 text-lg">{t("about")}</Link>
-              <Link href="/#approach" className="border-b border-hairline py-3.5 text-lg">{t("approach")}</Link>
+              <Link href="/#work" className="border-b border-hairline py-3.5 font-display text-[22px]">{t("work")}</Link>
+              <Link href="/about" className="border-b border-hairline py-3.5 font-display text-[22px]">{t("about")}</Link>
+              <Link href="/#approach" className="border-b border-hairline py-3.5 font-display text-[22px]">{t("approach")}</Link>
             </div>
             <div className="flex gap-2" role="group" aria-label={t("language")}>
               {routing.locales.map((l) => (
