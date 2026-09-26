@@ -1,6 +1,6 @@
 import type { LeadInput } from "../leadSchema";
 
-type Lang = "en" | "ro";
+type Lang = "en" | "ro" | "es";
 
 const SERVICE_NAMES: Record<Lang, Record<string, string>> = {
   en: {
@@ -18,6 +18,14 @@ const SERVICE_NAMES: Record<Lang, Record<string, string>> = {
     integrations: "Integrări",
     modernisation: "Modernizare",
     unsure: "Nu știu încă",
+  },
+  es: {
+    apps: "Aplicaciones web & de escritorio",
+    automation: "Automatización",
+    ai: "Soluciones de IA",
+    integrations: "Integraciones",
+    modernisation: "Modernización",
+    unsure: "Todavía no lo sé",
   },
 };
 
@@ -99,6 +107,18 @@ const COPY = {
     reply: "Dacă vrei să adaugi ceva, răspunde direct la acest email.",
     sign: "Ben — Hantari",
     ethos: "Mai bine decât ieri.",
+  },
+  es: {
+    subject: (ref: string) => `Recibimos tu solicitud (${ref})`,
+    hello: (name: string) => `Hola, ${name}:`,
+    body: "Gracias por escribirnos. Recibimos tu solicitud y te respondemos en un máximo de 1 día hábil — normalmente con algunas preguntas o una primera idea.",
+    summary: "Esto es lo que nos enviaste:",
+    ref: "Referencia",
+    services: "Preguntaste por",
+    desc: "Tu mensaje",
+    reply: "Si quieres agregar algo, simplemente responde a este correo.",
+    sign: "Ben — Hantari",
+    ethos: "Mejor que ayer.",
   },
 } as const;
 

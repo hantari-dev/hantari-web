@@ -3,6 +3,7 @@
 import { startTransition, useActionState, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { LANG_NAMES, routing } from "@/i18n/routing";
 import { FORM_OPTIONS, type FormOption } from "@/lib/services";
 import { TIMELINES } from "@/lib/leadSchema";
 import { submitLead, type FieldError, type SubmitState } from "./actions";
@@ -241,11 +242,21 @@ function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: ()
             <span>
               {t("phone")} <span className="font-normal text-graphite">{t("optional")}</span>
             </span>
-            <input type="tel" name="phone" autoComplete="tel" maxLength={40} placeholder="+40 …" className={`${input} font-normal`} />
+            <input type="tel" name="phone" autoComplete="tel" maxLength={40} placeholder={t("phonePlaceholder")} className={`${input} font-normal`} />
           </label>
         </div>
         {/* Replies go out in the language the visitor is browsing in */}
-        <input type="hidden" name="replyLang" value={locale} />
+        <fieldset className="flex flex-col gap-2.5">
+          <legend className="pb-2.5 text-sm font-medium">{t("replyIn")}</legend>
+          <div className="flex flex-wrap gap-x-6 gap-y-3 text-[15px]">
+            {routing.locales.map((l) => (
+              <label key={l} className="flex cursor-pointer items-center gap-2" lang={l}>
+                <input type="radio" name="replyLang" value={l} defaultChecked={l === locale} className="h-[18px] w-[18px] accent-ink" />
+                {LANG_NAMES[l]}
+              </label>
+            ))}
+          </div>
+        </fieldset>
         <label className="flex items-start gap-3 pt-1 text-sm leading-relaxed text-graphite">
           <input type="checkbox" name="consent" className="mt-0.5 h-[18px] w-[18px] shrink-0 accent-ink" aria-invalid={errors.has("consent")} />
           <span>

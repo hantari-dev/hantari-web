@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ComingSoon } from "@/components/ComingSoon";
+import { SameHashScroll } from "@/components/SameHashScroll";
 
 /** Set COMING_SOON=true (e.g. in Vercel) to show only the holding page. Redeploy after changing it. */
 const COMING_SOON = process.env.COMING_SOON === "true";
@@ -36,14 +37,14 @@ export async function generateMetadata({
     description: t("description"),
     alternates: {
       canonical: `/${locale}`,
-      languages: { en: "/en", ro: "/ro" },
+      languages: { en: "/en", ro: "/ro", es: "/es" },
     },
     openGraph: {
       type: "website",
       siteName: "Hantari",
       title: t("title"),
       description: t("description"),
-      locale: locale === "ro" ? "ro_RO" : "en_GB",
+      locale: ({ ro: "ro_RO", es: "es_ES", en: "en_GB" } as Record<string, string>)[locale] ?? "en_GB",
     },
     twitter: { card: "summary_large_image" },
     ...(COMING_SOON && { robots: { index: false, follow: false } }),
@@ -72,6 +73,7 @@ export default async function LocaleLayout({
           >
             {t("skip")}
           </a>
+          <SameHashScroll />
           <Header />
           <main id="main" className="flex-1">
             {children}

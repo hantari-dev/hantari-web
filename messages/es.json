@@ -1,0 +1,542 @@
+{
+  "meta": {
+    "title": "Hantari — Estudio de software & IA",
+    "description": "Hantari es un estudio de software & IA. Digitalizamos negocios, modernizamos software y damos vida a las ideas — para empresas, organizaciones y personas con una idea, desde Timișoara para todo el mundo.",
+    "aboutTitle": "Nosotros",
+    "startTitle": "Empieza un proyecto",
+    "privacyTitle": "Privacidad"
+  },
+  "nav": {
+    "services": "Servicios",
+    "work": "Proyectos",
+    "studio": "Estudio",
+    "start": "Empieza un proyecto",
+    "whatWeDo": "Qué hacemos",
+    "notSure": "¿No sabes por dónde empezar?",
+    "notSureText": "Cuéntanos qué tienes en mente — una idea, un proceso o un negocio que quieras llevar a lo digital. Te sugerimos por dónde empezar.",
+    "about": "Nosotros",
+    "aboutLine": "Quiénes somos y dónde trabajamos",
+    "approach": "Enfoque",
+    "approachLine": "Cómo avanza un proyecto, de principio a fin",
+    "contact": "Contacto",
+    "contactLine": "Cuéntanos sobre tu proyecto",
+    "language": "Idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": "Menú",
+    "home": "Inicio de Hantari",
+    "skip": "Ir al contenido"
+  },
+  "services": {
+    "apps": {
+      "name": "Aplicaciones web & de escritorio",
+      "line": "El software que tu negocio necesita",
+      "long": "Creamos el software que necesitas — herramientas internas y aplicaciones para tus clientes, hechas para durar.",
+      "page": {
+        "intro": "Aplicaciones web y de escritorio pensadas para las personas que las usan — desde herramientas internas hasta plataformas para tus clientes.",
+        "process": [
+          {
+            "t": "Descubrimiento",
+            "d": "Definimos juntos qué debe hacer la aplicación."
+          },
+          {
+            "t": "Dirección visual",
+            "d": "Bocetos y un prototipo en el que puedes hacer clic, para que veas la aplicación antes de construirla."
+          },
+          {
+            "t": "Alcance y plan",
+            "d": "Dividimos el trabajo en etapas claras, cada una con su plazo."
+          },
+          {
+            "t": "Desarrollo",
+            "d": "Construimos por etapas; recibes una versión de prueba en las primeras semanas."
+          },
+          {
+            "t": "Lanzamiento",
+            "d": "Publicamos la aplicación y configuramos el dominio, la seguridad y las copias de seguridad."
+          },
+          {
+            "t": "Soporte",
+            "d": "Supervisión, actualizaciones y mejoras después del lanzamiento."
+          }
+        ],
+        "get": [
+          "Una aplicación web que funciona en cualquier dispositivo, del teléfono al escritorio",
+          "Una aplicación de escritorio para Windows, cuando haga falta",
+          "Un panel de administración para tu contenido y tus datos",
+          "Hosting, dominio y certificado SSL configurados",
+          "El código fuente y la documentación son tuyos"
+        ],
+        "fit": [
+          "Portales para clientes y reservas",
+          "Herramientas internas: inventario, pedidos, informes",
+          "Sitios de presentación con funciones reales",
+          "Un primer producto (MVP) para una idea nueva"
+        ],
+        "tools": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tauri",
+          "PostgreSQL",
+          "Vercel",
+          "AWS"
+        ]
+      }
+    },
+    "automation": {
+      "name": "Automatización",
+      "line": "Menos trabajo manual, menos idas y vueltas",
+      "long": "Hacemos que los procesos de tu negocio funcionen con menos trabajo manual.",
+      "page": {
+        "intro": "Los pasos que se repiten — copiar datos, enviar correos, generar documentos — pueden funcionar solos, sin errores y a tiempo, y tu equipo recupera horas para el trabajo que importa.",
+        "process": [
+          {
+            "t": "Mapeo",
+            "d": "Seguimos el proceso de principio a fin y vemos qué se repite y qué puede funcionar solo."
+          },
+          {
+            "t": "Prioridades",
+            "d": "Empezamos por las automatizaciones que más tiempo te devuelven."
+          },
+          {
+            "t": "Desarrollo",
+            "d": "Flujos, scripts e integraciones que hacen el trabajo repetitivo por ti."
+          },
+          {
+            "t": "Pruebas con datos reales",
+            "d": "Funcionamos en paralelo con tu forma actual de trabajar hasta que todo sale bien."
+          },
+          {
+            "t": "Entrega y supervisión",
+            "d": "Te mostramos cómo funciona y recibes alertas si algo necesita atención."
+          }
+        ],
+        "get": [
+          "Documentos, facturas e informes generados automáticamente",
+          "Correos y notificaciones enviados en el momento justo",
+          "Datos sincronizados entre aplicaciones, sin copiar a mano",
+          "Un panel donde ves todo lo que está funcionando"
+        ],
+        "fit": [
+          "Informes semanales o mensuales",
+          "Procesamiento de pedidos y facturas",
+          "Incorporación de clientes o empleados",
+          "Importación y exportación de datos"
+        ],
+        "tools": [
+          "Python",
+          "Node.js",
+          "n8n",
+          "APIs",
+          "Google Workspace",
+          "Tareas programadas"
+        ]
+      }
+    },
+    "ai": {
+      "name": "Soluciones de IA",
+      "line": "IA que trabaja para tu negocio",
+      "long": "Ponemos la IA a trabajar en tu negocio: asistentes, procesamiento de documentos y búsquedas que conocen tus datos.",
+      "page": {
+        "intro": "Asistentes, procesamiento de documentos y búsqueda inteligente — IA conectada a tus datos y herramientas, trabajando para tu negocio.",
+        "process": [
+          {
+            "t": "Elegir la tarea",
+            "d": "Partimos de una tarea concreta en la que la IA aporta un valor que se puede medir."
+          },
+          {
+            "t": "Datos y accesos",
+            "d": "Decidimos qué información usa y qué puede hacer — tus datos siguen bajo tu control."
+          },
+          {
+            "t": "Prototipo",
+            "d": "Un prototipo funcional en pocos días, probado con ejemplos reales."
+          },
+          {
+            "t": "Integración",
+            "d": "Conectamos la IA a tus aplicaciones: calendario, correo, base de datos, facturación."
+          },
+          {
+            "t": "Evaluación continua",
+            "d": "Medimos la calidad de las respuestas y seguimos mejorando."
+          }
+        ],
+        "get": [
+          "Un asistente que responde a partir de tus propios documentos",
+          "Datos extraídos automáticamente de PDF, facturas y correos",
+          "Búsqueda en tus documentos con lenguaje natural",
+          "Agentes que realizan acciones: reservas, pedidos, resúmenes"
+        ],
+        "fit": [
+          "Preguntas de clientes y preguntas frecuentes",
+          "Procesamiento de facturas y documentos",
+          "Resúmenes de correos e informes",
+          "Citas y reservas"
+        ],
+        "tools": [
+          "Claude (Anthropic)",
+          "OpenAI",
+          "RAG",
+          "Agentes y uso de herramientas",
+          "PostgreSQL + pgvector"
+        ]
+      }
+    },
+    "integrations": {
+      "name": "Integraciones",
+      "line": "Tus herramientas — y la IA — trabajando juntas",
+      "long": "Hacemos que los programas que ya usas se comuniquen entre sí y conectamos la IA a tus herramientas.",
+      "page": {
+        "intro": "El software que ya usas puede trabajar en conjunto — los datos fluyen solos entre tu tienda, la facturación, los envíos y el calendario.",
+        "process": [
+          {
+            "t": "Inventario",
+            "d": "Hacemos una lista de tus aplicaciones y de los datos que deben moverse entre ellas."
+          },
+          {
+            "t": "Plan de flujos",
+            "d": "Decidimos quién envía qué, cuándo y qué pasa en cada caso."
+          },
+          {
+            "t": "Conexión",
+            "d": "Creamos los enlaces a través de las APIs oficiales de cada servicio."
+          },
+          {
+            "t": "Pruebas",
+            "d": "Revisamos cada flujo con datos reales, incluidos los casos menos frecuentes."
+          },
+          {
+            "t": "Supervisión",
+            "d": "Recibes alertas si una conexión necesita atención."
+          }
+        ],
+        "get": [
+          "Facturación electrónica emitida automáticamente desde tu tienda o aplicación",
+          "Tu sistema de facturación conectado a la tienda online: cada pedido se convierte en factura",
+          "Etiquetas de envío generadas automáticamente con tu empresa de mensajería",
+          "Reservas sincronizadas con Google Calendar y Meet",
+          "Pagos online con Stripe, PayPal u otras pasarelas",
+          "IA por encima: resúmenes, respuestas, datos extraídos"
+        ],
+        "fit": [
+          "Tiendas online",
+          "Consultorios y servicios que trabajan con reservas",
+          "Negocios que emiten muchas facturas",
+          "Equipos que mueven datos entre aplicaciones"
+        ],
+        "tools": [
+          "APIs REST",
+          "Webhooks",
+          "Facturación electrónica",
+          "WooCommerce",
+          "Stripe",
+          "PayPal",
+          "Google APIs"
+        ]
+      }
+    },
+    "modernisation": {
+      "name": "Modernización",
+      "line": "Software antiguo, estándares modernos",
+      "long": "Llevamos tu software antiguo a los estándares actuales.",
+      "page": {
+        "intro": "El software que mantiene en marcha tu negocio se puede actualizar — más rápido, más seguro y más fácil de mantener, sin detener tu trabajo.",
+        "process": [
+          {
+            "t": "Evaluación",
+            "d": "Analizamos lo que tienes: código, datos, hosting, seguridad — y lo que vale la pena conservar."
+          },
+          {
+            "t": "Estrategia",
+            "d": "Elegimos el camino adecuado: actualizar, reconstruir por etapas o reemplazar."
+          },
+          {
+            "t": "Migración por etapas",
+            "d": "Movemos las funciones una a una, sin detener tu negocio."
+          },
+          {
+            "t": "Datos protegidos",
+            "d": "Migramos los datos con verificaciones y copias de seguridad en cada paso."
+          },
+          {
+            "t": "Nube y soporte",
+            "d": "Hosting moderno, copias de seguridad automáticas y actualizaciones periódicas."
+          }
+        ],
+        "get": [
+          "Tu aplicación con tecnología actual",
+          "Migrada a la nube (AWS o Vercel) con copias de seguridad automáticas",
+          "Más seguridad y accesos controlados",
+          "Mejor rendimiento y gastos de hosting claros",
+          "Documentación de todo el sistema"
+        ],
+        "fit": [
+          "Aplicaciones internas usadas durante años",
+          "Sistemas que crecieron junto con el negocio",
+          "Servidores propios listos para pasar a la nube",
+          "Registros en Excel o Access que ya se quedaron pequeños"
+        ],
+        "tools": [
+          "AWS",
+          "Terraform",
+          "Docker",
+          "Linux",
+          "PostgreSQL",
+          "CI/CD"
+        ]
+      }
+    },
+    "unsure": {
+      "name": "Todavía no lo sé",
+      "line": "Cuéntanos tu idea y te sugerimos el camino"
+    }
+  },
+  "home": {
+    "title": "<services>Digitalizamos</services> negocios, modernizamos software y damos vida a las ideas.",
+    "intro": "Hantari es un estudio de software & IA para empresas, organizaciones y personas con una idea — desde el primer boceto hasta el lanzamiento y después, con precios y plazos claros, acordados desde el principio.",
+    "ctaSecondary": "Qué hacemos",
+    "featureEyebrow": "Software & IA",
+    "featureTitle": "Software inteligente para ideas reales.",
+    "featureCta": "Cómo trabajamos",
+    "servicesEyebrow": "Qué hacemos",
+    "servicesTitle": "Cinco cosas, bien hechas.",
+    "servicesIntro": "Un equipo pequeño que avanza rápido y cumple — desde la primera conversación hasta el software funcionando en tu negocio.",
+    "workTitle": "Proyectos seleccionados",
+    "lactaEyebrow": "Caso de estudio · Aplicación web",
+    "lactaText": "Un sitio bilingüe para una consultora de lactancia — servicios, reseñas y recursos que la propia dueña administra, con reservas online y un asistente de IA que guía a los visitantes por los recursos del sitio y los lleva rápido a reservar.",
+    "lactaCta": "Visitar lacta.ro",
+    "approachEyebrow": "Nuestra visión",
+    "approachTitle": "Lo digital, al alcance de todos.",
+    "approachLead": "Creemos que todo negocio y toda idea merecen llegar a lo digital. Por eso construimos: digitalizamos negocios, actualizamos el software antiguo y convertimos ideas en aplicaciones reales — hechas con cuidado, explicadas con claridad y preparadas para el futuro.",
+    "step1Label": "01 · Entendemos",
+    "step1Title": "Partimos de la idea — o de cómo trabajas hoy.",
+    "step1Text": "Un negocio para digitalizar, un sistema antiguo para modernizar o una idea nueva: primero entendemos lo que existe y acordamos juntos qué significa “mejor”.",
+    "step2Label": "02 · Construimos",
+    "step2Title": "Pasos que puedes ver.",
+    "step2Text": "Versiones funcionales desde temprano y con frecuencia — tu idea toma forma frente a ti y siempre sabes por qué estás pagando.",
+    "step3Label": "03 · Mantenemos",
+    "step3Title": "A largo plazo.",
+    "step3Text": "Seguimos a tu lado después del lanzamiento: hosting, supervisión y actualizaciones. Quienes lo construyeron lo siguen cuidando — para que mañana funcione mejor que hoy.",
+    "ctaTitle": "¿Tienes una idea o un negocio que quieres llevar a lo digital?",
+    "ctaText": "Cuéntanos. Te respondemos en un máximo de 1 día hábil, con un próximo paso claro."
+  },
+  "about": {
+    "eyebrow": "Sobre Hantari",
+    "title": "Un estudio pequeño para software práctico.",
+    "intro": "Hantari es un estudio de software & IA con base en Timișoara, Rumania, que trabaja con personas de todo el mundo. Nuestra visión es simple: ayudar a los negocios a digitalizarse, llevar el software antiguo a estándares actuales y convertir buenas ideas en productos que funcionan — usando IA donde resuelve un problema real.",
+    "imageLine": "Llevamos las ideas a la luz.",
+    "howEyebrow": "Cómo trabajamos",
+    "p1Title": "Claro antes que ingenioso.",
+    "p1Text": "Explicamos qué construimos y por qué, con las palabras que usarías tú.",
+    "p2Title": "Resultados antes que funciones.",
+    "p2Text": "El éxito es tiempo ahorrado y errores evitados.",
+    "p3Title": "Hecho para durar.",
+    "p3Text": "Infraestructura sólida, seguridad y soporte después del lanzamiento.",
+    "p4Title": "Mejor que ayer.",
+    "p4Text": "Avance constante, día tras día — así construimos cosas que duran.",
+    "studioEyebrow": "El estudio",
+    "basedIn": "Con base en",
+    "basedInValue": "Timișoara, Rumania — trabajamos con todo el mundo",
+    "email": "Correo",
+    "languages": "Idiomas",
+    "languagesValue": "Inglés, rumano, español, francés",
+    "response": "Tiempo de respuesta",
+    "responseValue": "En un máximo de 1 día hábil"
+  },
+  "start": {
+    "back": "Volver al sitio",
+    "eyebrow": "Empieza un proyecto",
+    "title": "Cuéntanos qué quieres construir.",
+    "intro": "Tres pasos cortos, unos dos minutos. No necesitas conocimientos técnicos — descríbelo como se lo explicarías a un colega.",
+    "nextTitle": "Qué pasa después",
+    "next1": "Recibes un correo que confirma que recibimos tu solicitud.",
+    "next2": "En un máximo de 1 día hábil te respondemos con preguntas o una primera idea.",
+    "next3": "Si encajamos, una llamada breve — y luego una propuesta clara por escrito.",
+    "preferEmail": "¿Prefieres escribirnos directamente?",
+    "stepOf": "Paso {step} de 3",
+    "stepNames": {
+      "1": "Qué necesitas",
+      "2": "Los detalles",
+      "3": "Tu contacto"
+    },
+    "s1Title": "¿Con qué podemos ayudarte?",
+    "s1Text": "Elige una o varias opciones. ¿No estás seguro? No hay problema.",
+    "selected": "{count} seleccionadas",
+    "s2Title": "Cuéntanos más.",
+    "s2Text": "Unas pocas frases son suficientes. ¿Qué te gustaría construir, cambiar o simplificar?",
+    "description": "¿Qué tienes en mente?",
+    "descriptionPlaceholder": "Por ejemplo: Queremos una aplicación donde los clientes hagan pedidos solos, conectada a nuestra facturación, para que el equipo siempre sepa qué sigue.",
+    "tools": "Herramientas que usas hoy",
+    "toolsPlaceholder": "Por ejemplo: Excel, Gmail, una aplicación interna antigua…",
+    "optional": "(opcional)",
+    "timeline": "¿Cuándo te gustaría empezar?",
+    "timelineOptions": {
+      "asap": "Lo antes posible",
+      "months": "En los próximos 1–3 meses",
+      "later": "Más adelante este año",
+      "exploring": "Solo estoy explorando"
+    },
+    "s3Title": "¿Cómo te contactamos?",
+    "s3Text": "Solo usamos estos datos para responder a tu solicitud. Te respondemos en un máximo de 1 día hábil.",
+    "name": "Tu nombre",
+    "namePlaceholder": "Nombre y apellido",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "nombre@empresa.com",
+    "company": "Empresa u organización",
+    "companyPlaceholder": "Si corresponde",
+    "phone": "Teléfono",
+    "phonePlaceholder": "+ código de país",
+    "replyIn": "¿En qué idioma prefieres que te respondamos?",
+    "consent": "Acepto que Hantari use estos datos para responder a esta solicitud, según se describe en la",
+    "privacyLink": "política de privacidad",
+    "backBtn": "Atrás",
+    "continue": "Continuar",
+    "send": "Enviar solicitud",
+    "sending": "Enviando…",
+    "doneTitle": "Gracias{name} — la recibimos.",
+    "doneText": "Enviamos una confirmación a {email}. Te respondemos en un máximo de 1 día hábil.",
+    "reference": "Referencia",
+    "askedAbout": "Preguntaste por",
+    "notSpecified": "Sin especificar",
+    "backToSite": "Volver al sitio",
+    "another": "Enviar otra solicitud",
+    "errors": {
+      "services": "Elige al menos una opción.",
+      "description": "Cuéntanos un poco más (al menos 20 caracteres).",
+      "name": "Escribe tu nombre.",
+      "email": "Escribe una dirección de correo válida.",
+      "consent": "Confirma que podemos usar tus datos para responderte.",
+      "generic": "Algo falló de nuestro lado. Inténtalo de nuevo o escríbenos a hello@hantari.ro.",
+      "tooFast": "¡Qué rápido! Tómate un momento e inténtalo de nuevo."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Privacidad",
+    "title": "Política de privacidad",
+    "updated": "Última actualización: {date}",
+    "draftNote": "Hantari está en proceso de registro. Los datos de identificación de la empresa se añadirán aquí en cuanto se complete el registro.",
+    "sections": [
+      {
+        "title": "1. Quiénes somos",
+        "p": [
+          "El responsable de tus datos es Hantari — un estudio de software & IA en Timișoara, Rumania, representado por Hantari Beneamin Andrei. Hasta que la empresa quede registrada, él gestiona tus datos personalmente.",
+          "Para cualquier consulta sobre tus datos, escríbenos a hello@hantari.ro."
+        ]
+      },
+      {
+        "title": "2. Qué datos recopilamos",
+        "p": [
+          "Solo recopilamos lo necesario para responderte:"
+        ],
+        "items": [
+          "Lo que escribes en el formulario “Empieza un proyecto”: nombre, correo y, de forma opcional, empresa u organización y teléfono.",
+          "Lo que nos cuentas sobre el proyecto: los servicios que te interesan, la descripción, las herramientas que usas hoy y cuándo quieres empezar.",
+          "El idioma en el que prefieres que te respondamos.",
+          "La correspondencia por correo, si nos escribes directamente.",
+          "Datos técnicos mínimos que nuestro proveedor de hosting guarda automáticamente por seguridad (por ejemplo, la dirección IP y el tipo de navegador)."
+        ]
+      },
+      {
+        "title": "3. Para qué los usamos y con qué base legal",
+        "items": [
+          "Para responderte y preparar una propuesta cuando nos la pides — medidas previas a un contrato (art. 6(1)(b) del RGPD) y sobre la base del consentimiento que das en el formulario (art. 6(1)(a)).",
+          "Para mantener el sitio web seguro y en funcionamiento — nuestro interés legítimo (art. 6(1)(f)).",
+          "Si trabajamos juntos, para las obligaciones legales de facturación y contabilidad (art. 6(1)(c))."
+        ],
+        "p2": [
+          "No vendemos tus datos, no los usamos para publicidad y no te enviamos boletines sin un consentimiento aparte."
+        ]
+      },
+      {
+        "title": "4. Con quién los compartimos",
+        "p": [
+          "Usamos algunos proveedores de confianza que procesan los datos solo en nuestro nombre:"
+        ],
+        "items": [
+          "Vercel — hosting del sitio web.",
+          "Neon — la base de datos donde se guardan las solicitudes (alojada en la UE).",
+          "Resend — envío de los correos de confirmación y notificación.",
+          "Google Workspace — nuestro correo."
+        ],
+        "p2": [
+          "Algunos de estos proveedores son empresas de EE. UU. Cuando los datos salen del Espacio Económico Europeo, la transferencia se basa en el Marco de Privacidad de Datos UE–EE. UU. o en las cláusulas contractuales tipo de la Comisión Europea."
+        ]
+      },
+      {
+        "title": "5. Cuánto tiempo los guardamos",
+        "items": [
+          "Solicitudes enviadas por el formulario: hasta 24 meses; después se eliminan.",
+          "Si te conviertes en cliente: mientras dure nuestra colaboración y luego el tiempo que exija la ley para los registros financieros y contables.",
+          "Datos técnicos de seguridad: unos pocos días, según la configuración del proveedor de hosting."
+        ]
+      },
+      {
+        "title": "6. Cookies",
+        "p": [
+          "Usamos una única cookie estrictamente necesaria que recuerda tu idioma (NEXT_LOCALE). No usamos cookies de publicidad, seguimiento ni analítica."
+        ]
+      },
+      {
+        "title": "7. Cómo los protegemos",
+        "p": [
+          "El sitio web solo usa conexiones cifradas (HTTPS), el acceso a los datos está limitado a nosotros y las cuentas que usamos están protegidas con verificación en dos pasos."
+        ]
+      },
+      {
+        "title": "8. Tus derechos",
+        "p": [
+          "Según el RGPD, tienes derecho a:"
+        ],
+        "items": [
+          "saber qué datos tenemos sobre ti y obtener una copia;",
+          "pedir que se corrijan o se eliminen;",
+          "limitar su tratamiento u oponerte a él;",
+          "recibirlos en un formato portable;",
+          "retirar tu consentimiento en cualquier momento, sin afectar el tratamiento realizado antes."
+        ],
+        "p2": [
+          "Escribe a hello@hantari.ro — respondemos en un plazo máximo de un mes. También puedes presentar una reclamación ante la autoridad rumana de protección de datos (ANSPDCP), www.dataprotection.ro."
+        ]
+      },
+      {
+        "title": "9. Menores",
+        "p": [
+          "Nuestros servicios no están dirigidos a menores de 16 años y no recopilamos sus datos de forma intencional."
+        ]
+      },
+      {
+        "title": "10. Cambios",
+        "p": [
+          "Si cambiamos esta política, actualizamos la fecha de arriba. Si los cambios son importantes, te avisaremos en el sitio web."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Software & IA · Desde Timișoara, para todo el mundo",
+    "ethos": "Mejor que ayer.",
+    "services": "Servicios",
+    "studio": "Estudio",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "rights": "© {year} Hantari"
+  },
+  "notFound": {
+    "title": "Esta página tomó un camino equivocado.",
+    "text": "La página que buscas no existe o se movió.",
+    "home": "Ir al inicio"
+  },
+  "servicePage": {
+    "eyebrow": "Servicios",
+    "processTitle": "Cómo trabajamos",
+    "getTitle": "Qué recibes",
+    "fitTitle": "Ideal para",
+    "toolsTitle": "Tecnología",
+    "ctaTitle": "Construyámoslo juntos.",
+    "ctaText": "Cuéntanos qué tienes en mente — te respondemos en un máximo de 1 día hábil.",
+    "prev": "Servicio anterior",
+    "next": "Servicio siguiente",
+    "all": "Todos los servicios"
+  }
+}

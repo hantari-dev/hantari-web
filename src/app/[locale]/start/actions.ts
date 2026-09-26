@@ -79,7 +79,8 @@ export async function submitLead(_prev: SubmitState, formData: FormData): Promis
     return { status: "error", fields: [], form: "tooFast" };
   }
 
-  const locale = formData.get("locale") === "ro" ? "ro" : "en";
+  const rawLocale = formData.get("locale");
+  const locale = rawLocale === "ro" || rawLocale === "es" ? rawLocale : "en";
   const parsed = leadSchema.safeParse({
     services: formData.getAll("services"),
     description: formData.get("description") ?? "",

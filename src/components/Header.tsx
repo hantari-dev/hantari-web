@@ -3,14 +3,13 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { routing, type Locale } from "@/i18n/routing";
+import { LANG_NAMES, routing, type Locale } from "@/i18n/routing";
 import { SERVICE_IDS } from "@/lib/services";
 import { HMark } from "./Logo";
 import { MenuArt } from "./art/Art";
 
 type MenuId = "services" | "studio" | "lang" | null;
 
-const LANG_NAMES: Record<Locale, string> = { en: "English", ro: "Română" };
 
 function Chevron({ open }: { open: boolean }) {
   return (

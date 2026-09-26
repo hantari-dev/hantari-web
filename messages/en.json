@@ -387,6 +387,7 @@
     "company": "Company or organisation",
     "companyPlaceholder": "If there is one",
     "phone": "Phone",
+    "phonePlaceholder": "+ country code",
     "replyIn": "Reply in",
     "consent": "I agree that Hantari may use these details to reply to this request, as described in the",
     "privacyLink": "privacy policy",
