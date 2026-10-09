@@ -15,7 +15,8 @@ import {
   SunriseArt,
 } from "@/components/art/Art";
 
-const underline = "grad-underline";
+const underline =
+  "underline decoration-[3px] underline-offset-[10px] transition-colors hover:text-signal max-md:decoration-2 max-md:underline-offset-[6px]";
 
 const SERVICE_CARDS: { id: ServiceId; Art: React.ComponentType; big: boolean }[] = [
   { id: "apps", Art: CityArt, big: true },
