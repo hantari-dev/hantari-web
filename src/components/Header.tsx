@@ -7,6 +7,8 @@ import { LANG_NAMES, routing, type Locale } from "@/i18n/routing";
 import { SERVICE_IDS } from "@/lib/services";
 import { HMark } from "./Logo";
 import { MenuArt } from "./art/Art";
+import { SERVICE_ART } from "./art/serviceArt";
+import type { ServiceId } from "@/lib/services";
 
 type MenuId = "services" | "studio" | "lang" | null;
 
@@ -175,34 +177,7 @@ export function Header() {
               {t("services")}
               <Chevron open={open === "services"} />
             </button>
-            {open === "services" && (
-              <div id="menu-services" className={`${panel} left-1/2 grid w-[min(780px,calc(100vw-32px))] -translate-x-1/2 grid-cols-3 overflow-hidden`}>
-                <div className="col-span-2 flex flex-col gap-1 p-7 pb-6">
-                  <p className="eyebrow px-3 pb-2.5 !text-[11px]">{t("whatWeDo")}</p>
-                  {SERVICE_IDS.map((id, i) => (
-                    <Link
-                      key={id}
-                      href={`/services/${id}`}
-                      className="group flex gap-4 rounded-lg p-3 transition-colors hover:bg-[#F1EFE9]"
-                    >
-                      <span className="pt-1 font-mono text-[11px] text-graphite">0{i + 1}</span>
-                      <span className="flex flex-col gap-0.5">
-                        <span className="font-medium text-ink group-hover:text-signal">{ts(`${id}.name`)}</span>
-                        <span className="text-[13px] text-graphite">{ts(`${id}.line`)}</span>
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-                <div className="relative flex flex-col gap-3.5 overflow-hidden bg-[#1A2446] p-7 pt-9 text-paper">
-                  <MenuArt className="absolute inset-x-0 bottom-0 h-[170px] w-full" />
-                  <p className="relative font-display text-2xl leading-tight">{t("notSure")}</p>
-                  <p className="relative text-sm leading-relaxed text-[#C9CEDD]">{t("notSureText")}</p>
-                  <Link href="/start" className="relative pt-1.5 text-sm font-medium text-paper hover:text-white hover:underline">
-                    {t("start")} →
-                  </Link>
-                </div>
-              </div>
-            )}
+            {open === "services" && <ServicesMenu />}
           </div>
 
           <Link href="/#work" className="py-2.5 transition-colors hover:text-signal">
@@ -362,5 +337,65 @@ export function Header() {
         </div>
       )}
     </>
+  );
+}
+
+/**
+ * Desktop services dropdown. Hovering (or focusing) a service plays that service's illustration
+ * in the right-hand panel; before any hover the panel shows the "Not sure where to start?" card.
+ * The panel keeps the last service shown, so moving the pointer across to it doesn't reset it.
+ */
+function ServicesMenu() {
+  const t = useTranslations("nav");
+  const ts = useTranslations("services");
+  const [active, setActive] = useState<ServiceId | null>(null);
+  const Art = active ? SERVICE_ART[active] : null;
+
+  return (
+    <div id="menu-services" className={`${panel} left-1/2 grid w-[min(780px,calc(100vw-32px))] -translate-x-1/2 grid-cols-3 overflow-hidden`}>
+      <div className="col-span-2 flex flex-col gap-1 p-7 pb-6">
+        <p className="eyebrow px-3 pb-2.5 !text-[11px]">{t("whatWeDo")}</p>
+        {SERVICE_IDS.map((id, i) => (
+          <Link
+            key={id}
+            href={`/services/${id}`}
+            onMouseEnter={() => setActive(id)}
+            onFocus={() => setActive(id)}
+            className={`group flex gap-4 rounded-lg p-3 transition-colors hover:bg-[#F1EFE9] ${active === id ? "bg-[#F1EFE9]" : ""}`}
+          >
+            <span className="pt-1 font-mono text-[11px] text-graphite">0{i + 1}</span>
+            <span className="flex flex-col gap-0.5">
+              <span className={`font-medium group-hover:text-signal ${active === id ? "text-signal" : "text-ink"}`}>{ts(`${id}.name`)}</span>
+              <span className="text-[13px] text-graphite">{ts(`${id}.line`)}</span>
+            </span>
+          </Link>
+        ))}
+      </div>
+
+      <div className="relative min-h-[400px] overflow-hidden bg-[#1A2446] text-paper">
+        {active && Art ? (
+          // key = service: switching remounts the art, so its animation plays from the start
+          <div key={active} className="menu-preview absolute inset-0 flex flex-col">
+            <div data-inview="" className="relative h-[220px] shrink-0 overflow-hidden">
+              <Art />
+            </div>
+            <div className="flex flex-1 flex-col gap-2 p-6">
+              <span className="font-mono text-[11px] text-[#9AA3C2]">0{SERVICE_IDS.indexOf(active) + 1}</span>
+              <p className="font-display text-[22px] leading-tight">{ts(`${active}.name`)}</p>
+              <p className="text-[13px] leading-relaxed text-[#C9CEDD]">{ts(`${active}.long`)}</p>
+            </div>
+          </div>
+        ) : (
+          <div className="menu-preview absolute inset-0 flex flex-col gap-3.5 p-7 pt-9">
+            <MenuArt className="absolute inset-x-0 bottom-0 h-[170px] w-full" />
+            <p className="relative font-display text-2xl leading-tight">{t("notSure")}</p>
+            <p className="relative text-sm leading-relaxed text-[#C9CEDD]">{t("notSureText")}</p>
+            <Link href="/start" className="relative pt-1.5 text-sm font-medium text-paper hover:text-white hover:underline">
+              {t("start")} →
+            </Link>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
