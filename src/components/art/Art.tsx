@@ -242,6 +242,41 @@ export function LactaArt({ className = fill }: ArtProps) {
   );
 }
 
+/** Browser mock-up in forest green, apricot and linen — Pflege mit Kopf und Herz case study. */
+export function PflegeArt({ className = fill }: ArtProps) {
+  return (
+    <svg className={className} viewBox="0 0 716 420" preserveAspectRatio="xMidYMid slice" aria-hidden>
+      <defs>
+        <linearGradient id="pflege-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#F7F1E8" />
+          <stop offset="0.55" stopColor="#ECDCC8" />
+          <stop offset="1" stopColor="#9DB8AB" />
+        </linearGradient>
+      </defs>
+      <rect width="716" height="420" fill="url(#pflege-bg)" />
+      <rect x="150" y="70" width="416" height="300" rx="12" fill="#FFFCF7" opacity="0.94" />
+      <rect x="150" y="70" width="416" height="34" rx="12" fill="#EFE6DA" />
+      <circle cx="172" cy="87" r="4" fill="#C9D6CF" />
+      <circle cx="186" cy="87" r="4" fill="#C9D6CF" />
+      <circle cx="200" cy="87" r="4" fill="#C9D6CF" />
+      <rect x="180" y="132" width="150" height="18" rx="4" fill="#2F5D50" />
+      <rect x="338" y="132" width="70" height="18" rx="4" fill="#E9A47C" />
+      <rect x="180" y="164" width="236" height="8" rx="4" fill="#DCD3C6" />
+      <rect x="180" y="180" width="200" height="8" rx="4" fill="#DCD3C6" />
+      <rect x="180" y="206" width="104" height="26" rx="13" fill="#2F5D50" />
+      <rect x="294" y="206" width="84" height="26" rx="13" fill="none" stroke="#2F5D50" strokeOpacity="0.45" />
+      <rect x="452" y="128" width="84" height="104" rx="42" fill="#F3E3D3" />
+      <path d="M494 196c-14-10-22-18-22-27 0-7 5-12 11-12 5 0 9 3 11 7 2-4 6-7 11-7 6 0 11 5 11 12 0 9-8 17-22 27z" fill="#E9A47C" />
+      <rect x="180" y="258" width="112" height="84" rx="10" fill="#EEF3F0" />
+      <rect x="302" y="258" width="112" height="84" rx="10" fill="#F6EEE4" />
+      <rect x="424" y="258" width="112" height="84" rx="10" fill="#EEF3F0" />
+      <rect x="196" y="278" width="40" height="8" rx="4" fill="#2F5D50" opacity="0.7" />
+      <rect x="318" y="278" width="40" height="8" rx="4" fill="#E9A47C" opacity="0.9" />
+      <rect x="440" y="278" width="40" height="8" rx="4" fill="#2F5D50" opacity="0.7" />
+    </svg>
+  );
+}
+
 /** Small ridge at dusk — the Services menu side panel. */
 export function MenuArt({ className }: ArtProps) {
   return (

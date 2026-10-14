@@ -9,6 +9,7 @@ import {
   CityArt,
   DuskArt,
   LactaArt,
+  PflegeArt,
   LoopArt,
   NightArt,
   StrataArt,
@@ -25,6 +26,11 @@ const SERVICE_CARDS: { id: ServiceId; Art: React.ComponentType; big: boolean }[]
   { id: "integrations", Art: BridgeArt, big: false },
   { id: "modernisation", Art: SunriseArt, big: false },
 ];
+
+const PROJECTS = [
+  { key: "lacta", name: "Lacta", url: "https://lacta.ro", Art: LactaArt },
+  { key: "pflege", name: "Pflege mit Kopf und Herz", url: "https://pflegemitkopfundherz.at", Art: PflegeArt },
+] as const;
 
 export default function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -109,19 +115,26 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
       <section id="work" className="container-page scroll-mt-6">
         <div className="flex flex-col gap-10 border-t border-hairline pb-16 pt-14 md:pb-[150px] md:pt-[110px]">
           <h2 className="font-display text-4xl md:text-[56px]">{t("workTitle")}</h2>
-          <a href="https://lacta.ro" target="_blank" rel="noopener" className="group grid items-center gap-6 lg:grid-cols-12">
-            <div className="relative h-[240px] overflow-hidden rounded-[18px] md:h-[420px] lg:col-span-7">
-              <div className="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-[1.02]">
-                <LactaArt />
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 lg:col-span-4 lg:col-start-9">
-              <span className="eyebrow">{t("lactaEyebrow")}</span>
-              <span className="font-display text-[32px] leading-[1.05] md:text-[44px]">Lacta</span>
-              <span className="text-[17px] leading-relaxed text-graphite">{t("lactaText")}</span>
-              <span className="pt-1.5 text-[15px] font-medium group-hover:text-signal">{t("lactaCta")} ↗</span>
-            </div>
-          </a>
+          <div className="flex flex-col gap-16 md:gap-24">
+            {PROJECTS.map(({ key, name, url, Art }, i) => {
+              const flip = i % 2 === 1; // alternate sides on large screens
+              return (
+                <a key={key} href={url} target="_blank" rel="noopener" className="group grid items-center gap-6 lg:grid-cols-12">
+                  <div className={`relative h-[240px] overflow-hidden rounded-[18px] md:h-[420px] lg:col-span-7 ${flip ? "lg:order-2 lg:col-start-6" : ""}`}>
+                    <div className="absolute inset-0 transition-transform duration-500 ease-out group-hover:scale-[1.02]">
+                      <Art />
+                    </div>
+                  </div>
+                  <div className={`flex flex-col gap-4 lg:col-span-4 ${flip ? "lg:order-1 lg:col-start-1" : "lg:col-start-9"}`}>
+                    <span className="eyebrow">{t(`${key}Eyebrow`)}</span>
+                    <span className="font-display text-[32px] leading-[1.05] md:text-[44px]">{name}</span>
+                    <span className="text-[17px] leading-relaxed text-graphite">{t(`${key}Text`)}</span>
+                    <span className="pt-1.5 text-[15px] font-medium group-hover:text-signal">{t(`${key}Cta`)} ↗</span>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
         </div>
       </section>
 
