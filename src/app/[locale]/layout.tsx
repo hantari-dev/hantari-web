@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ComingSoon } from "@/components/ComingSoon";
 import { SameHashScroll } from "@/components/SameHashScroll";
+import { HideOnDemo } from "@/components/HideOnDemo";
 
 /** Set COMING_SOON=true (e.g. in Vercel) to show only the holding page. Redeploy after changing it. */
 const COMING_SOON = process.env.COMING_SOON === "true";
@@ -74,11 +75,15 @@ export default async function LocaleLayout({
             {t("skip")}
           </a>
           <SameHashScroll />
-          <Header />
+          <HideOnDemo>
+            <Header />
+          </HideOnDemo>
           <main id="main" className="flex-1">
             {children}
           </main>
-          <Footer />
+          <HideOnDemo>
+            <Footer />
+          </HideOnDemo>
         </NextIntlClientProvider>
         )}
       </body>

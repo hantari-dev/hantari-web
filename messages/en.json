@@ -542,5 +542,144 @@
     "prev": "Previous service",
     "next": "Next service",
     "all": "All services"
+  },
+  "demo": {
+    "metaTitle": "Hantari — Showcase",
+    "swipe": "Swipe",
+    "prev": "Previous",
+    "next": "Next",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen",
+    "introEyebrow": "Software & AI studio · Timișoara",
+    "introTitle": "Digital, within everyone's reach.",
+    "introText": "We digitalise businesses, modernise software and bring ideas to life — with clear prices and deadlines agreed up front.",
+    "servicesEyebrow": "What we build",
+    "servicesTitle": "Five things, done well.",
+    "howEyebrow": "How we work",
+    "howTitle": "Clear steps, from idea to working software.",
+    "projectEyebrow": "Delivered project",
+    "tryLive": "Try it live",
+    "clipNote": "Demo clip",
+    "lacta": {
+      "tag": "Web app · Timișoara",
+      "lead": "A website for a lactation consultant, with booking and an AI assistant.",
+      "points": [
+        "Online booking flow: pick a time in the calendar, meet by video or in person",
+        "Lacta IA: an AI chat assistant that answers questions and leads to a booking",
+        "Bilingual: Romanian and Spanish",
+        "Reviews, an FAQ and a free downloadable guide"
+      ]
+    },
+    "pflege": {
+      "tag": "Presentation website · Graz, Austria",
+      "lead": "A website for a home-care service, built to bring in new requests.",
+      "points": [
+        "Services, prices and how it works, clear at first glance",
+        "Guided request form: for yourself, for a relative, or a first meeting",
+        "A blog for articles and news",
+        "Warm design, easy to use at any age"
+      ]
+    },
+    "ideasEyebrow": "For your business",
+    "ideasTitle": "What could this look like for you?",
+    "ideasHint": "Pick your field:",
+    "ideas": [
+      {
+        "id": "clinic",
+        "label": "Practice / clinic",
+        "items": [
+          {
+            "t": "Online booking with reminders",
+            "d": "Patients pick their own time; fewer calls and no-shows."
+          },
+          {
+            "t": "AI assistant for questions",
+            "d": "Answers 24/7 about services, prices and preparation, from your own information."
+          },
+          {
+            "t": "Digital forms",
+            "d": "Patient details filled in online before the visit, straight into your system."
+          }
+        ]
+      },
+      {
+        "id": "shop",
+        "label": "Online shop",
+        "items": [
+          {
+            "t": "Order → invoice → shipping label",
+            "d": "Every order creates the invoice and the shipping label automatically."
+          },
+          {
+            "t": "Stock in sync",
+            "d": "Your shop, warehouse and marketplaces see the same stock, in real time."
+          },
+          {
+            "t": "AI assistant for customers",
+            "d": "Recommends products and answers delivery and return questions, any time."
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "label": "Restaurant / café",
+        "items": [
+          {
+            "t": "Digital menu and table ordering",
+            "d": "Guests scan, order and pay from their phone."
+          },
+          {
+            "t": "Online reservations",
+            "d": "Tables booked straight from the website, synced with your calendar."
+          },
+          {
+            "t": "Automatic reports",
+            "d": "Sales and best sellers in your inbox every morning."
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "label": "Services & trades",
+        "items": [
+          {
+            "t": "Website with quote requests",
+            "d": "Customers describe what they need, with photos, and you get it all organised."
+          },
+          {
+            "t": "Automatic bookings and confirmations",
+            "d": "Online calendar, confirmation and reminder, no phone calls."
+          },
+          {
+            "t": "Automatic quotes and invoices",
+            "d": "From the job details, the quote and invoice are ready in minutes."
+          }
+        ]
+      },
+      {
+        "id": "realestate",
+        "label": "Real estate",
+        "items": [
+          {
+            "t": "Listings site with filters",
+            "d": "Properties searchable by area, price and rooms, easy to keep up to date."
+          },
+          {
+            "t": "AI assistant for enquiries",
+            "d": "Replies to interested buyers instantly and books viewings."
+          },
+          {
+            "t": "Client records",
+            "d": "Enquiries, viewings and offers, all in one place."
+          }
+        ]
+      }
+    ],
+    "closeEyebrow": "Next step",
+    "closeTitle": "Let's build something together.",
+    "closeText": "Tell us what you have in mind. You'll hear from us within 1 business day, with a clear next step.",
+    "scan": "Scan to start a project",
+    "fillNow": "Fill in the form together now",
+    "orEmail": "or write to us at"
   }
 }

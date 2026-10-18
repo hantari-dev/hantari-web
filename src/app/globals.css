@@ -198,3 +198,8 @@
 @media (prefers-reduced-motion: reduce) {
   .menu-preview { animation: none; }
 }
+
+/* ── Tablet showcase (/demo) ── */
+.demo-nudge { display: inline-block; animation: demo-nudge 1.6s ease-in-out infinite; }
+@keyframes demo-nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) { .demo-nudge { animation: none; } }

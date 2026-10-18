@@ -541,5 +541,144 @@
     "prev": "Servicio anterior",
     "next": "Servicio siguiente",
     "all": "Todos los servicios"
+  },
+  "demo": {
+    "metaTitle": "Hantari — Presentación",
+    "swipe": "Desliza",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "fullscreen": "Pantalla completa",
+    "exitFullscreen": "Salir de pantalla completa",
+    "introEyebrow": "Estudio de software & IA · Timișoara",
+    "introTitle": "Lo digital, al alcance de todos.",
+    "introText": "Digitalizamos negocios, modernizamos software y damos vida a las ideas — con precios y plazos claros, acordados desde el principio.",
+    "servicesEyebrow": "Qué construimos",
+    "servicesTitle": "Cinco cosas, bien hechas.",
+    "howEyebrow": "Cómo trabajamos",
+    "howTitle": "Pasos claros, de la idea al software que funciona.",
+    "projectEyebrow": "Proyecto entregado",
+    "tryLive": "Pruébalo en vivo",
+    "clipNote": "Clip de demostración",
+    "lacta": {
+      "tag": "Aplicación web · Timișoara",
+      "lead": "Un sitio para una consultora de lactancia, con reservas y un asistente de IA.",
+      "points": [
+        "Flujo de reservas online: eliges un horario en el calendario, consulta por video o presencial",
+        "Lacta IA: un asistente de IA en chat que responde preguntas y lleva a reservar",
+        "Bilingüe: rumano y español",
+        "Reseñas, preguntas frecuentes y una guía gratuita para descargar"
+      ]
+    },
+    "pflege": {
+      "tag": "Sitio de presentación · Graz, Austria",
+      "lead": "Un sitio para un servicio de cuidado a domicilio, pensado para traer nuevas solicitudes.",
+      "points": [
+        "Servicios, precios y cómo funciona, claros a primera vista",
+        "Formulario de solicitud guiado: para ti, para un familiar o una primera reunión",
+        "Un blog para artículos y novedades",
+        "Diseño cálido, fácil de usar a cualquier edad"
+      ]
+    },
+    "ideasEyebrow": "Para tu negocio",
+    "ideasTitle": "¿Cómo podría verse para ti?",
+    "ideasHint": "Elige tu sector:",
+    "ideas": [
+      {
+        "id": "clinic",
+        "label": "Consultorio / clínica",
+        "items": [
+          {
+            "t": "Reservas online con recordatorios",
+            "d": "Los pacientes eligen su horario; menos llamadas y menos ausencias."
+          },
+          {
+            "t": "Asistente de IA para preguntas",
+            "d": "Responde 24/7 sobre servicios, precios y preparación, con tu propia información."
+          },
+          {
+            "t": "Formularios digitales",
+            "d": "Los datos del paciente se completan online antes de la visita, directo en tu sistema."
+          }
+        ]
+      },
+      {
+        "id": "shop",
+        "label": "Tienda online",
+        "items": [
+          {
+            "t": "Pedido → factura → etiqueta de envío",
+            "d": "Cada pedido genera la factura y la etiqueta de envío automáticamente."
+          },
+          {
+            "t": "Inventario sincronizado",
+            "d": "Tu tienda, tu depósito y los marketplaces ven el mismo inventario, en tiempo real."
+          },
+          {
+            "t": "Asistente de IA para clientes",
+            "d": "Recomienda productos y responde sobre envíos y devoluciones, a cualquier hora."
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "label": "Restaurante / café",
+        "items": [
+          {
+            "t": "Menú digital y pedidos en la mesa",
+            "d": "Los clientes escanean, piden y pagan desde el teléfono."
+          },
+          {
+            "t": "Reservas online",
+            "d": "Mesas reservadas desde el sitio web, sincronizadas con tu calendario."
+          },
+          {
+            "t": "Informes automáticos",
+            "d": "Ventas y productos más vendidos en tu correo cada mañana."
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "label": "Servicios y oficios",
+        "items": [
+          {
+            "t": "Sitio con solicitud de presupuesto",
+            "d": "Los clientes describen lo que necesitan, con fotos, y recibes todo ordenado."
+          },
+          {
+            "t": "Citas y confirmaciones automáticas",
+            "d": "Calendario online, confirmación y recordatorio, sin llamadas."
+          },
+          {
+            "t": "Presupuestos y facturas automáticos",
+            "d": "Con los detalles del trabajo, el presupuesto y la factura están listos en minutos."
+          }
+        ]
+      },
+      {
+        "id": "realestate",
+        "label": "Inmobiliaria",
+        "items": [
+          {
+            "t": "Sitio de anuncios con filtros",
+            "d": "Propiedades buscables por zona, precio y ambientes, fáciles de actualizar."
+          },
+          {
+            "t": "Asistente de IA para consultas",
+            "d": "Responde al instante a los interesados y agenda visitas."
+          },
+          {
+            "t": "Registro de clientes",
+            "d": "Consultas, visitas y ofertas, todo en un solo lugar."
+          }
+        ]
+      }
+    ],
+    "closeEyebrow": "Próximo paso",
+    "closeTitle": "Construyamos algo juntos.",
+    "closeText": "Cuéntanos qué tienes en mente. Te respondemos en un máximo de 1 día hábil, con un próximo paso claro.",
+    "scan": "Escanea para empezar un proyecto",
+    "fillNow": "Completemos el formulario ahora",
+    "orEmail": "o escríbenos a"
   }
 }

@@ -542,5 +542,144 @@
     "prev": "Serviciul anterior",
     "next": "Serviciul următor",
     "all": "Toate serviciile"
+  },
+  "demo": {
+    "metaTitle": "Hantari — Prezentare",
+    "swipe": "Glisează",
+    "prev": "Înapoi",
+    "next": "Înainte",
+    "fullscreen": "Ecran complet",
+    "exitFullscreen": "Ieși din ecran complet",
+    "introEyebrow": "Studio de software & AI · Timișoara",
+    "introTitle": "Digitalul, la îndemâna oricui.",
+    "introText": "Digitalizăm afaceri, modernizăm software și dăm viață ideilor — cu prețuri și termene clare, stabilite de la început.",
+    "servicesEyebrow": "Ce construim",
+    "servicesTitle": "Cinci lucruri, făcute bine.",
+    "howEyebrow": "Cum lucrăm",
+    "howTitle": "Pași clari, de la idee la software care merge.",
+    "projectEyebrow": "Proiect livrat",
+    "tryLive": "Încearcă live",
+    "clipNote": "Clip demo",
+    "lacta": {
+      "tag": "Aplicație web · Timișoara",
+      "lead": "Site pentru o consultantă în alăptare, cu programări și un asistent AI.",
+      "points": [
+        "Flux de programare online: alegi un interval din calendar, consultație video sau fizic",
+        "Lacta IA: asistent AI în chat care răspunde la întrebări și duce spre programare",
+        "Bilingv: română și spaniolă",
+        "Recenzii, întrebări frecvente și un ghid gratuit de descărcat"
+      ]
+    },
+    "pflege": {
+      "tag": "Site de prezentare · Graz, Austria",
+      "lead": "Site pentru un serviciu de îngrijire la domiciliu, gândit să aducă cereri noi.",
+      "points": [
+        "Servicii, prețuri și pașii colaborării, clar de la prima vedere",
+        "Formular de cerere ghidat: pentru tine, pentru o rudă sau o primă întâlnire",
+        "Blog pentru articole și noutăți",
+        "Design cald, ușor de folosit la orice vârstă"
+      ]
+    },
+    "ideasEyebrow": "Pentru afacerea ta",
+    "ideasTitle": "Cum ar putea arăta pentru tine?",
+    "ideasHint": "Alege domeniul:",
+    "ideas": [
+      {
+        "id": "clinic",
+        "label": "Cabinet / clinică",
+        "items": [
+          {
+            "t": "Programări online cu reminder",
+            "d": "Pacienții își aleg singuri ora; mai puține telefoane și neprezentări."
+          },
+          {
+            "t": "Asistent AI pentru întrebări",
+            "d": "Răspunde 24/7 despre servicii, prețuri și pregătire, din informațiile tale."
+          },
+          {
+            "t": "Formulare digitale",
+            "d": "Datele pacientului completate online înainte de vizită, direct în sistemul tău."
+          }
+        ]
+      },
+      {
+        "id": "shop",
+        "label": "Magazin online",
+        "items": [
+          {
+            "t": "Comandă → factură → AWB",
+            "d": "Fiecare comandă generează automat factura și eticheta de livrare."
+          },
+          {
+            "t": "Stocuri sincronizate",
+            "d": "Magazinul, depozitul și marketplace-urile văd același stoc, în timp real."
+          },
+          {
+            "t": "Asistent AI pentru clienți",
+            "d": "Recomandă produse și răspunde despre livrare și retur, oricând."
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "label": "Restaurant / cafenea",
+        "items": [
+          {
+            "t": "Meniu digital și comenzi la masă",
+            "d": "Clienții scanează, comandă și plătesc de pe telefon."
+          },
+          {
+            "t": "Rezervări online",
+            "d": "Mese rezervate direct de pe site, sincronizate cu calendarul tău."
+          },
+          {
+            "t": "Rapoarte automate",
+            "d": "Vânzările și produsele de top, pe email în fiecare dimineață."
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "label": "Servicii & meserii",
+        "items": [
+          {
+            "t": "Site cu cerere de ofertă",
+            "d": "Clienții descriu ce au nevoie, cu poze, și primești totul organizat."
+          },
+          {
+            "t": "Programări și confirmări automate",
+            "d": "Calendar online, confirmare și reminder, fără apeluri."
+          },
+          {
+            "t": "Oferte și facturi automate",
+            "d": "Din detaliile lucrării, oferta și factura sunt gata în câteva minute."
+          }
+        ]
+      },
+      {
+        "id": "realestate",
+        "label": "Imobiliare",
+        "items": [
+          {
+            "t": "Site cu anunțuri și filtre",
+            "d": "Proprietăți căutabile după zonă, preț și camere, ușor de actualizat."
+          },
+          {
+            "t": "Asistent AI pentru cereri",
+            "d": "Răspunde imediat interesaților și programează vizionări."
+          },
+          {
+            "t": "Evidența clienților",
+            "d": "Cereri, vizionări și oferte, toate într-un singur loc."
+          }
+        ]
+      }
+    ],
+    "closeEyebrow": "Pasul următor",
+    "closeTitle": "Hai să construim ceva împreună.",
+    "closeText": "Spune-ne ce ai în minte. Îți răspundem în cel mult o zi lucrătoare, cu un pas clar înainte.",
+    "scan": "Scanează pentru a începe un proiect",
+    "fillNow": "Completăm formularul acum",
+    "orEmail": "sau scrie-ne la"
   }
 }
