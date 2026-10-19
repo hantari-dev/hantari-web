@@ -27,7 +27,11 @@ const COPY = {
   },
 } as const;
 
-const H_PATH = "M0 492V85L99 0V330L394 75V492H295V272L99 443V492Z";
+// The bridge H (see BRIDGE_* in components/Logo.tsx), as an SVG string on its 66 × 76 grid
+const bridge = (left: string, right: string, id: string, transform = "") =>
+  `<g transform="${transform}"><defs><linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="15.5" y1="0" x2="50.5" y2="0"><stop offset="0" stop-color="${left}"/><stop offset="1" stop-color="${right}"/></linearGradient></defs>` +
+  `<path d="M2 0H15L17 76H0Z" fill="${left}"/><path d="M51 0H64L66 76H49Z" fill="${right}"/>` +
+  `<rect x="15.5" y="32" width="35" height="12" fill="url(#${id})"/></g>`;
 
 // The dusk scene from the home page, with the H standing in the sky.
 const DUSK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 546" width="420" height="546">
@@ -41,13 +45,13 @@ const DUSK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 546" widt
 </radialGradient>
 </defs>
 <rect width="420" height="546" fill="url(#s)"/><rect width="420" height="546" fill="url(#g)"/>
-<path transform="translate(137 120) scale(0.37)" fill="#F4F2ED" d="${H_PATH}"/>
+${bridge("#F4F2ED", "#8FA6F0", "dk", "translate(134 112) scale(2.3)")}
 <path d="M0 430L60 404L120 420L190 386L250 412L320 380L380 404L420 392V546H0Z" fill="#3A416E" opacity="0.75"/>
 <path d="M0 470L70 440L140 462L210 428L280 458L350 432L420 456V546H0Z" fill="#20274A"/>
 <path d="M0 512L90 482L170 500L260 474L340 502L420 484V546H0Z" fill="#0D1224"/>
 </svg>`;
 
-const MARK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 492" width="34" height="42"><path fill="#191A1C" d="${H_PATH}"/></svg>`;
+const MARK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 76" width="37" height="42">${bridge("#191A1C", "#2E4FC4", "lt")}</svg>`;
 
 const svgSrc = (svg: string) => `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
 
@@ -73,7 +77,7 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
       <div style={{ width: "100%", height: "100%", display: "flex", background: "#F4F2ED", padding: 42 }}>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", flex: 1, padding: "22px 48px 18px 30px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <img src={svgSrc(MARK)} width={34} height={42} alt="" />
+            <img src={svgSrc(MARK)} width={37} height={42} alt="" />
             <span style={{ fontFamily: "Plex, PlexExt", fontSize: 24, letterSpacing: 5.5, color: "#191A1C" }}>HANTARI</span>
           </div>
           <div style={{ display: "flex", fontFamily: "Newsreader, NewsreaderExt", fontSize: 60, lineHeight: 1.08, letterSpacing: -1, color: "#191A1C" }}>

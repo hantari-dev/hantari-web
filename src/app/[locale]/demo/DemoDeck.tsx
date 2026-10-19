@@ -160,7 +160,7 @@ function Intro() {
       <DuskArt />
       <div className={`relative flex h-full flex-col justify-between text-[#F4F2ED] ${pad}`}>
         <div className="flex items-center gap-3">
-          <HMark className="h-[28px] w-auto" />
+          <HMark className="h-[28px] w-auto" tone="duo-dark" />
           <span className="text-[16px] font-medium tracking-[0.24em]">HANTARI</span>
         </div>
         <div className="flex max-w-[880px] flex-col gap-6">
