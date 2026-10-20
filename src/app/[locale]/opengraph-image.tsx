@@ -29,8 +29,8 @@ const COPY = {
 
 // The bridge H (see BRIDGE_* in components/Logo.tsx), as an SVG string on its 66 × 76 grid
 const bridge = (left: string, right: string, id: string, transform = "") =>
-  `<g transform="${transform}"><defs><linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="66" y2="0"><stop offset="0" stop-color="${left}"/><stop offset="0.24" stop-color="${left}"/><stop offset="0.76" stop-color="${right}"/><stop offset="1" stop-color="${right}"/></linearGradient></defs>` +
-  `<path d="M3 0H12C13.657 0 15 1.343 15 3V28C15 30.21 16.79 32 19 32H47C49.21 32 51 30.21 51 28V3C51 1.343 52.343 0 54 0H63C64.657 0 66 1.343 66 3V73C66 74.657 64.657 76 63 76H54C52.343 76 51 74.657 51 73V48C51 45.79 49.21 44 47 44H19C16.79 44 15 45.79 15 48V73C15 74.657 13.657 76 12 76H3C1.343 76 0 74.657 0 73V3C0 1.343 1.343 0 3 0Z" fill="url(#${id})"/></g>`;
+  `<g transform="${transform}"><defs><linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="66" y2="0"><stop offset="0" stop-color="${left}"/><stop offset="0.258" stop-color="${left}"/><stop offset="0.742" stop-color="${right}"/><stop offset="1" stop-color="${right}"/></linearGradient></defs>` +
+  `<path d="M1.933 2.532A2.6 2.6 0 0 1 4.532 0L12.468 0A2.6 2.6 0 0 1 15.067 2.532L15.75 28.495A3.6 3.6 0 0 0 19.349 32L46.651 32A3.6 3.6 0 0 0 50.25 28.495L50.933 2.532A2.6 2.6 0 0 1 53.532 0L61.468 0A2.6 2.6 0 0 1 64.067 2.532L65.93 73.332A2.6 2.6 0 0 1 63.331 76L51.669 76A2.6 2.6 0 0 1 49.07 73.332L49.745 47.695A3.6 3.6 0 0 0 46.146 44L19.854 44A3.6 3.6 0 0 0 16.255 47.695L16.93 73.332A2.6 2.6 0 0 1 14.331 76L2.669 76A2.6 2.6 0 0 1 0.07 73.332Z" fill="url(#${id})"/></g>`;
 
 // The dusk scene from the home page, with the H standing in the sky.
 const DUSK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 546" width="420" height="546">
