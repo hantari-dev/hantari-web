@@ -29,9 +29,8 @@ const COPY = {
 
 // The bridge H (see BRIDGE_* in components/Logo.tsx), as an SVG string on its 66 × 76 grid
 const bridge = (left: string, right: string, id: string, transform = "") =>
-  `<g transform="${transform}"><defs><linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="15.5" y1="0" x2="50.5" y2="0"><stop offset="0" stop-color="${left}"/><stop offset="1" stop-color="${right}"/></linearGradient></defs>` +
-  `<path d="M2 0H15L17 76H0Z" fill="${left}"/><path d="M51 0H64L66 76H49Z" fill="${right}"/>` +
-  `<rect x="15.5" y="32" width="35" height="12" fill="url(#${id})"/></g>`;
+  `<g transform="${transform}"><defs><linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="66" y2="0"><stop offset="0" stop-color="${left}"/><stop offset="0.24" stop-color="${left}"/><stop offset="0.76" stop-color="${right}"/><stop offset="1" stop-color="${right}"/></linearGradient></defs>` +
+  `<path d="M3 0H12C13.657 0 15 1.343 15 3V28C15 30.21 16.79 32 19 32H47C49.21 32 51 30.21 51 28V3C51 1.343 52.343 0 54 0H63C64.657 0 66 1.343 66 3V73C66 74.657 64.657 76 63 76H54C52.343 76 51 74.657 51 73V48C51 45.79 49.21 44 47 44H19C16.79 44 15 45.79 15 48V73C15 74.657 13.657 76 12 76H3C1.343 76 0 74.657 0 73V3C0 1.343 1.343 0 3 0Z" fill="url(#${id})"/></g>`;
 
 // The dusk scene from the home page, with the H standing in the sky.
 const DUSK = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 546" width="420" height="546">
