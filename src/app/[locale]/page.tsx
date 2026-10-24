@@ -4,27 +4,19 @@ import { use } from "react";
 import { Link } from "@/i18n/navigation";
 import { CONTACT_EMAIL, type ServiceId } from "@/lib/services";
 import { Reveal } from "@/components/Reveal";
-import {
-  BridgeArt,
-  CityArt,
-  DuskArt,
-  LactaArt,
-  PflegeArt,
-  LoopArt,
-  NightArt,
-  StrataArt,
-  SunriseArt,
-} from "@/components/art/Art";
+import { LactaArt, PflegeArt, NightArt } from "@/components/art/Art";
+import { HeroMosaic } from "@/components/art/HeroMosaic";
+import { SERVICE_ART } from "@/components/art/serviceArt";
 
 const underline =
   "underline decoration-[3px] underline-offset-[10px] transition-colors hover:text-signal max-md:decoration-2 max-md:underline-offset-[6px]";
 
 const SERVICE_CARDS: { id: ServiceId; Art: React.ComponentType; big: boolean }[] = [
-  { id: "apps", Art: CityArt, big: true },
-  { id: "automation", Art: StrataArt, big: true },
-  { id: "ai", Art: LoopArt, big: false },
-  { id: "integrations", Art: BridgeArt, big: false },
-  { id: "modernisation", Art: SunriseArt, big: false },
+  { id: "apps", Art: SERVICE_ART.apps, big: true },
+  { id: "automation", Art: SERVICE_ART.automation, big: true },
+  { id: "ai", Art: SERVICE_ART.ai, big: false },
+  { id: "integrations", Art: SERVICE_ART.integrations, big: false },
+  { id: "modernisation", Art: SERVICE_ART.modernisation, big: false },
 ];
 
 const PROJECTS = [
@@ -62,18 +54,26 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
         </div>
       </section>
 
-      {/* Feature image */}
+      {/* Feature: the work, drifting in a tile (america.gov-style), copy on the right */}
       <section className="container-page pb-16 md:pb-[150px]">
-        <div className="relative h-[420px] overflow-hidden rounded-2xl bg-night md:h-[620px] md:rounded-[22px]">
-          <DuskArt />
-          <div className="absolute inset-0 flex flex-col items-center justify-start gap-5 px-6 pt-10 text-center text-[#F7F3EA] md:justify-center md:pb-[90px] md:pt-0">
-            <p className="eyebrow !text-[#D9DDEA]">{t("featureEyebrow")}</p>
-            <p className="max-w-[820px] font-display text-[34px] leading-[1.06] md:text-[64px] md:leading-[1.04]">
+        <div
+          className="grid items-center gap-9 overflow-hidden rounded-2xl p-5 pb-6 text-[#F7F3EA] sm:p-8 md:rounded-[22px] md:p-12 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:gap-16 lg:p-16"
+          style={{
+            background:
+              "radial-gradient(90% 60% at 15% 110%, rgba(127,139,218,.26), transparent 60%), radial-gradient(70% 70% at 85% 0%, rgba(46,79,196,.24), transparent 60%), #0B1122",
+          }}
+        >
+          <div className="flex flex-col gap-5 pt-2 lg:order-2 lg:pt-0">
+            <p className="eyebrow !text-[#9FB0EE]">{t("featureEyebrow")}</p>
+            <p className="max-w-[520px] font-display text-[38px] leading-[1.04] tracking-[-0.01em] md:text-[56px] lg:text-[64px]">
               {t("featureTitle")}
             </p>
-            <Link href="/#approach" className="hidden rounded-lg bg-[#F7F3EA] px-[18px] py-[11px] text-sm font-medium text-ink transition-opacity hover:opacity-90 md:inline-block">
+            <Link href="/#approach" className="mt-2 w-fit rounded-lg bg-[#F7F3EA] px-[18px] py-[11px] text-sm font-medium text-ink transition-opacity hover:opacity-90">
               {t("featureCta")} →
             </Link>
+          </div>
+          <div className="w-full max-w-[600px] justify-self-center lg:order-1">
+            <HeroMosaic label={t("featureArtLabel")} labels={{ pause: t("motionPause"), play: t("motionPlay") }} />
           </div>
         </div>
       </section>

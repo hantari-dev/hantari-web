@@ -1,11 +1,11 @@
 import type { ServiceId } from "@/lib/services";
-import { BridgeArt, CityArt, LoopArt, StrataArt, SunriseArt } from "./Art";
+import { AIVisual, AppsVisual, AutomationVisual, IntegrationsVisual, ModernVisual } from "./ServiceVisuals";
 
-/** The illustration used for each service (homepage cards and service pages). */
-export const SERVICE_ART: Record<ServiceId, React.ComponentType<{ className?: string }>> = {
-  apps: CityArt,
-  automation: StrataArt,
-  ai: LoopArt,
-  integrations: BridgeArt,
-  modernisation: SunriseArt,
+/** The visual used for each service (homepage cards, service pages, the Services menu and the showcase). */
+export const SERVICE_ART: Record<ServiceId, React.ComponentType> = {
+  apps: AppsVisual,
+  automation: AutomationVisual,
+  ai: AIVisual,
+  integrations: IntegrationsVisual,
+  modernisation: ModernVisual,
 };
