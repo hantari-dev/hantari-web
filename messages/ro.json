@@ -31,9 +31,9 @@
     "apps": {
       "name": "Aplicații web & desktop",
       "line": "Software-ul de care are nevoie afacerea ta",
-      "long": "Construim software-ul de care ai nevoie — instrumente interne și aplicații pentru clienți, făcute să dureze.",
+      "long": "Construim aplicațiile de care ai nevoie — portaluri pentru clienți, instrumente interne și aplicații desktop — ușor de folosit și făcute să dureze.",
       "page": {
-        "intro": "Aplicații web și desktop gândite în jurul oamenilor care le folosesc — de la instrumente interne până la platforme pentru clienții tăi.",
+        "intro": "Aplicații web și desktop gândite în jurul oamenilor care le folosesc — de la instrumente interne până la platforme pentru clienții tăi. Le vezi cum prind formă, cu o versiune de test încă din primele săptămâni, iar codul rămâne al tău.",
         "process": [
           {
             "t": "Descoperire",
@@ -65,13 +65,17 @@
           "Aplicație desktop pentru Windows, când e nevoie",
           "Panou de administrare pentru conținut și date",
           "Găzduire, domeniu și certificat SSL configurate",
-          "Codul sursă și documentația îți aparțin"
+          "Codul sursă și documentația îți aparțin",
+          "Conturi și roluri: fiecare vede doar ce îi trebuie",
+          "Plăți online, notificări pe email sau SMS și rapoarte, unde e nevoie"
         ],
         "fit": [
           "Portaluri pentru clienți și rezervări",
           "Instrumente interne: stocuri, comenzi, rapoarte",
           "Site-uri de prezentare cu funcții reale",
-          "Primul produs (MVP) pentru o idee nouă"
+          "Primul produs (MVP) pentru o idee nouă",
+          "Aplicații de programări, ca Lacta",
+          "Înlocuirea fișierelor Excel folosite de toată echipa"
         ],
         "tools": [
           "Next.js",
@@ -87,9 +91,9 @@
     "automation": {
       "name": "Automatizare",
       "line": "Mai puțină muncă manuală",
-      "long": "Facem ca procesele afacerii tale să meargă cu mai puțină muncă manuală.",
+      "long": "Pașii care se repetă — copiat date, trimis emailuri, făcut facturi și rapoarte — rulează singuri, corect și la timp.",
       "page": {
-        "intro": "Pașii care se repetă — copiat date, trimis emailuri, generat documente — pot rula singuri, corect și la timp, iar echipa ta câștigă ore pentru munca ce contează.",
+        "intro": "Pașii care se repetă — copiat date, trimis emailuri, generat documente — pot rula singuri, corect și la timp, iar echipa ta câștigă ore pentru munca ce contează. Începem cu ce îți consumă cel mai mult timp și îți arătăm, în cifre, câte ore câștigi.",
         "process": [
           {
             "t": "Cartografiere",
@@ -116,13 +120,17 @@
           "Documente, facturi și rapoarte generate automat",
           "Emailuri și notificări trimise la momentul potrivit",
           "Date sincronizate între aplicații, fără copiere manuală",
-          "Un tablou de bord cu tot ce rulează"
+          "Un tablou de bord cu tot ce rulează",
+          "AI care citește emailuri și documente și completează singur datele",
+          "Alerte când ceva nu merge, înainte să observe clienții"
         ],
         "fit": [
           "Rapoarte săptămânale sau lunare",
           "Procesarea comenzilor și a facturilor",
           "Onboarding pentru clienți sau angajați",
-          "Importuri și exporturi de date"
+          "Importuri și exporturi de date",
+          "Reminder-e pentru programări și plăți",
+          "Oferte și contracte generate din șabloane"
         ],
         "tools": [
           "Python",
@@ -137,9 +145,9 @@
     "ai": {
       "name": "Soluții AI",
       "line": "AI care lucrează pentru afacerea ta",
-      "long": "Punem AI la lucru în afacerea ta: asistenți, procesare de documente și căutare care îți cunosc datele.",
+      "long": "Punem AI la lucru în afacerea ta: agenți vocali care răspund la telefon, asistenți care îți cunosc documentele și procesarea automată a facturilor și emailurilor.",
       "page": {
-        "intro": "Asistenți, procesare de documente și căutare inteligentă — AI conectat la datele și instrumentele tale, ca să lucreze pentru afacerea ta.",
+        "intro": "Agenți vocali, asistenți, procesare de documente și căutare inteligentă — AI conectat la datele și instrumentele tale. Începem cu o sarcină concretă, măsurăm rezultatele și păstrăm un om în buclă acolo unde contează.",
         "process": [
           {
             "t": "Alegem sarcina",
@@ -155,7 +163,7 @@
           },
           {
             "t": "Integrare",
-            "d": "Conectăm AI-ul la aplicațiile tale: calendar, email, bază de date, facturare."
+            "d": "Conectăm AI-ul la aplicațiile tale — calendar, email, bază de date, facturare — și, pentru agentul vocal, la linia ta de telefon."
           },
           {
             "t": "Evaluare continuă",
@@ -163,12 +171,17 @@
           }
         ],
         "get": [
+          "Agent vocal care răspunde la telefon 24/7, în română și în alte limbi",
+          "Programări, întrebări frecvente și comenzi preluate prin telefon, cu transfer la un om când e nevoie",
+          "Transcriere și rezumat după fiecare apel, direct în email sau CRM",
           "Asistent care răspunde din documentele tale",
           "Date extrase automat din PDF-uri, facturi și emailuri",
           "Căutare în documente, în limbaj natural",
           "Agenți care fac acțiuni: programări, comenzi, rezumate"
         ],
         "fit": [
+          "Cabinete, clinici și saloane care pierd apeluri",
+          "Linii de suport și call center",
           "Relații cu clienții și întrebări frecvente",
           "Procesarea facturilor și a documentelor",
           "Rezumate de emailuri și rapoarte",
@@ -179,16 +192,18 @@
           "OpenAI",
           "RAG",
           "Agenți & tool use",
-          "PostgreSQL + pgvector"
+          "PostgreSQL + pgvector",
+          "Voice AI (STT / TTS)",
+          "Telefonie VoIP"
         ]
       }
     },
     "integrations": {
       "name": "Integrări",
       "line": "Instrumentele tale — și AI — lucrând împreună",
-      "long": "Facem ca programele pe care le folosești deja să comunice între ele și conectăm AI la instrumentele tale.",
+      "long": "Facem ca programele pe care le folosești deja — magazin, facturare, curieri, calendar — să comunice între ele și conectăm AI la instrumentele tale.",
       "page": {
-        "intro": "Programele pe care le folosești deja pot lucra împreună — datele circulă singure între magazin, facturare, curieri și calendar.",
+        "intro": "Programele pe care le folosești deja pot lucra împreună — datele circulă singure între magazin, facturare, curieri și calendar. Fără copiere manuală și fără greșeli de tastare: o comandă nouă devine factură, AWB și email către client în câteva secunde.",
         "process": [
           {
             "t": "Inventar",
@@ -217,13 +232,15 @@
           "AWB-uri generate automat (FAN Courier, Sameday, Cargus)",
           "Programări sincronizate cu Google Calendar și Meet",
           "Plăți online cu Stripe sau Netopia",
-          "AI peste toate: rezumate, răspunsuri, date extrase"
+          "AI peste toate: rezumate, răspunsuri, date extrase",
+          "Un singur loc în care vezi clienții, comenzile și plățile"
         ],
         "fit": [
           "Magazine online",
           "Cabinete și servicii cu programări",
           "Firme care emit multe facturi",
-          "Echipe care mută date între aplicații"
+          "Echipe care mută date între aplicații",
+          "Afaceri care cresc mai repede decât procesele lor"
         ],
         "tools": [
           "API-uri REST",
@@ -240,9 +257,9 @@
     "modernisation": {
       "name": "Modernizare",
       "line": "Software vechi, la standarde moderne",
-      "long": "Aducem software-ul tău vechi la standarde moderne.",
+      "long": "Aducem software-ul tău vechi la standarde moderne — mai rapid, mai sigur și ușor de întreținut — fără să oprești activitatea.",
       "page": {
-        "intro": "Software-ul care îți ține afacerea în mișcare poate fi adus la zi — mai rapid, mai sigur și ușor de întreținut, fără să oprești activitatea.",
+        "intro": "Software-ul care îți ține afacerea în mișcare poate fi adus la zi — mai rapid, mai sigur și ușor de întreținut, fără să oprești activitatea. Păstrăm ce funcționează, mutăm datele în siguranță și adăugăm ce lipsea: acces de pe telefon, rapoarte și integrări.",
         "process": [
           {
             "t": "Evaluare",
@@ -270,13 +287,15 @@
           "Mutare în cloud (AWS sau Vercel) cu backup-uri automate",
           "Securitate mai bună și acces controlat",
           "Performanță mai bună și costuri de găzduire clare",
-          "Documentație pentru tot sistemul"
+          "Documentație pentru tot sistemul",
+          "Acces de oriunde, inclusiv de pe telefon"
         ],
         "fit": [
           "Aplicații interne folosite de ani de zile",
           "Sisteme care au crescut odată cu afacerea",
           "Servere proprii care pot trece în cloud",
-          "Evidențe în Excel sau Access care au devenit prea mari"
+          "Evidențe în Excel sau Access care au devenit prea mari",
+          "Programe pentru care nu mai există suport"
         ],
         "tools": [
           "AWS",
@@ -298,7 +317,7 @@
     "intro": "Hantari este un studio de software & AI pentru afaceri, organizații și oameni cu o idee — de la prima schiță până la lansare și mai departe, cu prețuri și termene clare, stabilite de la început.",
     "ctaSecondary": "Ce facem",
     "featureEyebrow": "Software & AI",
-    "featureTitle": "Software inteligent pentru idei reale.",
+    "featureTitle": "Mai puțină muncă manuală. Mai mult timp pentru clienți.",
     "featureCta": "Cum lucrăm",
     "featureArtLabel": "Aplicații, site-uri, agenți AI și automatizări construite de Hantari",
     "motionPause": "Pune animația pe pauză",

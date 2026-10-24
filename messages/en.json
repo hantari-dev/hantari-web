@@ -31,9 +31,9 @@
     "apps": {
       "name": "Web & desktop apps",
       "line": "The software your business needs",
-      "long": "We build the software you need — internal tools and customer-facing apps, made to last.",
+      "long": "We build the apps you need — customer portals, internal tools and desktop apps — easy to use and made to last.",
       "page": {
-        "intro": "Web and desktop apps designed around the people who use them — from internal tools to platforms for your customers.",
+        "intro": "Web and desktop apps designed around the people who use them — from internal tools to platforms for your customers. You see them take shape, with a test version in the first weeks, and the code stays yours.",
         "process": [
           {
             "t": "Discovery",
@@ -65,13 +65,17 @@
           "A desktop app for Windows, when needed",
           "An admin panel for your content and data",
           "Hosting, domain and SSL certificate set up",
-          "You own the source code and documentation"
+          "You own the source code and documentation",
+          "Accounts and roles: everyone sees only what they need",
+          "Online payments, email or SMS notifications and reports, where needed"
         ],
         "fit": [
           "Customer portals and booking",
           "Internal tools: stock, orders, reports",
           "Presentation sites with real features",
-          "A first product (MVP) for a new idea"
+          "A first product (MVP) for a new idea",
+          "Booking apps, like Lacta",
+          "Replacing the Excel files the whole team works in"
         ],
         "tools": [
           "Next.js",
@@ -87,9 +91,9 @@
     "automation": {
       "name": "Automation",
       "line": "Less manual work, fewer loops",
-      "long": "We make your business processes run with less manual work.",
+      "long": "The steps that repeat — copying data, sending emails, making invoices and reports — run on their own, correctly and on time.",
       "page": {
-        "intro": "The steps that repeat — copying data, sending emails, creating documents — can run on their own, correctly and on time, giving your team hours back for work that matters.",
+        "intro": "The steps that repeat — copying data, sending emails, creating documents — can run on their own, correctly and on time, giving your team hours back for work that matters. We start with what costs you the most time and show you, in numbers, how many hours you get back.",
         "process": [
           {
             "t": "Mapping",
@@ -116,13 +120,17 @@
           "Documents, invoices and reports created automatically",
           "Emails and notifications sent at the right moment",
           "Data kept in sync between apps, no manual copying",
-          "A dashboard showing everything that runs"
+          "A dashboard showing everything that runs",
+          "AI that reads emails and documents and fills in the data itself",
+          "Alerts when something goes wrong, before your customers notice"
         ],
         "fit": [
           "Weekly or monthly reports",
           "Order and invoice processing",
           "Customer or employee onboarding",
-          "Data imports and exports"
+          "Data imports and exports",
+          "Reminders for appointments and payments",
+          "Quotes and contracts generated from templates"
         ],
         "tools": [
           "Python",
@@ -137,9 +145,9 @@
     "ai": {
       "name": "AI solutions",
       "line": "AI that works for your business",
-      "long": "We put AI to work in your business: assistants, document processing and search that know your data.",
+      "long": "We put AI to work in your business: voice agents that answer the phone, assistants that know your documents, and automatic processing of invoices and emails.",
       "page": {
-        "intro": "Assistants, document processing and smart search — AI connected to your data and tools, working for your business.",
+        "intro": "Voice agents, assistants, document processing and smart search — AI connected to your data and tools. We start with one concrete task, measure the results and keep a person in the loop where it matters.",
         "process": [
           {
             "t": "Choosing the task",
@@ -155,7 +163,7 @@
           },
           {
             "t": "Integration",
-            "d": "We connect the AI to your apps: calendar, email, database, invoicing."
+            "d": "We connect the AI to your apps — calendar, email, database, invoicing — and, for the voice agent, to your phone line."
           },
           {
             "t": "Ongoing evaluation",
@@ -163,12 +171,17 @@
           }
         ],
         "get": [
+          "A voice agent that answers the phone 24/7, in English, Romanian and other languages",
+          "Bookings, common questions and orders taken by phone, with a hand-over to a person when needed",
+          "A transcript and summary after every call, straight to email or your CRM",
           "An assistant that answers from your own documents",
           "Data extracted automatically from PDFs, invoices and emails",
           "Search across documents in plain language",
           "Agents that take actions: bookings, orders, summaries"
         ],
         "fit": [
+          "Clinics, practices and salons that miss calls",
+          "Support lines and call centres",
           "Customer questions and FAQs",
           "Invoice and document processing",
           "Email and report summaries",
@@ -179,16 +192,18 @@
           "OpenAI",
           "RAG",
           "Agents & tool use",
-          "PostgreSQL + pgvector"
+          "PostgreSQL + pgvector",
+          "Voice AI (STT / TTS)",
+          "VoIP telephony"
         ]
       }
     },
     "integrations": {
       "name": "Integrations",
       "line": "Your tools — and AI — working together",
-      "long": "We make your existing software talk to each other, and connect AI to the tools you already use.",
+      "long": "We make the software you already use — shop, invoicing, couriers, calendar — talk to each other, and connect AI to your tools.",
       "page": {
-        "intro": "The software you already use can work together — data flows by itself between your shop, invoicing, couriers and calendar.",
+        "intro": "The software you already use can work together — data flows by itself between your shop, invoicing, couriers and calendar. No manual copying and no typos: a new order becomes an invoice, a shipping label and an email to the customer in seconds.",
         "process": [
           {
             "t": "Inventory",
@@ -217,13 +232,15 @@
           "Shipping labels created automatically (FAN Courier, Sameday, Cargus)",
           "Bookings synced with Google Calendar and Meet",
           "Online payments with Stripe or Netopia",
-          "AI on top: summaries, answers, extracted data"
+          "AI on top: summaries, answers, extracted data",
+          "One place to see customers, orders and payments"
         ],
         "fit": [
           "Online shops",
           "Practices and services that take bookings",
           "Businesses that issue many invoices",
-          "Teams moving data between apps"
+          "Teams moving data between apps",
+          "Businesses growing faster than their processes"
         ],
         "tools": [
           "REST APIs",
@@ -240,9 +257,9 @@
     "modernisation": {
       "name": "Modernisation",
       "line": "Older software, modern standards",
-      "long": "We bring your old software up to modern standards.",
+      "long": "We bring your old software up to modern standards — faster, more secure and easier to maintain — without stopping your work.",
       "page": {
-        "intro": "The software that keeps your business moving can be brought up to date — faster, more secure and easier to maintain, without stopping your work.",
+        "intro": "The software that keeps your business moving can be brought up to date — faster, more secure and easier to maintain, without stopping your work. We keep what works, move your data safely and add what was missing: access from your phone, reports and integrations.",
         "process": [
           {
             "t": "Assessment",
@@ -270,13 +287,15 @@
           "Moved to the cloud (AWS or Vercel) with automatic backups",
           "Better security and controlled access",
           "Better performance and clear hosting costs",
-          "Documentation for the whole system"
+          "Documentation for the whole system",
+          "Access from anywhere, including your phone"
         ],
         "fit": [
           "Internal apps used for years",
           "Systems that grew with the business",
           "Own servers ready to move to the cloud",
-          "Excel or Access records that have grown too big"
+          "Excel or Access records that have grown too big",
+          "Software that's no longer supported"
         ],
         "tools": [
           "AWS",
@@ -298,7 +317,7 @@
     "intro": "Hantari is a software & AI studio for businesses, organisations and people with an idea — from the first sketch to launch and beyond, with clear prices and deadlines agreed up front.",
     "ctaSecondary": "What we do",
     "featureEyebrow": "Software & AI",
-    "featureTitle": "Intelligent software for real ideas.",
+    "featureTitle": "Less manual work. More time for your customers.",
     "featureCta": "How we work",
     "featureArtLabel": "Apps, websites, AI agents and automations built by Hantari",
     "motionPause": "Pause the animation",

@@ -65,7 +65,7 @@ export default function HomePage({ params }: PageProps<"/[locale]">) {
         >
           <div className="flex flex-col gap-5 pt-2 lg:order-2 lg:pt-0">
             <p className="eyebrow !text-[#9FB0EE]">{t("featureEyebrow")}</p>
-            <p className="max-w-[520px] font-display text-[38px] leading-[1.04] tracking-[-0.01em] md:text-[56px] lg:text-[64px]">
+            <p className="max-w-[540px] font-display text-[36px] leading-[1.05] tracking-[-0.01em] md:text-[52px] lg:text-[58px]">
               {t("featureTitle")}
             </p>
             <Link href="/#approach" className="mt-2 w-fit rounded-lg bg-[#F7F3EA] px-[18px] py-[11px] text-sm font-medium text-ink transition-opacity hover:opacity-90">

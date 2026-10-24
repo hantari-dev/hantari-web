@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { SmallDuskArt } from "@/components/art/Art";
+import { FormFillVisual } from "@/components/art/ServiceVisuals";
 import { CONTACT_EMAIL, FORM_OPTIONS, type FormOption } from "@/lib/services";
 import { StartForm } from "./StartForm";
 
@@ -28,8 +28,8 @@ export default async function StartPage({ params, searchParams }: PageProps<"/[l
           <h1 className="font-display text-[42px] leading-[1.02] tracking-[-0.015em] md:text-[56px]">{t("title")}</h1>
           <p className="text-[17px] leading-relaxed text-graphite">{t("intro")}</p>
         </div>
-        <div className="relative hidden h-[220px] overflow-hidden rounded-2xl lg:block">
-          <SmallDuskArt />
+        <div className="relative hidden h-[300px] overflow-hidden rounded-2xl lg:block">
+          <FormFillVisual />
         </div>
         <div className="hidden flex-col border-t border-hairline lg:flex">
           <p className="eyebrow pb-1.5 pt-5 !text-[11px]">{t("nextTitle")}</p>

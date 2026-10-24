@@ -31,9 +31,9 @@
     "apps": {
       "name": "Aplicaciones web & de escritorio",
       "line": "El software que tu negocio necesita",
-      "long": "Creamos el software que necesitas — herramientas internas y aplicaciones para tus clientes, hechas para durar.",
+      "long": "Creamos las aplicaciones que necesitas — portales para clientes, herramientas internas y aplicaciones de escritorio — fáciles de usar y hechas para durar.",
       "page": {
-        "intro": "Aplicaciones web y de escritorio pensadas para las personas que las usan — desde herramientas internas hasta plataformas para tus clientes.",
+        "intro": "Aplicaciones web y de escritorio pensadas para las personas que las usan — desde herramientas internas hasta plataformas para tus clientes. Las ves tomar forma, con una versión de prueba desde las primeras semanas, y el código es tuyo.",
         "process": [
           {
             "t": "Descubrimiento",
@@ -65,13 +65,17 @@
           "Una aplicación de escritorio para Windows, cuando haga falta",
           "Un panel de administración para tu contenido y tus datos",
           "Hosting, dominio y certificado SSL configurados",
-          "El código fuente y la documentación son tuyos"
+          "El código fuente y la documentación son tuyos",
+          "Cuentas y roles: cada persona ve solo lo que necesita",
+          "Pagos online, notificaciones por correo o SMS e informes, donde haga falta"
         ],
         "fit": [
           "Portales para clientes y reservas",
           "Herramientas internas: inventario, pedidos, informes",
           "Sitios de presentación con funciones reales",
-          "Un primer producto (MVP) para una idea nueva"
+          "Un primer producto (MVP) para una idea nueva",
+          "Aplicaciones de reservas, como Lacta",
+          "Sustituir las hojas de Excel que usa todo el equipo"
         ],
         "tools": [
           "Next.js",
@@ -87,9 +91,9 @@
     "automation": {
       "name": "Automatización",
       "line": "Menos trabajo manual, menos idas y vueltas",
-      "long": "Hacemos que los procesos de tu negocio funcionen con menos trabajo manual.",
+      "long": "Los pasos que se repiten — copiar datos, enviar correos, hacer facturas e informes — funcionan solos, sin errores y a tiempo.",
       "page": {
-        "intro": "Los pasos que se repiten — copiar datos, enviar correos, generar documentos — pueden funcionar solos, sin errores y a tiempo, y tu equipo recupera horas para el trabajo que importa.",
+        "intro": "Los pasos que se repiten — copiar datos, enviar correos, generar documentos — pueden funcionar solos, sin errores y a tiempo, y tu equipo recupera horas para el trabajo que importa. Empezamos por lo que más tiempo te quita y te mostramos, en cifras, cuántas horas recuperas.",
         "process": [
           {
             "t": "Mapeo",
@@ -116,13 +120,17 @@
           "Documentos, facturas e informes generados automáticamente",
           "Correos y notificaciones enviados en el momento justo",
           "Datos sincronizados entre aplicaciones, sin copiar a mano",
-          "Un panel donde ves todo lo que está funcionando"
+          "Un panel donde ves todo lo que está funcionando",
+          "IA que lee correos y documentos y completa los datos sola",
+          "Alertas cuando algo falla, antes de que lo noten tus clientes"
         ],
         "fit": [
           "Informes semanales o mensuales",
           "Procesamiento de pedidos y facturas",
           "Incorporación de clientes o empleados",
-          "Importación y exportación de datos"
+          "Importación y exportación de datos",
+          "Recordatorios de citas y pagos",
+          "Presupuestos y contratos generados a partir de plantillas"
         ],
         "tools": [
           "Python",
@@ -137,9 +145,9 @@
     "ai": {
       "name": "Soluciones de IA",
       "line": "IA que trabaja para tu negocio",
-      "long": "Ponemos la IA a trabajar en tu negocio: asistentes, procesamiento de documentos y búsquedas que conocen tus datos.",
+      "long": "Ponemos la IA a trabajar en tu negocio: agentes de voz que atienden el teléfono, asistentes que conocen tus documentos y el procesamiento automático de facturas y correos.",
       "page": {
-        "intro": "Asistentes, procesamiento de documentos y búsqueda inteligente — IA conectada a tus datos y herramientas, trabajando para tu negocio.",
+        "intro": "Agentes de voz, asistentes, procesamiento de documentos y búsqueda inteligente — IA conectada a tus datos y herramientas. Empezamos por una tarea concreta, medimos los resultados y mantenemos a una persona en el proceso donde importa.",
         "process": [
           {
             "t": "Elegir la tarea",
@@ -155,7 +163,7 @@
           },
           {
             "t": "Integración",
-            "d": "Conectamos la IA a tus aplicaciones: calendario, correo, base de datos, facturación."
+            "d": "Conectamos la IA a tus aplicaciones — calendario, correo, base de datos, facturación — y, para el agente de voz, a tu línea telefónica."
           },
           {
             "t": "Evaluación continua",
@@ -163,12 +171,17 @@
           }
         ],
         "get": [
+          "Un agente de voz que atiende el teléfono 24/7, en español, rumano y otros idiomas",
+          "Citas, preguntas frecuentes y pedidos por teléfono, con traspaso a una persona cuando hace falta",
+          "Transcripción y resumen de cada llamada, directo a tu correo o CRM",
           "Un asistente que responde a partir de tus propios documentos",
           "Datos extraídos automáticamente de PDF, facturas y correos",
           "Búsqueda en tus documentos con lenguaje natural",
           "Agentes que realizan acciones: reservas, pedidos, resúmenes"
         ],
         "fit": [
+          "Consultorios, clínicas y salones que pierden llamadas",
+          "Líneas de soporte y centros de llamadas",
           "Preguntas de clientes y preguntas frecuentes",
           "Procesamiento de facturas y documentos",
           "Resúmenes de correos e informes",
@@ -179,16 +192,18 @@
           "OpenAI",
           "RAG",
           "Agentes y uso de herramientas",
-          "PostgreSQL + pgvector"
+          "PostgreSQL + pgvector",
+          "IA de voz (STT / TTS)",
+          "Telefonía VoIP"
         ]
       }
     },
     "integrations": {
       "name": "Integraciones",
       "line": "Tus herramientas — y la IA — trabajando juntas",
-      "long": "Hacemos que los programas que ya usas se comuniquen entre sí y conectamos la IA a tus herramientas.",
+      "long": "Hacemos que los programas que ya usas — tienda, facturación, envíos, calendario — se comuniquen entre sí y conectamos la IA a tus herramientas.",
       "page": {
-        "intro": "El software que ya usas puede trabajar en conjunto — los datos fluyen solos entre tu tienda, la facturación, los envíos y el calendario.",
+        "intro": "El software que ya usas puede trabajar en conjunto — los datos fluyen solos entre tu tienda, la facturación, los envíos y el calendario. Sin copiar a mano y sin errores de tecleo: un pedido nuevo se convierte en factura, etiqueta de envío y correo al cliente en segundos.",
         "process": [
           {
             "t": "Inventario",
@@ -217,13 +232,15 @@
           "Etiquetas de envío generadas automáticamente con tu empresa de mensajería",
           "Reservas sincronizadas con Google Calendar y Meet",
           "Pagos online con Stripe, PayPal u otras pasarelas",
-          "IA por encima: resúmenes, respuestas, datos extraídos"
+          "IA por encima: resúmenes, respuestas, datos extraídos",
+          "Un solo lugar para ver clientes, pedidos y pagos"
         ],
         "fit": [
           "Tiendas online",
           "Consultorios y servicios que trabajan con reservas",
           "Negocios que emiten muchas facturas",
-          "Equipos que mueven datos entre aplicaciones"
+          "Equipos que mueven datos entre aplicaciones",
+          "Negocios que crecen más rápido que sus procesos"
         ],
         "tools": [
           "APIs REST",
@@ -239,9 +256,9 @@
     "modernisation": {
       "name": "Modernización",
       "line": "Software antiguo, estándares modernos",
-      "long": "Llevamos tu software antiguo a los estándares actuales.",
+      "long": "Llevamos tu software antiguo a los estándares actuales — más rápido, más seguro y más fácil de mantener — sin detener tu trabajo.",
       "page": {
-        "intro": "El software que mantiene en marcha tu negocio se puede actualizar — más rápido, más seguro y más fácil de mantener, sin detener tu trabajo.",
+        "intro": "El software que mantiene en marcha tu negocio se puede actualizar — más rápido, más seguro y más fácil de mantener, sin detener tu trabajo. Conservamos lo que funciona, migramos tus datos con seguridad y añadimos lo que faltaba: acceso desde el móvil, informes e integraciones.",
         "process": [
           {
             "t": "Evaluación",
@@ -269,13 +286,15 @@
           "Migrada a la nube (AWS o Vercel) con copias de seguridad automáticas",
           "Más seguridad y accesos controlados",
           "Mejor rendimiento y gastos de hosting claros",
-          "Documentación de todo el sistema"
+          "Documentación de todo el sistema",
+          "Acceso desde cualquier lugar, también desde el móvil"
         ],
         "fit": [
           "Aplicaciones internas usadas durante años",
           "Sistemas que crecieron junto con el negocio",
           "Servidores propios listos para pasar a la nube",
-          "Registros en Excel o Access que ya se quedaron pequeños"
+          "Registros en Excel o Access que ya se quedaron pequeños",
+          "Programas que ya no tienen soporte"
         ],
         "tools": [
           "AWS",
@@ -297,7 +316,7 @@
     "intro": "Hantari es un estudio de software & IA para empresas, organizaciones y personas con una idea — desde el primer boceto hasta el lanzamiento y después, con precios y plazos claros, acordados desde el principio.",
     "ctaSecondary": "Qué hacemos",
     "featureEyebrow": "Software & IA",
-    "featureTitle": "Software inteligente para ideas reales.",
+    "featureTitle": "Menos trabajo manual. Más tiempo para tus clientes.",
     "featureCta": "Cómo trabajamos",
     "featureArtLabel": "Aplicaciones, sitios web, agentes de IA y automatizaciones creados por Hantari",
     "motionPause": "Pausar la animación",

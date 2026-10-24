@@ -113,7 +113,7 @@ const HantariSite = () => (
   <Browser url="hantari.ro" w={300} h={190}>
     <div style={{ height: "100%", background: "linear-gradient(180deg,#0B1122 0%,#1B2A55 40%,#3F5596 62%,#7F8BDA 84%,#DDE2FF 100%)", position: "relative", fontFamily: SERIF, textAlign: "center", color: "#F4F2ED" }}>
       <div style={{ fontFamily: MONO, fontSize: 6, letterSpacing: ".25em", paddingTop: 30, opacity: 0.8 }}>SOFTWARE &amp; AI</div>
-      <div style={{ fontSize: 17, lineHeight: 1.05, marginTop: 6 }}>Software inteligent<br />pentru idei reale.</div>
+      <div style={{ fontSize: 16, lineHeight: 1.08, marginTop: 6 }}>Mai puțină muncă manuală.<br />Mai mult timp pentru clienți.</div>
       <svg viewBox="0 0 300 70" style={{ position: "absolute", left: 0, bottom: 0, width: "100%" }} preserveAspectRatio="none">
         <path d="M0 40L40 22L80 34L130 12L170 30L220 10L260 26L300 18V70H0Z" fill="#3A416E" opacity=".8" />
         <path d="M0 55L50 36L100 50L150 30L200 48L250 34L300 46V70H0Z" fill="#20274A" />

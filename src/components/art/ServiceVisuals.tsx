@@ -57,6 +57,7 @@ const BG = {
   violet: "radial-gradient(60% 80% at 25% 15%,#F3EEFF 0%,rgba(243,238,255,0) 60%),radial-gradient(70% 80% at 85% 90%,#5B47D6 0%,rgba(91,71,214,0) 70%),radial-gradient(60% 70% at 70% 30%,#B9A8FF 0%,rgba(185,168,255,0) 70%),linear-gradient(140deg,#E7E1FF 0%,#9E8CF2 55%,#4B3BC2 100%)",
   mint: "radial-gradient(70% 80% at 20% 85%,#FFFFFF 0%,rgba(255,255,255,0) 55%),radial-gradient(60% 80% at 90% 10%,#2FB5A8 0%,rgba(47,181,168,0) 70%),radial-gradient(70% 70% at 55% 50%,#A6EADF 0%,rgba(166,234,223,0) 70%),linear-gradient(150deg,#E2FAF5 0%,#8FDCD0 50%,#2E9C93 100%)",
   stone: "radial-gradient(70% 80% at 15% 15%,#FFFFFF 0%,rgba(255,255,255,0) 60%),radial-gradient(70% 80% at 90% 90%,#7B8AA8 0%,rgba(123,138,168,0) 70%),linear-gradient(145deg,#EEF0F4 0%,#C3CAD8 55%,#6C7A97 100%)",
+  mist: "radial-gradient(70% 80% at 20% 15%,#FFFFFF 0%,rgba(255,255,255,0) 60%),radial-gradient(70% 90% at 90% 95%,#7F8BDA 0%,rgba(127,139,218,0) 70%),linear-gradient(150deg,#F2F4FF 0%,#C9D1F6 55%,#8494DE 100%)",
   dawn: "radial-gradient(40% 110% at 74% 0%,#FFFFFF 0%,rgba(255,255,255,0) 70%),radial-gradient(60% 90% at 96% 100%,#C9D2FF 0%,rgba(201,210,255,0) 70%),radial-gradient(60% 100% at 8% 100%,#3F5596 0%,rgba(63,85,150,0) 70%),linear-gradient(120deg,#141E44 0%,#33407E 38%,#7F8BDA 72%,#DDE2FF 100%)",
 };
 
@@ -415,6 +416,14 @@ const CSS = `
 .sv-l2{animation:sv-l2 14s ease-out infinite}@keyframes sv-l2{0%,34.3%{opacity:0;transform:translateY(6px)}37.3%,91%{opacity:1;transform:none}96%,100%{opacity:0;transform:none}}
 .sv-l3{animation:sv-l3 14s ease-out infinite}@keyframes sv-l3{0%,50.0%{opacity:0;transform:translateY(6px)}53.0%,91%{opacity:1;transform:none}96%,100%{opacity:0;transform:none}}
 .sv-l4{animation:sv-l4 14s ease-out infinite}@keyframes sv-l4{0%,64.3%{opacity:0;transform:translateY(6px)}67.3%,91%{opacity:1;transform:none}96%,100%{opacity:0;transform:none}}
+.sv-chip{font-size:8.5px;padding:6px 10px;border-radius:14px;border:1px solid;transition:background .3s,color .3s,border-color .3s}
+.sv-field{display:flex;align-items:center;min-height:26px;margin-top:5px;padding:6px 9px;border:1px solid #E4E1DA;border-radius:8px;background:#fff;font-size:9px;color:${ink}}
+.sv-btn{font-size:9px;font-weight:500;background:${ink};color:#fff;padding:8px 13px;border-radius:8px;transition:transform .15s,background .15s}
+.sv-btn.is-send{background:${signal}}
+.sv-btn.is-press{transform:scale(.94);background:#3A3C42}
+.sv-btn.is-send.is-press{background:#2440A6}
+.sv-okring{width:46px;height:46px;border-radius:50%;background:#2FB36A;display:grid;place-items:center;animation:sv-okring 1.6s ease-out infinite}
+@keyframes sv-okring{0%{box-shadow:0 0 0 0 rgba(47,179,106,.45)}100%{box-shadow:0 0 0 14px rgba(47,179,106,0)}}
 .sv-grow{transform-origin:left;animation:sv-grow 5s ease-in-out infinite alternate}
 .sv-pick{animation:sv-pick 2.6s ease-in-out infinite}
 .sv-arrow path:first-child{animation:sv-dash 3s linear infinite}
@@ -443,3 +452,97 @@ const CSS = `
 
 export const SERVICE_VISUALS = { apps: AppsVisual, automation: AutomationVisual, ai: AIVisual, integrations: IntegrationsVisual, modernisation: ModernVisual } as const;
 export type { Locale as ServiceVisualLocale };
+
+/* ─────────────── Start page · the project form filling itself in ─────────────── */
+const F = {
+  ro: { step: "Pasul {n} din 3", s1: "Cu ce te putem ajuta?", opts: ["Aplicații", "Automatizare", "Soluții AI", "Integrări", "Modernizare"], next: "Continuă", s2: "Povestește-ne.", label2: "Ce ai în minte?", text: "Vrem ca clienții să-și facă singuri programările online și să primească reminder pe SMS.", s3: "Cum te putem contacta?", name: "Nume", nameV: "Andreea Popa", emailV: "andreea@salon-ana.ro", send: "Trimite", ok: "Mulțumim!", okSub: "Îți răspundem în cel mult o zi lucrătoare.", toast: "Email de confirmare trimis", label: "Formularul de proiect, completat pas cu pas" },
+  en: { step: "Step {n} of 3", s1: "How can we help?", opts: ["Apps", "Automation", "AI solutions", "Integrations", "Modernisation"], next: "Continue", s2: "Tell us about it.", label2: "What do you have in mind?", text: "We'd like customers to book online by themselves and get an SMS reminder.", s3: "How can we reach you?", name: "Name", nameV: "Anna Becker", emailV: "anna@salon-ana.com", send: "Send", ok: "Thank you!", okSub: "We'll reply within one business day.", toast: "Confirmation email sent", label: "The project form, filled in step by step" },
+  es: { step: "Paso {n} de 3", s1: "¿Cómo podemos ayudarte?", opts: ["Aplicaciones", "Automatización", "IA", "Integraciones", "Modernización"], next: "Continuar", s2: "Cuéntanos.", label2: "¿Qué tienes en mente?", text: "Queremos que los clientes reserven online solos y reciban un recordatorio por SMS.", s3: "¿Cómo te contactamos?", name: "Nombre", nameV: "Lucía Gómez", emailV: "lucia@salon-ana.es", send: "Enviar", ok: "¡Gracias!", okSub: "Te respondemos en un día laborable como máximo.", toast: "Correo de confirmación enviado", label: "El formulario de proyecto, completado paso a paso" },
+} as const;
+
+// one loop, in ms: step 1 → step 2 (typing) → step 3 (contact) → sent
+const LOOP = 15500;
+const typed = (s: string, t: number, from: number, to: number) => s.slice(0, Math.max(0, Math.min(s.length, Math.round(((t - from) / (to - from)) * s.length))));
+
+export function FormFillVisual({ locale }: { locale?: Locale }) {
+  const active = useLocale() as Locale;
+  const c = F[locale ?? active];
+  const ref = useRef<HTMLDivElement>(null);
+  const [t, setT] = useState(10900); // server render & reduced motion: the filled-in last step
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let now = 0;
+    const id = setInterval(() => {
+      if (ref.current?.closest("[data-paused]")) return;
+      now = (now + 50) % LOOP;
+      setT(now);
+    }, 50);
+    return () => clearInterval(id);
+  }, []);
+
+  const step = t < 3200 ? 1 : t < 8200 ? 2 : t < 11800 ? 3 : 4;
+  const picked = [t > 900, t > 1700];
+  const press = (at: number) => (t > at && t < at + 350 ? " is-press" : "");
+  const caret = <span className="sv-caret" />;
+
+  return (
+    <Visual bg={BG.mist} label={c.label} crop={[360, 300]}>
+      <div ref={ref} className="sv-card" style={{ left: 150, top: 62, width: 340, minHeight: 270, padding: "16px 18px", borderRadius: 16 }}>
+        {step < 4 ? (
+          <>
+            <div style={{ fontFamily: MONO, fontSize: 7.5, letterSpacing: ".18em", color: "#5B5E63" }}>{c.step.replace("{n}", String(step)).toUpperCase()}</div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 4, marginTop: 8 }}>
+              {[1, 2, 3].map((n) => <span key={n} style={{ height: 3, borderRadius: 2, background: n <= step ? ink : "#E4E1DA", transition: "background .4s" }} />)}
+            </div>
+            <div key={step} className="sv-swap">
+              {step === 1 && (
+                <>
+                  <div style={{ fontFamily: SERIF, fontSize: 21, color: ink, marginTop: 16 }}>{c.s1}</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 14 }}>
+                    {c.opts.map((o, i) => {
+                      const on = (i === 1 && picked[0]) || (i === 2 && picked[1]);
+                      return <span key={o} className="sv-chip" style={{ background: on ? ink : "#fff", color: on ? "#fff" : ink, borderColor: on ? ink : "#E4E1DA" }}>{on ? "✓ " : ""}{o}</span>;
+                    })}
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 46 }}><span className={`sv-btn${press(2700)}`}>{c.next} →</span></div>
+                </>
+              )}
+              {step === 2 && (
+                <>
+                  <div style={{ fontFamily: SERIF, fontSize: 21, color: ink, marginTop: 16 }}>{c.s2}</div>
+                  <div style={{ fontSize: 8.5, fontWeight: 500, color: ink, marginTop: 12 }}>{c.label2}</div>
+                  <div className="sv-field" style={{ minHeight: 70, alignItems: "flex-start", lineHeight: 1.5 }}><span>{typed(c.text, t, 3600, 7200)}{caret}</span></div>
+                  <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 16 }}><span className={`sv-btn${press(7700)}`}>{c.next} →</span></div>
+                </>
+              )}
+              {step === 3 && (
+                <>
+                  <div style={{ fontFamily: SERIF, fontSize: 21, color: ink, marginTop: 16 }}>{c.s3}</div>
+                  <div style={{ fontSize: 8.5, fontWeight: 500, color: ink, marginTop: 12 }}>{c.name}</div>
+                  <div className="sv-field"><span>{typed(c.nameV, t, 8500, 9400)}{t < 9450 && caret}</span></div>
+                  <div style={{ fontSize: 8.5, fontWeight: 500, color: ink, marginTop: 9 }}>Email</div>
+                  <div className="sv-field"><span>{typed(c.emailV, t, 9600, 10700)}{t >= 9450 && caret}</span></div>
+                  <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 14 }}><span className={`sv-btn is-send${press(11300)}`}>{c.send} →</span></div>
+                </>
+              )}
+            </div>
+          </>
+        ) : (
+          <div className="sv-swap" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", paddingTop: 54 }}>
+            <span className="sv-okring"><svg viewBox="0 0 24 24" width="22"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
+            <div style={{ fontFamily: SERIF, fontSize: 24, color: ink, marginTop: 16 }}>{c.ok}</div>
+            <div style={{ fontSize: 9, color: "#5B5E63", marginTop: 6, maxWidth: 220 }}>{c.okSub}</div>
+          </div>
+        )}
+      </div>
+      {step === 4 && (
+        <div className="sv-card sv-swap" style={{ left: 186, top: 300, width: 248, padding: "9px 11px", display: "flex", alignItems: "center", gap: 9, borderRadius: 12 }}>
+          <span style={{ width: 24, height: 24, borderRadius: 7, background: "#E9EEFC", color: signal, display: "grid", placeItems: "center", flex: "none" }}>
+            <svg viewBox="0 0 16 16" width="12"><rect x="1.5" y="3" width="13" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="1.4" /><path d="M2 4l6 5 6-5" fill="none" stroke="currentColor" strokeWidth="1.4" /></svg>
+          </span>
+          <div style={{ fontSize: 8.5, color: ink }}><div style={{ fontWeight: 600 }}>{c.toast}</div><div style={{ color: "#5B5E63", marginTop: 2 }}>{c.emailV}</div></div>
+        </div>
+      )}
+    </Visual>
+  );
+}
