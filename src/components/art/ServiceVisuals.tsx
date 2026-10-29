@@ -12,7 +12,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useLocale } from "next-intl";
 
-type Locale = "ro" | "en" | "es";
+type Locale = "ro" | "en" | "es" | "de";
 const SANS = "var(--sv-sans, 'IBM Plex Sans', system-ui, sans-serif)";
 const SERIF = "var(--sv-serif, 'Newsreader', Georgia, serif)";
 const MONO = "var(--sv-mono, 'IBM Plex Mono', ui-monospace, monospace)";
@@ -44,6 +44,14 @@ const T = {
     int: { ok: "sincronizado", msg: { hantari: ["Todo conectado", "Tus aplicaciones trabajando juntas"], mail: ["Email", "Consulta nueva → cliente creado en el CRM"], inv: ["Facturación", "Pedido pagado → factura emitida"], cal: ["Calendario", "Reserva nueva → recordatorio enviado"], chat: ["Mensajería", "Mensaje del cliente → respuesta con IA"], db: ["Base de datos", "Inventario actualizado en tiempo real"], pay: ["Pagos", "Pago recibido → pedido confirmado"], shop: ["Tienda online", "Pedido nuevo → factura → email"] } },
     mod: { old: "Gestión v2.3", neu: "Inventario", before: "Antes", after: "Después", items: ["Rosas rojas", "Tulipanes blancos", "Papel kraft"], unit: "uds", menu: "Archivo  Editar  Informes  Ayuda", cols: ["Artículo", "Código", "Cant.", "Precio"], rows: ["Rosa roja", "Tulipán blanco", "Envoltorio", "Crisantemo", "Cinta", "Tarjeta", "Jarrón", "Esponja"] },
     idea: { note: "Idea: reservas online para el salón, con recordatorio por SMS", app: "Salón Ana", slot: "Elige la hora", btn: "Reservar", step: "De la idea a la app", svc: "Corte · Color · Peinado" },
+  },
+  de: {
+    apps: { url: "app.blumen-iris.at/bestellungen", title: "Bestellungen", today: "Heute · 24. Okt.", cols: ["Kunde", "Lieferung", "Summe", "Status"], st: ["Neu", "In Arbeit", "Geliefert"], nav: ["Übersicht", "Bestellungen", "Produkte", "Kunden", "Berichte"], phone: "Bestellung #1042", phoneSub: "Lieferung heute, 16:00", phoneBtn: "Bestätigen", lines: ["Strauß mit 15 Rosen", "Grußkarte"], cur: "€", fx: 5 },
+    auto: { head: "Automatischer Ablauf", steps: ["Neue E-Mail von einem Kunden", "KI liest die Daten aus", "Rechnung erstellt", "An die Buchhaltung gesendet"], meta: ["jetzt", "0,8 s", "1,2 s", "2,0 s"], done: "Diesen Monat 1.284-mal ausgeführt" },
+    ai: { title: "KI-Sprachagent", live: "Im Gespräch", biz: "Zahnarztpraxis Lächeln", caller: "Eingehender Anruf · ••• ••• 214", tr: "Live-Transkript", lines: ["Grüß Gott, ich hätte gern einen Termin für eine Mundhygiene.", "Gerne! Frei ist Donnerstag um 11:30 oder Freitag um 15:00.", "Donnerstag um 11:30 passt perfekt.", "Erledigt, Sie bekommen gleich eine Bestätigung per SMS. Schönen Tag noch!"], done: "Termin gebucht", doneSub: "Do., 11:30 · SMS gesendet · Kalender aktualisiert" },
+    int: { ok: "synchronisiert", msg: { hantari: ["Alles verbunden", "Ihre Anwendungen arbeiten zusammen"], mail: ["E-Mail", "Neue Anfrage → Kunde im CRM angelegt"], inv: ["Rechnungen", "Bestellung bezahlt → Rechnung erstellt"], cal: ["Kalender", "Neuer Termin → Erinnerung gesendet"], chat: ["Nachrichten", "Kundennachricht → Antwort mit KI"], db: ["Datenbank", "Lagerbestand in Echtzeit aktualisiert"], pay: ["Zahlungen", "Zahlung erhalten → Bestellung bestätigt"], shop: ["Onlineshop", "Neue Bestellung → Rechnung → E-Mail"] } },
+    mod: { old: "Warenwirtschaft v2.3", neu: "Lager", before: "Vorher", after: "Nachher", items: ["Rote Rosen", "Weiße Tulpen", "Kraftpapier"], unit: "Stk.", menu: "Datei  Bearbeiten  Berichte  Hilfe", cols: ["Artikel", "Code", "Menge", "Preis"], rows: ["Rote Rose", "Weiße Tulpe", "Verpackung", "Chrysantheme", "Schleife", "Karte", "Vase", "Steckschaum"] },
+    idea: { note: "Idee: Online-Termine für den Salon, mit SMS-Erinnerung", app: "Salon Ana", slot: "Uhrzeit wählen", btn: "Buchen", step: "Von der Idee zur App", svc: "Schnitt · Farbe · Styling" },
   },
 } as const;
 
@@ -458,6 +466,7 @@ const F = {
   ro: { step: "Pasul {n} din 3", s1: "Cu ce te putem ajuta?", opts: ["Aplicații", "Automatizare", "Soluții AI", "Integrări", "Modernizare"], next: "Continuă", s2: "Povestește-ne.", label2: "Ce ai în minte?", text: "Vrem ca clienții să-și facă singuri programările online și să primească reminder pe SMS.", s3: "Cum te putem contacta?", name: "Nume", nameV: "Andreea Popa", emailV: "andreea@salon-ana.ro", send: "Trimite", ok: "Mulțumim!", okSub: "Îți răspundem în cel mult o zi lucrătoare.", toast: "Email de confirmare trimis", label: "Formularul de proiect, completat pas cu pas" },
   en: { step: "Step {n} of 3", s1: "How can we help?", opts: ["Apps", "Automation", "AI solutions", "Integrations", "Modernisation"], next: "Continue", s2: "Tell us about it.", label2: "What do you have in mind?", text: "We'd like customers to book online by themselves and get an SMS reminder.", s3: "How can we reach you?", name: "Name", nameV: "Anna Becker", emailV: "anna@salon-ana.com", send: "Send", ok: "Thank you!", okSub: "We'll reply within one business day.", toast: "Confirmation email sent", label: "The project form, filled in step by step" },
   es: { step: "Paso {n} de 3", s1: "¿Cómo podemos ayudarte?", opts: ["Aplicaciones", "Automatización", "IA", "Integraciones", "Modernización"], next: "Continuar", s2: "Cuéntanos.", label2: "¿Qué tienes en mente?", text: "Queremos que los clientes reserven online solos y reciban un recordatorio por SMS.", s3: "¿Cómo te contactamos?", name: "Nombre", nameV: "Lucía Gómez", emailV: "lucia@salon-ana.es", send: "Enviar", ok: "¡Gracias!", okSub: "Te respondemos en un día laborable como máximo.", toast: "Correo de confirmación enviado", label: "El formulario de proyecto, completado paso a paso" },
+  de: { step: "Schritt {n} von 3", s1: "Wobei können wir helfen?", opts: ["Apps", "Automatisierung", "KI-Lösungen", "Integrationen", "Modernisierung"], next: "Weiter", s2: "Erzählen Sie uns davon.", label2: "Was haben Sie vor?", text: "Wir möchten, dass Kunden online selbst Termine buchen und eine SMS-Erinnerung bekommen.", s3: "Wie erreichen wir Sie?", name: "Name", nameV: "Anna Huber", emailV: "anna@salon-ana.at", send: "Senden", ok: "Danke!", okSub: "Wir antworten innerhalb eines Werktags.", toast: "Bestätigungs-E-Mail gesendet", label: "Das Projektformular, Schritt für Schritt ausgefüllt" },
 } as const;
 
 // one loop, in ms: step 1 → step 2 (typing) → step 3 (contact) → sent

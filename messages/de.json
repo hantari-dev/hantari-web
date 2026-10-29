@@ -1,0 +1,706 @@
+{
+  "meta": {
+    "title": "Hantari — Studio für Software & KI",
+    "description": "Hantari ist ein Studio für Software & KI. Wir digitalisieren Unternehmen, modernisieren ihre Software und erwecken Ideen zum Leben — für Unternehmen, Organisationen und Menschen mit einer Idee, von Timișoara aus, für überall.",
+    "aboutTitle": "Über uns",
+    "startTitle": "Projekt starten",
+    "privacyTitle": "Datenschutz"
+  },
+  "nav": {
+    "services": "Leistungen",
+    "work": "Projekte",
+    "studio": "Studio",
+    "start": "Projekt starten",
+    "whatWeDo": "Was wir machen",
+    "notSure": "Nicht sicher, wo Sie anfangen sollen?",
+    "notSureText": "Erzählen Sie uns, was Sie vorhaben — eine Idee, einen Ablauf oder ein Unternehmen, das Sie digital machen möchten. Wir schlagen Ihnen den ersten Schritt vor.",
+    "about": "Über uns",
+    "aboutLine": "Wer wir sind und wo wir arbeiten",
+    "approach": "Vorgehen",
+    "approachLine": "Wie ein Projekt abläuft, vom Start bis zum Ziel",
+    "contact": "Kontakt",
+    "contactLine": "Erzählen Sie uns von Ihrem Projekt",
+    "language": "Sprache",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "menu": "Menü",
+    "home": "Hantari Startseite",
+    "skip": "Zum Inhalt springen"
+  },
+  "services": {
+    "apps": {
+      "name": "Web- & Desktop-Apps",
+      "line": "Die Software, die Ihr Unternehmen braucht",
+      "long": "Wir entwickeln die Anwendungen, die Sie brauchen — Kundenportale, interne Tools und Desktop-Apps — einfach zu bedienen und für lange Zeit gebaut.",
+      "page": {
+        "intro": "Web- und Desktop-Anwendungen, gestaltet rund um die Menschen, die sie nutzen — von internen Tools bis zu Plattformen für Ihre Kunden. Sie sehen, wie sie Form annehmen, mit einer Testversion schon in den ersten Wochen, und der Code gehört Ihnen.",
+        "process": [
+          {
+            "t": "Kennenlernen",
+            "d": "Gemeinsam legen wir fest, was die Anwendung können muss."
+          },
+          {
+            "t": "Visuelle Richtung",
+            "d": "Skizzen und ein klickbarer Prototyp, damit Sie die Anwendung sehen, bevor sie gebaut wird."
+          },
+          {
+            "t": "Umfang & Plan",
+            "d": "Wir teilen die Arbeit in klare Etappen, jede mit eigenem Termin."
+          },
+          {
+            "t": "Entwicklung",
+            "d": "Wir bauen in Etappen; eine Testversion bekommen Sie schon in den ersten Wochen."
+          },
+          {
+            "t": "Start",
+            "d": "Wir veröffentlichen die Anwendung und richten Domain, Sicherheit und Backups ein."
+          },
+          {
+            "t": "Betreuung",
+            "d": "Überwachung, Updates und Verbesserungen nach dem Start."
+          }
+        ],
+        "get": [
+          "Eine Web-App, die auf Handy und Computer gut funktioniert",
+          "Eine Desktop-App für Windows, wenn nötig",
+          "Ein Admin-Bereich für Ihre Inhalte und Daten",
+          "Hosting, Domain und SSL-Zertifikat eingerichtet",
+          "Quellcode und Dokumentation gehören Ihnen",
+          "Konten und Rollen: Jede Person sieht nur, was sie braucht",
+          "Online-Zahlungen, Benachrichtigungen per E-Mail oder SMS und Berichte, wo nötig"
+        ],
+        "fit": [
+          "Kundenportale und Terminbuchung",
+          "Interne Tools: Lager, Bestellungen, Berichte",
+          "Präsentations-Websites mit echten Funktionen",
+          "Ein erstes Produkt (MVP) für eine neue Idee",
+          "Buchungs-Apps, wie Lacta",
+          "Ersatz für Excel-Dateien, in denen das ganze Team arbeitet"
+        ],
+        "tools": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tauri",
+          "PostgreSQL",
+          "Vercel",
+          "AWS"
+        ]
+      }
+    },
+    "automation": {
+      "name": "Automatisierung",
+      "line": "Weniger Handarbeit",
+      "long": "Die Schritte, die sich wiederholen — Daten kopieren, E-Mails senden, Rechnungen und Berichte erstellen — laufen von selbst, korrekt und pünktlich.",
+      "page": {
+        "intro": "Die Schritte, die sich wiederholen — Daten kopieren, E-Mails senden, Dokumente erstellen — können von selbst laufen, korrekt und pünktlich, und Ihr Team gewinnt Stunden für die Arbeit, die zählt. Wir beginnen mit dem, was Sie am meisten Zeit kostet, und zeigen Ihnen in Zahlen, wie viele Stunden Sie zurückgewinnen.",
+        "process": [
+          {
+            "t": "Bestandsaufnahme",
+            "d": "Wir verfolgen den Ablauf von Anfang bis Ende und sehen, was sich wiederholt und was von selbst laufen kann."
+          },
+          {
+            "t": "Prioritäten",
+            "d": "Wir beginnen mit den Automatisierungen, die am meisten Zeit zurückgeben."
+          },
+          {
+            "t": "Umsetzung",
+            "d": "Abläufe, Skripte und Integrationen, die die wiederkehrende Arbeit für Sie erledigen."
+          },
+          {
+            "t": "Tests mit echten Daten",
+            "d": "Wir laufen parallel zu Ihrer heutigen Arbeitsweise, bis alles stimmt."
+          },
+          {
+            "t": "Übergabe & Überwachung",
+            "d": "Wir zeigen Ihnen, wie alles funktioniert, und Sie werden benachrichtigt, wenn etwas Aufmerksamkeit braucht."
+          }
+        ],
+        "get": [
+          "Dokumente, Rechnungen und Berichte automatisch erstellt",
+          "E-Mails und Benachrichtigungen zum richtigen Zeitpunkt versendet",
+          "Daten zwischen Anwendungen synchron, ohne manuelles Kopieren",
+          "Ein Dashboard mit allem, was läuft",
+          "KI, die E-Mails und Dokumente liest und die Daten selbst einträgt",
+          "Warnungen, wenn etwas nicht läuft, bevor es Ihre Kunden bemerken"
+        ],
+        "fit": [
+          "Wöchentliche oder monatliche Berichte",
+          "Bearbeitung von Bestellungen und Rechnungen",
+          "Onboarding von Kunden oder Mitarbeitenden",
+          "Datenimporte und -exporte",
+          "Erinnerungen an Termine und Zahlungen",
+          "Angebote und Verträge aus Vorlagen"
+        ],
+        "tools": [
+          "Python",
+          "Node.js",
+          "n8n",
+          "APIs",
+          "Google Workspace",
+          "Geplante Aufgaben"
+        ]
+      }
+    },
+    "ai": {
+      "name": "KI-Lösungen",
+      "line": "KI, die für Ihr Unternehmen arbeitet",
+      "long": "Wir bringen KI in Ihrem Unternehmen zum Einsatz: Sprachagenten, die ans Telefon gehen, Assistenten, die Ihre Dokumente kennen, und automatische Verarbeitung von Rechnungen und E-Mails.",
+      "page": {
+        "intro": "Sprachagenten, Assistenten, Dokumentenverarbeitung und intelligente Suche — KI, verbunden mit Ihren Daten und Tools. Wir beginnen mit einer konkreten Aufgabe, messen die Ergebnisse und behalten dort, wo es zählt, einen Menschen im Prozess.",
+        "process": [
+          {
+            "t": "Die Aufgabe wählen",
+            "d": "Wir starten mit einer konkreten Aufgabe, bei der KI einen messbaren Nutzen bringt."
+          },
+          {
+            "t": "Daten & Zugriff",
+            "d": "Wir legen fest, welche Informationen sie nutzt und was sie tun darf — Ihre Daten bleiben unter Ihrer Kontrolle."
+          },
+          {
+            "t": "Prototyp",
+            "d": "Ein funktionierender Prototyp in wenigen Tagen, getestet an echten Beispielen."
+          },
+          {
+            "t": "Integration",
+            "d": "Wir verbinden die KI mit Ihren Anwendungen — Kalender, E-Mail, Datenbank, Rechnungsstellung — und, für den Sprachagenten, mit Ihrer Telefonleitung."
+          },
+          {
+            "t": "Laufende Bewertung",
+            "d": "Wir messen die Qualität der Antworten und verbessern laufend."
+          }
+        ],
+        "get": [
+          "Ein Sprachagent, der rund um die Uhr ans Telefon geht, auf Deutsch, Englisch und in anderen Sprachen",
+          "Termine, häufige Fragen und Bestellungen am Telefon, mit Übergabe an einen Menschen, wenn nötig",
+          "Transkript und Zusammenfassung nach jedem Anruf, direkt per E-Mail oder in Ihr CRM",
+          "Ein Assistent, der aus Ihren eigenen Dokumenten antwortet",
+          "Daten automatisch aus PDFs, Rechnungen und E-Mails ausgelesen",
+          "Suche in Dokumenten, in normaler Sprache",
+          "Agenten, die handeln: Termine, Bestellungen, Zusammenfassungen"
+        ],
+        "fit": [
+          "Praxen, Kliniken und Salons, die Anrufe verpassen",
+          "Support-Hotlines und Callcenter",
+          "Kundenfragen und FAQ",
+          "Verarbeitung von Rechnungen und Dokumenten",
+          "Zusammenfassungen von E-Mails und Berichten",
+          "Termine und Reservierungen"
+        ],
+        "tools": [
+          "Claude (Anthropic)",
+          "OpenAI",
+          "RAG",
+          "Agenten & Tool-Nutzung",
+          "PostgreSQL + pgvector",
+          "Voice AI (STT / TTS)",
+          "VoIP-Telefonie"
+        ]
+      }
+    },
+    "integrations": {
+      "name": "Integrationen",
+      "line": "Ihre Tools — und KI — arbeiten zusammen",
+      "long": "Wir sorgen dafür, dass die Programme, die Sie schon nutzen — Shop, Rechnungsstellung, Versand, Kalender — miteinander sprechen, und verbinden KI mit Ihren Tools.",
+      "page": {
+        "intro": "Die Software, die Sie schon nutzen, kann zusammenarbeiten — Daten fließen von selbst zwischen Shop, Rechnungsstellung, Versand und Kalender. Kein manuelles Kopieren und keine Tippfehler: Eine neue Bestellung wird in Sekunden zu Rechnung, Versandetikett und E-Mail an den Kunden.",
+        "process": [
+          {
+            "t": "Bestandsaufnahme",
+            "d": "Wir listen Ihre Anwendungen auf und die Daten, die zwischen ihnen fließen müssen."
+          },
+          {
+            "t": "Ablaufplan",
+            "d": "Wir legen fest, wer was wann sendet und was in jedem Fall passiert."
+          },
+          {
+            "t": "Verbinden",
+            "d": "Wir bauen die Verbindungen über die offiziellen Schnittstellen (APIs) jedes Dienstes."
+          },
+          {
+            "t": "Tests",
+            "d": "Wir prüfen jeden Ablauf mit echten Daten, auch die selteneren Fälle."
+          },
+          {
+            "t": "Überwachung",
+            "d": "Sie werden benachrichtigt, wenn eine Verbindung Aufmerksamkeit braucht."
+          }
+        ],
+        "get": [
+          "E-Rechnungen automatisch aus Ihrem Shop oder Ihrer Anwendung",
+          "Ihr Rechnungsprogramm mit dem Onlineshop verbunden: Jede Bestellung wird zur Rechnung",
+          "Versandetiketten automatisch bei Ihrem Versanddienstleister erstellt",
+          "Termine synchron mit Google Calendar und Meet",
+          "Online-Zahlungen mit Stripe, PayPal oder anderen Anbietern",
+          "KI obendrauf: Zusammenfassungen, Antworten, ausgelesene Daten",
+          "Ein Ort, an dem Sie Kunden, Bestellungen und Zahlungen sehen"
+        ],
+        "fit": [
+          "Onlineshops",
+          "Praxen und Dienstleister mit Terminbuchung",
+          "Unternehmen mit vielen Rechnungen",
+          "Teams, die Daten zwischen Anwendungen hin- und herschieben",
+          "Unternehmen, die schneller wachsen als ihre Abläufe"
+        ],
+        "tools": [
+          "REST-APIs",
+          "Webhooks",
+          "E-Rechnung",
+          "WooCommerce",
+          "Stripe",
+          "PayPal",
+          "Google APIs"
+        ]
+      }
+    },
+    "modernisation": {
+      "name": "Modernisierung",
+      "line": "Ältere Software, moderne Standards",
+      "long": "Wir bringen Ihre ältere Software auf moderne Standards — schneller, sicherer und leichter zu warten — ohne dass Ihr Betrieb stillsteht.",
+      "page": {
+        "intro": "Die Software, die Ihr Unternehmen am Laufen hält, lässt sich auf den neuesten Stand bringen — schneller, sicherer und leichter zu warten, ohne dass Ihr Betrieb stillsteht. Wir behalten, was funktioniert, übertragen Ihre Daten sicher und ergänzen, was gefehlt hat: Zugriff vom Handy, Berichte und Integrationen.",
+        "process": [
+          {
+            "t": "Analyse",
+            "d": "Wir sehen uns an, was Sie haben: Code, Daten, Hosting, Sicherheit — und was es wert ist, behalten zu werden."
+          },
+          {
+            "t": "Strategie",
+            "d": "Wir wählen den richtigen Weg: aktualisieren, schrittweise neu bauen oder ersetzen."
+          },
+          {
+            "t": "Migration in Etappen",
+            "d": "Wir übertragen Funktion für Funktion, ohne Ihren Betrieb zu unterbrechen."
+          },
+          {
+            "t": "Daten in Sicherheit",
+            "d": "Wir migrieren die Daten mit Prüfungen und Backups bei jedem Schritt."
+          },
+          {
+            "t": "Cloud & Betreuung",
+            "d": "Modernes Hosting, automatische Backups und regelmäßige Updates."
+          }
+        ],
+        "get": [
+          "Ihre Anwendung auf moderner Technologie",
+          "Umzug in die Cloud (AWS oder Vercel) mit automatischen Backups",
+          "Mehr Sicherheit und kontrollierter Zugriff",
+          "Bessere Leistung und klare Hosting-Kosten",
+          "Dokumentation für das gesamte System",
+          "Zugriff von überall, auch vom Handy"
+        ],
+        "fit": [
+          "Interne Anwendungen, die seit Jahren im Einsatz sind",
+          "Systeme, die mit dem Unternehmen gewachsen sind",
+          "Eigene Server, die in die Cloud wechseln können",
+          "Excel- oder Access-Listen, die zu groß geworden sind",
+          "Software, für die es keinen Support mehr gibt"
+        ],
+        "tools": [
+          "AWS",
+          "Terraform",
+          "Docker",
+          "Linux",
+          "PostgreSQL",
+          "CI/CD"
+        ]
+      }
+    },
+    "unsure": {
+      "name": "Noch nicht sicher",
+      "line": "Erzählen Sie uns Ihre Idee, wir schlagen den Weg vor"
+    }
+  },
+  "home": {
+    "title": "Wir <services>digitalisieren</services> Unternehmen, modernisieren Software und erwecken Ideen zum Leben.",
+    "intro": "Hantari ist ein Studio für Software & KI — für Unternehmen, Organisationen und Menschen mit einer Idee. Von der ersten Skizze bis zum Start und darüber hinaus, mit klaren Preisen und Terminen, die von Anfang an feststehen.",
+    "ctaSecondary": "Was wir machen",
+    "featureEyebrow": "Software & KI",
+    "featureTitle": "Weniger Handarbeit. Mehr Zeit für Ihre Kunden.",
+    "featureCta": "So arbeiten wir",
+    "featureArtLabel": "Apps, Websites, KI-Agenten und Automatisierungen von Hantari",
+    "motionPause": "Animation anhalten",
+    "motionPlay": "Animation abspielen",
+    "servicesEyebrow": "Was wir machen",
+    "servicesTitle": "Fünf Dinge, gut gemacht.",
+    "servicesIntro": "Ein kleines Team, das schnell arbeitet und liefert — vom ersten Gespräch bis zur Software, die in Ihrem Unternehmen läuft.",
+    "workTitle": "Ausgewählte Projekte",
+    "lactaEyebrow": "Fallstudie · Web-App",
+    "lactaText": "Zweisprachige Website (Rumänisch und Spanisch) für eine Stillberaterin. Online-Terminbuchung — Zeit im Kalender wählen, Treffen per Video oder persönlich — und Lacta IA, ein KI-Chat-Assistent, der Fragen beantwortet und Besucher zur Buchung führt. Dazu Bewertungen, FAQ und ein kostenloser Ratgeber zum Herunterladen.",
+    "lactaCta": "lacta.ro besuchen",
+    "pflegeEyebrow": "Fallstudie · Präsentations-Website",
+    "pflegeText": "Präsentations-Website für einen Pflegedienst in Graz. Besucher sehen schnell die Leistungen, Preise und den Ablauf und senden dann über ein geführtes Formular eine Anfrage — Betreuung für sich selbst, für Angehörige oder ein erstes Kennenlernen. Dazu ein Blog, auf Deutsch.",
+    "pflegeCta": "pflegemitkopfundherz.at besuchen",
+    "approachEyebrow": "Unsere Vision",
+    "approachTitle": "Digital, für alle erreichbar.",
+    "approachLead": "Wir glauben, dass jedes Unternehmen und jede Idee den Schritt ins Digitale verdient. Deshalb bauen wir: Wir digitalisieren Unternehmen, bringen ältere Software auf den neuesten Stand und machen aus Ideen echte Anwendungen — mit Sorgfalt gemacht, verständlich erklärt und zukunftssicher.",
+    "step1Label": "01 · Verstehen",
+    "step1Title": "Wir beginnen bei der Idee — oder bei Ihrer heutigen Arbeitsweise.",
+    "step1Text": "Ein Unternehmen, das digital werden soll, ein altes System zum Modernisieren oder eine ganz neue Idee: Zuerst verstehen wir, was es gibt, und vereinbaren gemeinsam, was „besser“ bedeutet.",
+    "step2Label": "02 · Bauen",
+    "step2Title": "Schritte, die Sie sehen.",
+    "step2Text": "Früh und oft funktionierende Versionen — Ihre Idee nimmt vor Ihren Augen Form an, und Sie wissen immer, wofür Sie bezahlen.",
+    "step3Label": "03 · Betreuen",
+    "step3Title": "Auf lange Sicht.",
+    "step3Text": "Wir bleiben auch nach dem Start an Ihrer Seite: Hosting, Überwachung und Updates. Wer es gebaut hat, kümmert sich weiter darum — damit morgen besser läuft als heute.",
+    "ctaTitle": "Haben Sie eine Idee oder ein Unternehmen, das digital werden soll?",
+    "ctaText": "Erzählen Sie uns davon. Sie hören innerhalb eines Werktags von uns, mit einem klaren nächsten Schritt."
+  },
+  "about": {
+    "eyebrow": "Über Hantari",
+    "title": "Ein kleines Studio für praktische Software.",
+    "intro": "Hantari ist ein Studio für Software & KI mit Sitz in Timișoara, Rumänien, und arbeitet mit Menschen überall. Unsere Vision ist einfach: Unternehmen beim Schritt ins Digitale helfen, ältere Software auf moderne Standards bringen und gute Ideen in funktionierende Produkte verwandeln — mit KI dort, wo sie ein echtes Problem löst.",
+    "imageLine": "Wir bringen Ideen ans Licht.",
+    "howEyebrow": "So arbeiten wir",
+    "p1Title": "Verständlich statt kompliziert.",
+    "p1Text": "Wir erklären, was wir bauen und warum, in Worten, die Sie selbst verwenden würden.",
+    "p2Title": "Ergebnisse statt Funktionen.",
+    "p2Text": "Erfolg heißt: gesparte Zeit und vermiedene Fehler.",
+    "p3Title": "Gebaut, um zu bleiben.",
+    "p3Text": "Solide Infrastruktur, Sicherheit und Betreuung nach dem Start.",
+    "p4Title": "Besser als gestern.",
+    "p4Text": "Stetiger, beständiger Fortschritt, Tag für Tag — so entstehen Dinge, die bleiben.",
+    "studioEyebrow": "Das Studio",
+    "basedIn": "Standort",
+    "basedInValue": "Timișoara, Rumänien — weltweit tätig",
+    "email": "E-Mail",
+    "languages": "Sprachen",
+    "languagesValue": "Englisch, Rumänisch, Spanisch, Französisch",
+    "response": "Antwortzeit",
+    "responseValue": "Innerhalb eines Werktags"
+  },
+  "start": {
+    "back": "Zurück zur Website",
+    "eyebrow": "Projekt starten",
+    "title": "Erzählen Sie uns, was Sie bauen möchten.",
+    "intro": "Drei kurze Schritte, etwa zwei Minuten. Technisches Wissen ist nicht nötig — beschreiben Sie es so, wie Sie es einer Kollegin oder einem Kollegen erklären würden.",
+    "nextTitle": "Wie es weitergeht",
+    "next1": "Sie erhalten eine E-Mail, die bestätigt, dass Ihre Anfrage angekommen ist.",
+    "next2": "Innerhalb eines Werktags antworten wir mit Fragen oder einer ersten Idee.",
+    "next3": "Wenn es passt, ein kurzes Gespräch — danach ein klares, schriftliches Angebot.",
+    "preferEmail": "Lieber direkt schreiben?",
+    "stepOf": "Schritt {step} von 3",
+    "stepNames": {
+      "1": "Was Sie brauchen",
+      "2": "Details",
+      "3": "Ihre Kontaktdaten"
+    },
+    "s1Title": "Wobei können wir helfen?",
+    "s1Text": "Wählen Sie eine oder mehrere Optionen. Nicht sicher? Auch kein Problem.",
+    "selected": "{count} ausgewählt",
+    "s2Title": "Erzählen Sie uns davon.",
+    "s2Text": "Ein paar Sätze reichen. Was möchten Sie bauen, ändern oder einfacher machen?",
+    "description": "Was haben Sie vor?",
+    "descriptionPlaceholder": "z. B. Wir hätten gern eine App, in der Kunden selbst bestellen, verbunden mit unserer Rechnungsstellung, damit das Team immer sieht, was als Nächstes ansteht.",
+    "tools": "Programme, die Sie heute nutzen",
+    "toolsPlaceholder": "z. B. Excel, Outlook, eine ältere interne Anwendung, Ihr Buchhaltungsprogramm…",
+    "optional": "(optional)",
+    "timeline": "Wann möchten Sie starten?",
+    "timelineOptions": {
+      "asap": "So bald wie möglich",
+      "months": "In den nächsten 1–3 Monaten",
+      "later": "Später in diesem Jahr",
+      "exploring": "Ich informiere mich nur"
+    },
+    "s3Title": "Wie erreichen wir Sie?",
+    "s3Text": "Wir verwenden diese Angaben nur, um auf Ihre Anfrage zu antworten. Sie hören innerhalb eines Werktags von uns.",
+    "name": "Ihr Name",
+    "namePlaceholder": "Vor- und Nachname",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "name@firma.at",
+    "company": "Unternehmen oder Organisation",
+    "companyPlaceholder": "Falls vorhanden",
+    "phone": "Telefon",
+    "phonePlaceholder": "+ Ländervorwahl",
+    "replyIn": "Antwort auf",
+    "consent": "Ich bin einverstanden, dass Hantari diese Angaben verwendet, um auf diese Anfrage zu antworten, wie beschrieben in der",
+    "privacyLink": "Datenschutzerklärung",
+    "backBtn": "Zurück",
+    "continue": "Weiter",
+    "send": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "doneTitle": "Danke{name} — Ihre Anfrage ist angekommen.",
+    "doneText": "Wir haben eine Bestätigung an {email} gesendet. Sie hören innerhalb eines Werktags von uns.",
+    "reference": "Referenz",
+    "askedAbout": "Ihre Anfrage betrifft",
+    "notSpecified": "Nicht angegeben",
+    "backToSite": "Zurück zur Website",
+    "another": "Weitere Anfrage senden",
+    "errors": {
+      "services": "Bitte wählen Sie mindestens eine Option.",
+      "description": "Bitte erzählen Sie uns etwas mehr (mindestens 20 Zeichen).",
+      "name": "Bitte geben Sie Ihren Namen an.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "consent": "Bitte bestätigen Sie, dass wir Ihre Angaben für die Antwort verwenden dürfen.",
+      "generic": "Bei uns ist etwas schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an hello@hantari.ro.",
+      "tooFast": "Das ging schnell! Bitte nehmen Sie sich einen Moment und versuchen Sie es erneut."
+    }
+  },
+  "privacy": {
+    "eyebrow": "Datenschutz",
+    "title": "Datenschutzerklärung",
+    "updated": "Zuletzt aktualisiert: {date}",
+    "draftNote": "Hantari wird derzeit als Unternehmen registriert. Die Firmendaten werden hier ergänzt, sobald die Registrierung abgeschlossen ist.",
+    "sections": [
+      {
+        "title": "1. Wer wir sind",
+        "p": [
+          "Verantwortlich für Ihre Daten ist Hantari — ein Studio für Software & KI in Timișoara, Rumänien, vertreten durch Hantari Beneamin Andrei. Bis zur Registrierung des Unternehmens werden Ihre Daten von ihm persönlich verarbeitet.",
+          "Bei Fragen zu Ihren Daten schreiben Sie uns an hello@hantari.ro."
+        ]
+      },
+      {
+        "title": "2. Welche Daten wir erheben",
+        "p": [
+          "Wir erheben nur, was wir brauchen, um Ihnen zu antworten:"
+        ],
+        "items": [
+          "Was Sie im Formular „Projekt starten“ eingeben: Name, E-Mail und optional Unternehmen oder Organisation und Telefonnummer.",
+          "Was Sie uns über das Projekt erzählen: die Leistungen, die Sie interessieren, die Beschreibung, die Programme, die Sie heute nutzen, und wann Sie starten möchten.",
+          "Die Sprache, in der wir Ihnen antworten sollen.",
+          "E-Mail-Korrespondenz, wenn Sie uns direkt schreiben.",
+          "Minimale technische Daten, die unser Hosting-Anbieter aus Sicherheitsgründen automatisch speichert (zum Beispiel IP-Adresse und Browsertyp)."
+        ]
+      },
+      {
+        "title": "3. Wofür wir sie verwenden und auf welcher Rechtsgrundlage",
+        "items": [
+          "Um Ihnen zu antworten und auf Ihren Wunsch ein Angebot zu erstellen — vorvertragliche Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO) und auf Grundlage der Einwilligung, die Sie im Formular erteilen (Art. 6 Abs. 1 lit. a).",
+          "Um die Website sicher und funktionsfähig zu halten — unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f).",
+          "Wenn wir zusammenarbeiten, für gesetzliche Pflichten zu Rechnungsstellung und Buchhaltung (Art. 6 Abs. 1 lit. c)."
+        ],
+        "p2": [
+          "Wir verkaufen Ihre Daten nicht, nutzen sie nicht für Werbung und senden Ihnen ohne gesonderte Einwilligung keine Newsletter."
+        ]
+      },
+      {
+        "title": "4. Mit wem wir sie teilen",
+        "p": [
+          "Wir arbeiten mit wenigen vertrauenswürdigen Anbietern, die Daten nur in unserem Auftrag verarbeiten:"
+        ],
+        "items": [
+          "Vercel — Hosting der Website.",
+          "Neon — die Datenbank, in der Anfragen gespeichert werden (Hosting in der EU).",
+          "Resend — Versand von Bestätigungs- und Benachrichtigungs-E-Mails.",
+          "Google Workspace — unsere E-Mail."
+        ],
+        "p2": [
+          "Einige dieser Anbieter sind US-Unternehmen. Wenn Daten den Europäischen Wirtschaftsraum verlassen, stützt sich die Übermittlung auf das EU-US Data Privacy Framework oder auf die Standardvertragsklauseln der Europäischen Kommission."
+        ]
+      },
+      {
+        "title": "5. Wie lange wir sie speichern",
+        "items": [
+          "Über das Formular gesendete Anfragen: bis zu 24 Monate, danach werden sie gelöscht.",
+          "Wenn Sie Kunde werden: für die Dauer der Zusammenarbeit, danach so lange, wie es das Gesetz für Finanz- und Buchhaltungsunterlagen verlangt.",
+          "Technische Sicherheitsdaten: einige Tage, gemäß den Einstellungen des Hosting-Anbieters."
+        ]
+      },
+      {
+        "title": "6. Cookies",
+        "p": [
+          "Wir verwenden ein einziges, unbedingt notwendiges Cookie, das sich Ihre Sprache merkt (NEXT_LOCALE). Keine Werbe-, Tracking- oder Analyse-Cookies."
+        ]
+      },
+      {
+        "title": "7. Wie wir sie schützen",
+        "p": [
+          "Die Website nutzt ausschließlich verschlüsselte Verbindungen (HTTPS), nur wir haben Zugriff auf die Daten, und die von uns verwendeten Konten sind mit Zwei-Faktor-Authentifizierung geschützt."
+        ]
+      },
+      {
+        "title": "8. Ihre Rechte",
+        "p": [
+          "Nach der DSGVO haben Sie das Recht:"
+        ],
+        "items": [
+          "zu erfahren, welche Daten wir über Sie haben, und eine Kopie zu erhalten;",
+          "sie berichtigen oder löschen zu lassen;",
+          "die Verarbeitung einzuschränken oder ihr zu widersprechen;",
+          "sie in einem übertragbaren Format zu erhalten;",
+          "Ihre Einwilligung jederzeit zu widerrufen, ohne dass die bis dahin erfolgte Verarbeitung davon berührt wird."
+        ],
+        "p2": [
+          "Schreiben Sie an hello@hantari.ro — wir antworten spätestens innerhalb eines Monats. Sie können sich auch bei der rumänischen Datenschutzbehörde (ANSPDCP, www.dataprotection.ro) oder bei der Datenschutzbehörde in Ihrem Wohnsitzland beschweren — in Österreich bei der Datenschutzbehörde (www.dsb.gv.at)."
+        ]
+      },
+      {
+        "title": "9. Kinder",
+        "p": [
+          "Unsere Leistungen richten sich nicht an Personen unter 16 Jahren, und wir erheben wissentlich keine Daten von ihnen."
+        ]
+      },
+      {
+        "title": "10. Änderungen",
+        "p": [
+          "Wenn wir diese Erklärung ändern, aktualisieren wir das Datum oben. Über wichtige Änderungen informieren wir auf der Website."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Software & KI · Von Timișoara aus, für überall",
+    "ethos": "Besser als gestern.",
+    "services": "Leistungen",
+    "studio": "Studio",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "rights": "© {year} Hantari"
+  },
+  "notFound": {
+    "title": "Diese Seite hat sich verlaufen.",
+    "text": "Die gesuchte Seite gibt es nicht oder sie ist umgezogen.",
+    "home": "Zur Startseite"
+  },
+  "servicePage": {
+    "eyebrow": "Leistungen",
+    "processTitle": "So arbeiten wir",
+    "getTitle": "Was Sie bekommen",
+    "fitTitle": "Passend für",
+    "toolsTitle": "Technologie",
+    "ctaTitle": "Bauen wir es gemeinsam.",
+    "ctaText": "Erzählen Sie uns, was Sie vorhaben — Sie hören innerhalb eines Werktags von uns.",
+    "prev": "Vorherige Leistung",
+    "next": "Nächste Leistung",
+    "all": "Alle Leistungen"
+  },
+  "demo": {
+    "metaTitle": "Hantari — Showcase",
+    "swipe": "Wischen",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "fullscreen": "Vollbild",
+    "exitFullscreen": "Vollbild beenden",
+    "introEyebrow": "Studio für Software & KI · Timișoara",
+    "introTitle": "Digital, für alle erreichbar.",
+    "introText": "Wir digitalisieren Unternehmen, modernisieren Software und erwecken Ideen zum Leben — mit klaren Preisen und Terminen, die von Anfang an feststehen.",
+    "servicesEyebrow": "Was wir bauen",
+    "servicesTitle": "Fünf Dinge, gut gemacht.",
+    "howEyebrow": "So arbeiten wir",
+    "howTitle": "Klare Schritte, von der Idee zur funktionierenden Software.",
+    "projectEyebrow": "Umgesetztes Projekt",
+    "tryLive": "Live ausprobieren",
+    "clipNote": "Demo-Clip",
+    "lacta": {
+      "tag": "Web-App · Timișoara",
+      "lead": "Eine Website für eine Stillberaterin, mit Terminbuchung und KI-Assistent.",
+      "points": [
+        "Online-Terminbuchung: Zeit im Kalender wählen, Treffen per Video oder persönlich",
+        "Lacta IA: ein KI-Chat-Assistent, der Fragen beantwortet und zur Buchung führt",
+        "Zweisprachig: Rumänisch und Spanisch",
+        "Bewertungen, FAQ und ein kostenloser Ratgeber zum Herunterladen"
+      ]
+    },
+    "pflege": {
+      "tag": "Präsentations-Website · Graz, Österreich",
+      "lead": "Eine Website für einen Pflegedienst, gebaut, um neue Anfragen zu bringen.",
+      "points": [
+        "Leistungen, Preise und Ablauf auf einen Blick",
+        "Geführtes Anfrageformular: für sich selbst, für Angehörige oder ein erstes Kennenlernen",
+        "Ein Blog für Artikel und Neuigkeiten",
+        "Warmes Design, leicht zu bedienen in jedem Alter"
+      ]
+    },
+    "ideasEyebrow": "Für Ihr Unternehmen",
+    "ideasTitle": "Wie könnte das bei Ihnen aussehen?",
+    "ideasHint": "Wählen Sie Ihre Branche:",
+    "ideas": [
+      {
+        "id": "clinic",
+        "label": "Praxis / Klinik",
+        "items": [
+          {
+            "t": "Online-Termine mit Erinnerungen",
+            "d": "Patientinnen und Patienten wählen selbst ihre Zeit; weniger Anrufe und weniger versäumte Termine."
+          },
+          {
+            "t": "KI-Assistent für Fragen",
+            "d": "Antwortet rund um die Uhr zu Leistungen, Preisen und Vorbereitung, auf Basis Ihrer eigenen Informationen."
+          },
+          {
+            "t": "Digitale Formulare",
+            "d": "Patientendaten werden vor dem Termin online ausgefüllt, direkt in Ihr System."
+          }
+        ]
+      },
+      {
+        "id": "shop",
+        "label": "Onlineshop",
+        "items": [
+          {
+            "t": "Bestellung → Rechnung → Versandetikett",
+            "d": "Jede Bestellung erstellt automatisch Rechnung und Versandetikett."
+          },
+          {
+            "t": "Lagerbestand synchron",
+            "d": "Shop, Lager und Marktplätze sehen denselben Bestand, in Echtzeit."
+          },
+          {
+            "t": "KI-Assistent für Kunden",
+            "d": "Empfiehlt Produkte und beantwortet Fragen zu Lieferung und Rückgabe, jederzeit."
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "label": "Restaurant / Café",
+        "items": [
+          {
+            "t": "Digitale Speisekarte und Bestellung am Tisch",
+            "d": "Gäste scannen, bestellen und bezahlen mit dem Handy."
+          },
+          {
+            "t": "Online-Reservierungen",
+            "d": "Tische direkt über die Website reserviert, synchron mit Ihrem Kalender."
+          },
+          {
+            "t": "Automatische Berichte",
+            "d": "Umsatz und Bestseller jeden Morgen in Ihrem Postfach."
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "label": "Dienstleistung & Handwerk",
+        "items": [
+          {
+            "t": "Website mit Angebotsanfragen",
+            "d": "Kunden beschreiben, was sie brauchen, mit Fotos, und Sie bekommen alles geordnet."
+          },
+          {
+            "t": "Automatische Termine und Bestätigungen",
+            "d": "Online-Kalender, Bestätigung und Erinnerung, ganz ohne Telefonate."
+          },
+          {
+            "t": "Automatische Angebote und Rechnungen",
+            "d": "Aus den Auftragsdaten sind Angebot und Rechnung in wenigen Minuten fertig."
+          }
+        ]
+      },
+      {
+        "id": "realestate",
+        "label": "Immobilien",
+        "items": [
+          {
+            "t": "Immobilien-Website mit Filtern",
+            "d": "Objekte nach Lage, Preis und Zimmern durchsuchbar, leicht aktuell zu halten."
+          },
+          {
+            "t": "KI-Assistent für Anfragen",
+            "d": "Antwortet Interessenten sofort und vereinbart Besichtigungen."
+          },
+          {
+            "t": "Kundenübersicht",
+            "d": "Anfragen, Besichtigungen und Angebote, alles an einem Ort."
+          }
+        ]
+      }
+    ],
+    "closeEyebrow": "Nächster Schritt",
+    "closeTitle": "Lassen Sie uns gemeinsam etwas bauen.",
+    "closeText": "Erzählen Sie uns, was Sie vorhaben. Sie hören innerhalb eines Werktags von uns, mit einem klaren nächsten Schritt.",
+    "scan": "Scannen, um ein Projekt zu starten",
+    "fillNow": "Jetzt gemeinsam das Formular ausfüllen",
+    "orEmail": "oder schreiben Sie uns an"
+  }
+}

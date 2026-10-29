@@ -39,14 +39,14 @@ export async function generateMetadata({
     description: t("description"),
     alternates: {
       canonical: `/${locale}`,
-      languages: { en: "/en", ro: "/ro", es: "/es" },
+      languages: { en: "/en", ro: "/ro", es: "/es", de: "/de" },
     },
     openGraph: {
       type: "website",
       siteName: "Hantari",
       title: t("title"),
       description: t("description"),
-      locale: ({ ro: "ro_RO", es: "es_ES", en: "en_GB" } as Record<string, string>)[locale] ?? "en_GB",
+      locale: ({ ro: "ro_RO", es: "es_ES", de: "de_AT", en: "en_GB" } as Record<string, string>)[locale] ?? "en_GB",
     },
     twitter: { card: "summary_large_image" },
     ...(COMING_SOON && { robots: { index: false, follow: false } }),

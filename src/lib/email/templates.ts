@@ -1,6 +1,6 @@
 import type { LeadInput } from "../leadSchema";
 
-type Lang = "en" | "ro" | "es";
+type Lang = "en" | "ro" | "es" | "de";
 
 const SERVICE_NAMES: Record<Lang, Record<string, string>> = {
   en: {
@@ -26,6 +26,14 @@ const SERVICE_NAMES: Record<Lang, Record<string, string>> = {
     integrations: "Integraciones",
     modernisation: "Modernización",
     unsure: "Todavía no lo sé",
+  },
+  de: {
+    apps: "Web- & Desktop-Apps",
+    automation: "Automatisierung",
+    ai: "KI-Lösungen",
+    integrations: "Integrationen",
+    modernisation: "Modernisierung",
+    unsure: "Noch nicht sicher",
   },
 };
 
@@ -119,6 +127,18 @@ const COPY = {
     reply: "Si quieres agregar algo, simplemente responde a este correo.",
     sign: "Ben — Hantari",
     ethos: "Mejor que ayer.",
+  },
+  de: {
+    subject: (ref: string) => `Wir haben Ihre Anfrage erhalten (${ref})`,
+    hello: (name: string) => `Hallo ${name},`,
+    body: "Danke, dass Sie sich bei Hantari gemeldet haben. Ihre Anfrage ist angekommen, und wir antworten innerhalb eines Werktags — meist mit ein paar Fragen oder einer ersten Idee.",
+    summary: "Das haben Sie uns geschickt:",
+    ref: "Referenz",
+    services: "Ihre Anfrage betrifft",
+    desc: "Ihre Nachricht",
+    reply: "Wenn Sie etwas ergänzen möchten, antworten Sie einfach auf diese E-Mail.",
+    sign: "Ben — Hantari",
+    ethos: "Besser als gestern.",
   },
 } as const;
 

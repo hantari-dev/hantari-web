@@ -9,10 +9,11 @@ const CS = {
   en: { eyebrow: "Software & AI · From Timișoara, for anywhere", title: "Coming soon.", text: "A software & AI studio for businesses, organisations and people with an idea. Our new website is almost ready.", write: "Write to us", ethos: "Better than yesterday." },
   ro: { eyebrow: "Software & AI · Din Timișoara, pentru oriunde", title: "În curând.", text: "Un studio de software & AI pentru afaceri, organizații și oameni cu o idee. Site-ul nostru este aproape gata.", write: "Scrie-ne", ethos: "Mai bine decât ieri." },
   es: { eyebrow: "Software & IA · Desde Timișoara, para todo el mundo", title: "Muy pronto.", text: "Un estudio de software & IA para empresas, organizaciones y personas con una idea. Nuestro sitio web está casi listo.", write: "Escríbenos", ethos: "Mejor que ayer." },
+  de: { eyebrow: "Software & KI · Von Timișoara aus, für überall", title: "Bald da.", text: "Ein Studio für Software & KI für Unternehmen, Organisationen und Menschen mit einer Idee. Unsere Website ist fast fertig.", write: "Schreiben Sie uns", ethos: "Besser als gestern." },
 } as const;
 
 export function ComingSoon({ locale }: { locale: string }) {
-  const c = CS[locale === "ro" || locale === "es" ? locale : "en"];
+  const c = CS[locale === "ro" || locale === "es" || locale === "de" ? locale : "en"];
   return (
     <div className="flex min-h-screen flex-col bg-paper text-ink">
       <div className="container-page flex flex-1 flex-col justify-between gap-12 py-10 md:py-14">

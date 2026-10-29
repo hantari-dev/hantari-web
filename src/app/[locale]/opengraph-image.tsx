@@ -21,6 +21,10 @@ const COPY = {
     title: "Digitalizamos negocios, modernizamos software y damos vida a las ideas.",
     line: "Estudio de software & IA · Timișoara",
   },
+  de: {
+    title: "Wir digitalisieren Unternehmen, modernisieren Software und erwecken Ideen zum Leben.",
+    line: "Studio für Software & KI · Timișoara",
+  },
   en: {
     title: "We digitalise businesses, modernise software and bring ideas to life.",
     line: "Software & AI studio · Timișoara",
@@ -60,7 +64,7 @@ async function font(pkg: string, file: string) {
 
 export default async function Image({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const copy = COPY[locale === "ro" || locale === "es" ? locale : "en"];
+  const copy = COPY[locale === "ro" || locale === "es" || locale === "de" ? locale : "en"];
 
   const [serif, serifExt, sans, sansExt, mono, monoExt] = await Promise.all([
     font("newsreader", "newsreader-latin-400-normal.woff"),

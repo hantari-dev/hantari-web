@@ -20,7 +20,7 @@ export const leadSchema = z.object({
   email: z.email("email").max(200),
   company: optionalText(160),
   phone: optionalText(40),
-  replyLang: z.enum(["en", "ro", "es"]),
+  replyLang: z.enum(["en", "ro", "es", "de"]),
   consent: z.literal(true, "consent"),
 });
 
