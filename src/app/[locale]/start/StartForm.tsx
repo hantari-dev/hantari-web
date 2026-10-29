@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LANG_NAMES, routing } from "@/i18n/routing";
 import { FORM_OPTIONS, type FormOption } from "@/lib/services";
-import { TIMELINES } from "@/lib/leadSchema";
+import { BUDGETS, TIMELINES } from "@/lib/leadSchema";
 import { submitLead, type FieldError, type SubmitState } from "./actions";
 
 const input =
@@ -205,14 +205,26 @@ function StepForm({ initial, onRestart }: { initial: FormOption[]; onRestart: ()
           </span>
           <input type="text" name="tools" maxLength={500} placeholder={t("toolsPlaceholder")} className={`${input} font-normal`} />
         </label>
-        <label className={`${labelCls} sm:max-w-[50%]`}>
-          {t("timeline")}
-          <select name="timeline" defaultValue="asap" className={`${input} font-normal`}>
-            {TIMELINES.map((v) => (
-              <option key={v} value={v}>{t(`timelineOptions.${v}`)}</option>
-            ))}
-          </select>
-        </label>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <label className={labelCls}>
+            {t("timeline")}
+            <select name="timeline" defaultValue="asap" className={`${input} font-normal`}>
+              {TIMELINES.map((v) => (
+                <option key={v} value={v}>{t(`timelineOptions.${v}`)}</option>
+              ))}
+            </select>
+          </label>
+          <label className={labelCls}>
+            <span>
+              {t("budget")} <span className="font-normal text-graphite">{t("optional")}</span>
+            </span>
+            <select name="budget" defaultValue="unsure" className={`${input} font-normal`}>
+              {BUDGETS.map((v) => (
+                <option key={v} value={v}>{t(`budgetOptions.${v}`)}</option>
+              ))}
+            </select>
+          </label>
+        </div>
       </fieldset>
 
       {/* Step 3 */}

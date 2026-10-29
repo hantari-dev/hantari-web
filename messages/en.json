@@ -403,6 +403,13 @@
       "later": "Later this year",
       "exploring": "Just exploring"
     },
+    "budget": "Budget range",
+    "budgetOptions": {
+      "unsure": "Not sure yet",
+      "small": "Under €5,000",
+      "medium": "€5,000 – €15,000",
+      "large": "Over €15,000"
+    },
     "s3Title": "How do we reach you?",
     "s3Text": "We only use this to reply to your request. You’ll hear from us within 1 business day.",
     "name": "Your name",
@@ -457,7 +464,7 @@
         ],
         "items": [
           "What you enter in the “Start a project” form: name, email and, optionally, company or organisation and phone.",
-          "What you tell us about the project: the services you’re interested in, the description, the tools you use today and when you’d like to start.",
+          "What you tell us about the project: the services you’re interested in, the description, the tools you use today, when you’d like to start and your estimated budget.",
           "The language you’d like us to reply in.",
           "Email correspondence, if you write to us directly.",
           "Minimal technical data kept automatically by our hosting provider for security (for example IP address and browser type)."

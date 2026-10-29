@@ -1,7 +1,7 @@
 export const SERVICE_IDS = [
   "apps",
-  "automation",
   "ai",
+  "automation",
   "integrations",
   "modernisation",
 ] as const;

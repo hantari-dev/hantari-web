@@ -6,7 +6,6 @@ import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { LANG_NAMES, routing, type Locale } from "@/i18n/routing";
 import { SERVICE_IDS } from "@/lib/services";
 import { HMark } from "./Logo";
-import { MenuArt } from "./art/Art";
 import { SERVICE_ART } from "./art/serviceArt";
 import type { ServiceId } from "@/lib/services";
 
@@ -342,14 +341,14 @@ export function Header() {
 
 /**
  * Desktop services dropdown. Hovering (or focusing) a service plays that service's illustration
- * in the right-hand panel; before any hover the panel shows the "Not sure where to start?" card.
- * The panel keeps the last service shown, so moving the pointer across to it doesn't reset it.
+ * in the right-hand panel; it opens on the first service. The panel keeps the last service shown,
+ * so moving the pointer across to it doesn't reset it.
  */
 function ServicesMenu() {
   const t = useTranslations("nav");
   const ts = useTranslations("services");
-  const [active, setActive] = useState<ServiceId | null>(null);
-  const Art = active ? SERVICE_ART[active] : null;
+  const [active, setActive] = useState<ServiceId>(SERVICE_IDS[0]);
+  const Art = SERVICE_ART[active];
 
   return (
     <div id="menu-services" className={`${panel} left-1/2 grid w-[min(780px,calc(100vw-32px))] -translate-x-1/2 grid-cols-3 overflow-hidden`}>
@@ -373,28 +372,17 @@ function ServicesMenu() {
       </div>
 
       <div className="relative min-h-[400px] overflow-hidden bg-[#1A2446] text-paper">
-        {active && Art ? (
-          // key = service: switching remounts the art, so its animation plays from the start
-          <div key={active} className="menu-preview absolute inset-0 flex flex-col">
-            <div data-inview="" className="relative h-[220px] shrink-0 overflow-hidden">
-              <Art />
-            </div>
-            <div className="flex flex-1 flex-col gap-2 p-6">
-              <span className="font-mono text-[11px] text-[#9AA3C2]">0{SERVICE_IDS.indexOf(active) + 1}</span>
-              <p className="font-display text-[22px] leading-tight">{ts(`${active}.name`)}</p>
-              <p className="text-[13px] leading-relaxed text-[#C9CEDD]">{ts(`${active}.long`)}</p>
-            </div>
+        {/* key = service: switching remounts the art, so its animation plays from the start */}
+        <div key={active} className="menu-preview absolute inset-0 flex flex-col">
+          <div data-inview="" className="relative h-[220px] shrink-0 overflow-hidden">
+            <Art />
           </div>
-        ) : (
-          <div className="menu-preview absolute inset-0 flex flex-col gap-3.5 p-7 pt-9">
-            <MenuArt className="absolute inset-x-0 bottom-0 h-[170px] w-full" />
-            <p className="relative font-display text-2xl leading-tight">{t("notSure")}</p>
-            <p className="relative text-sm leading-relaxed text-[#C9CEDD]">{t("notSureText")}</p>
-            <Link href="/start" className="relative pt-1.5 text-sm font-medium text-paper hover:text-white hover:underline">
-              {t("start")} →
-            </Link>
+          <div className="flex flex-1 flex-col gap-2 p-6">
+            <span className="font-mono text-[11px] text-[#9AA3C2]">0{SERVICE_IDS.indexOf(active) + 1}</span>
+            <p className="font-display text-[22px] leading-tight">{ts(`${active}.name`)}</p>
+            <p className="text-[13px] leading-relaxed text-[#C9CEDD]">{ts(`${active}.long`)}</p>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

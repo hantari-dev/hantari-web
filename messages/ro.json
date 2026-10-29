@@ -403,6 +403,13 @@
       "later": "Mai târziu anul acesta",
       "exploring": "Doar mă informez"
     },
+    "budget": "Buget estimativ",
+    "budgetOptions": {
+      "unsure": "Nu știu încă",
+      "small": "Sub 5.000 €",
+      "medium": "5.000 – 15.000 €",
+      "large": "Peste 15.000 €"
+    },
     "s3Title": "Cum te putem contacta?",
     "s3Text": "Folosim aceste date doar ca să răspundem cererii tale. Îți răspundem în cel mult o zi lucrătoare.",
     "name": "Numele tău",
@@ -457,7 +464,7 @@
         ],
         "items": [
           "Datele pe care le completezi în formularul „Începe un proiect”: nume, email și, opțional, companie sau organizație și telefon.",
-          "Ce ne spui despre proiect: serviciile care te interesează, descrierea, programele pe care le folosești și când ai vrea să începi.",
+          "Ce ne spui despre proiect: serviciile care te interesează, descrierea, programele pe care le folosești, când ai vrea să începi și bugetul estimativ.",
           "Limba în care preferi să-ți răspundem.",
           "Corespondența prin email, dacă ne scrii direct.",
           "Date tehnice minime, păstrate automat de furnizorul de găzduire din motive de securitate (de exemplu adresa IP și tipul browserului)."

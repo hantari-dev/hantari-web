@@ -402,6 +402,13 @@
       "later": "Später in diesem Jahr",
       "exploring": "Ich informiere mich nur"
     },
+    "budget": "Geschätztes Budget",
+    "budgetOptions": {
+      "unsure": "Noch nicht sicher",
+      "small": "Unter 5.000 €",
+      "medium": "5.000 – 15.000 €",
+      "large": "Über 15.000 €"
+    },
     "s3Title": "Wie erreichen wir Sie?",
     "s3Text": "Wir verwenden diese Angaben nur, um auf Ihre Anfrage zu antworten. Sie hören innerhalb eines Werktags von uns.",
     "name": "Ihr Name",
@@ -456,7 +463,7 @@
         ],
         "items": [
           "Was Sie im Formular „Projekt starten“ eingeben: Name, E-Mail und optional Unternehmen oder Organisation und Telefonnummer.",
-          "Was Sie uns über das Projekt erzählen: die Leistungen, die Sie interessieren, die Beschreibung, die Programme, die Sie heute nutzen, und wann Sie starten möchten.",
+          "Was Sie uns über das Projekt erzählen: die Leistungen, die Sie interessieren, die Beschreibung, die Programme, die Sie heute nutzen, wann Sie starten möchten und Ihr geschätztes Budget.",
           "Die Sprache, in der wir Ihnen antworten sollen.",
           "E-Mail-Korrespondenz, wenn Sie uns direkt schreiben.",
           "Minimale technische Daten, die unser Hosting-Anbieter aus Sicherheitsgründen automatisch speichert (zum Beispiel IP-Adresse und Browsertyp)."

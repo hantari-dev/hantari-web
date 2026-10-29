@@ -171,7 +171,7 @@ export function AutomationVisual({ locale }: { locale?: Locale }) {
   ];
   const tint = [["#EEF2FF", signal], ["#F3EEFF", "#6A4FD8"], ["#E8F4FB", "#1F7BB8"], ["#E9F7EF", "#2F7D4F"]];
   return (
-    <Visual bg={BG.sage} label={c.head}>
+    <Visual bg={BG.sage} label={c.head} crop={[520, 325]}>
       <div className="sv-card sv-float" style={{ left: 150, top: 46, width: 340, padding: "16px 18px 14px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span style={{ fontSize: 10, fontWeight: 600, color: ink }}>{c.head}</span>

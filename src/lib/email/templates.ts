@@ -37,6 +37,9 @@ const SERVICE_NAMES: Record<Lang, Record<string, string>> = {
   },
 };
 
+/** Budget ranges as Ben reads them in the notification email. */
+const BUDGET_LABELS: Record<string, string> = { unsure: "Not sure yet", small: "Under €5,000", medium: "€5,000 – €15,000", large: "Over €15,000" };
+
 const esc = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
@@ -70,7 +73,7 @@ export function ownerEmail(lead: LeadInput, reference: string, locale: string) {
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px">
 ${row("Name", lead.name)}${row("Email", lead.email)}${row("Company", lead.company)}${row("Phone", lead.phone)}
 ${row("Services", services)}${row("Description", lead.description)}${row("Tools today", lead.tools)}
-${row("Timeline", lead.timeline)}${row("Reply in", lead.replyLang.toUpperCase())}${row("Site language", locale.toUpperCase())}
+${row("Timeline", lead.timeline)}${row("Budget", BUDGET_LABELS[lead.budget])}${row("Reply in", lead.replyLang.toUpperCase())}${row("Site language", locale.toUpperCase())}
 </table>`,
     `${lead.name}: ${services}`,
   );
@@ -81,7 +84,7 @@ ${row("Timeline", lead.timeline)}${row("Reply in", lead.replyLang.toUpperCase())
     lead.company && `Company: ${lead.company}`,
     lead.phone && `Phone: ${lead.phone}`,
     `Services: ${services}`,
-    `Timeline: ${lead.timeline} · Reply in: ${lead.replyLang}`,
+    `Timeline: ${lead.timeline} · Budget: ${BUDGET_LABELS[lead.budget]} · Reply in: ${lead.replyLang}`,
     ``,
     lead.description,
     lead.tools && `\nTools today: ${lead.tools}`,

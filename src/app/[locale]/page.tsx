@@ -13,8 +13,8 @@ const underline =
 
 const SERVICE_CARDS: { id: ServiceId; Art: React.ComponentType; big: boolean }[] = [
   { id: "apps", Art: SERVICE_ART.apps, big: true },
-  { id: "automation", Art: SERVICE_ART.automation, big: true },
-  { id: "ai", Art: SERVICE_ART.ai, big: false },
+  { id: "ai", Art: SERVICE_ART.ai, big: true },
+  { id: "automation", Art: SERVICE_ART.automation, big: false },
   { id: "integrations", Art: SERVICE_ART.integrations, big: false },
   { id: "modernisation", Art: SERVICE_ART.modernisation, big: false },
 ];

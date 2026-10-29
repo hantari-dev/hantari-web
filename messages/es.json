@@ -402,6 +402,13 @@
       "later": "Más adelante este año",
       "exploring": "Solo estoy explorando"
     },
+    "budget": "Presupuesto estimado",
+    "budgetOptions": {
+      "unsure": "Todavía no lo sé",
+      "small": "Menos de 5.000 €",
+      "medium": "5.000 – 15.000 €",
+      "large": "Más de 15.000 €"
+    },
     "s3Title": "¿Cómo te contactamos?",
     "s3Text": "Solo usamos estos datos para responder a tu solicitud. Te respondemos en un máximo de 1 día hábil.",
     "name": "Tu nombre",
@@ -456,7 +463,7 @@
         ],
         "items": [
           "Lo que escribes en el formulario “Empieza un proyecto”: nombre, correo y, de forma opcional, empresa u organización y teléfono.",
-          "Lo que nos cuentas sobre el proyecto: los servicios que te interesan, la descripción, las herramientas que usas hoy y cuándo quieres empezar.",
+          "Lo que nos cuentas sobre el proyecto: los servicios que te interesan, la descripción, las herramientas que usas hoy, cuándo quieres empezar y tu presupuesto estimado.",
           "El idioma en el que prefieres que te respondamos.",
           "La correspondencia por correo, si nos escribes directamente.",
           "Datos técnicos mínimos que nuestro proveedor de hosting guarda automáticamente por seguridad (por ejemplo, la dirección IP y el tipo de navegador)."
